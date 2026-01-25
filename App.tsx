@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { QuoteModalProvider } from './components/QuoteModal';
 import Home from './pages/Home';
@@ -49,7 +49,7 @@ const App: React.FC = () => {
           }
         >
           <Route index element={<Home />} />
-          
+
           {/* About Section */}
           <Route path="about" element={<AboutIndex />} />
           <Route path="about/profile" element={<CompanyProfile />} />

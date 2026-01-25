@@ -18,9 +18,9 @@ const ProductDetail: React.FC = () => {
     <div className="bg-paper text-ink">
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
         <div className="flex items-center gap-2 text-xs text-slate-500">
-          <a href="/#/" className="hover:text-ink">Home</a>
+          <a href="/" className="hover:text-ink">Home</a>
           <ChevronRight size={14} />
-          <a href="/#/products" className="hover:text-ink">Products</a>
+          <a href="/products" className="hover:text-ink">Products</a>
           <ChevronRight size={14} />
           <span className="text-slate-400">Phone Mounts & Holders</span>
           <ChevronRight size={14} />
@@ -80,7 +80,7 @@ const ProductDetail: React.FC = () => {
                 Get a Quote
               </button>
               <a
-                href="/#/contact"
+                href="/contact"
                 className="flex-1 bg-slate-900 text-white font-semibold py-3 rounded-full text-center"
               >
                 Customization
@@ -153,7 +153,7 @@ const ProductDetail: React.FC = () => {
                 <p className="text-sm text-white/70 mt-1">
                   Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.
                 </p>
-                <a href="/#/contact" className="text-white/80 font-semibold text-sm mt-2 inline-block">Get Samples →</a>
+                <a href="/contact" className="text-white/80 font-semibold text-sm mt-2 inline-block">Get Samples →</a>
               </div>
             </div>
           </div>

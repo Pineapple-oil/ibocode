@@ -309,22 +309,22 @@ export const Layout: React.FC = () => {
             <div>
               <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">Quick Links</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="/#/" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="/#/about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="/#/manufacturing" className="hover:text-white transition-colors">Manufacturing</a></li>
-                <li><a href="/#/quality" className="hover:text-white transition-colors">Quality</a></li>
-                <li><a href="/#/contact" className="hover:text-white transition-colors">Contact</a></li>
+                <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
+                <li><a href="/about" className="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/manufacturing" className="hover:text-white transition-colors">Manufacturing</a></li>
+                <li><a href="/quality" className="hover:text-white transition-colors">Quality</a></li>
+                <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
 
             <div>
               <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">Follow Us</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="/#/oem-odm" className="hover:text-white transition-colors">OEM & ODM Programs</a></li>
-                <li><a href="/#/oem-odm/customization" className="hover:text-white transition-colors">Customization Options</a></li>
-                <li><a href="/#/manufacturing/factory" className="hover:text-white transition-colors">Factory Overview</a></li>
-                <li><a href="/#/quality/certifications" className="hover:text-white transition-colors">Compliance Updates</a></li>
-                <li><a href="/#/blog" className="hover:text-white transition-colors">Blog Insights</a></li>
+                <li><a href="/oem-odm" className="hover:text-white transition-colors">OEM & ODM Programs</a></li>
+                <li><a href="/oem-odm/customization" className="hover:text-white transition-colors">Customization Options</a></li>
+                <li><a href="/manufacturing/factory" className="hover:text-white transition-colors">Factory Overview</a></li>
+                <li><a href="/quality/certifications" className="hover:text-white transition-colors">Compliance Updates</a></li>
+                <li><a href="/blog" className="hover:text-white transition-colors">Blog Insights</a></li>
               </ul>
             </div>
 
@@ -366,17 +366,17 @@ export const Layout: React.FC = () => {
               <p className="text-sm text-white/60 mb-4">Latest blog posts and compliance updates for global buyers.</p>
               <ul className="space-y-3 text-sm">
                 <li>
-                  <a href="/#/blog" className="hover:text-white transition-colors">
+                  <a href="/blog" className="hover:text-white transition-colors">
                     The Shift to USB-C PD in Automotive
                   </a>
                 </li>
                 <li>
-                  <a href="/#/blog" className="hover:text-white transition-colors">
+                  <a href="/blog" className="hover:text-white transition-colors">
                     EU RoHS vs. REACH: Compliance Checklist
                   </a>
                 </li>
                 <li>
-                  <a href="/#/blog" className="hover:text-white transition-colors">
+                  <a href="/blog" className="hover:text-white transition-colors">
                     Choosing the Right OEM Partner in China
                   </a>
                 </li>

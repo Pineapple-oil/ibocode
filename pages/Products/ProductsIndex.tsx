@@ -9,7 +9,7 @@ const products = [
     image: 'https://picsum.photos/seed/product-1/600/420',
     badges: ['Hot'],
     tags: ['15W Wireless', 'N52 Magnets'],
-    href: '/#/products/phone-mounts/magnetic-wireless-charger-pro',
+    href: '/products/phone-mounts/magnetic-wireless-charger-pro',
   },
   {
     title: 'Gravity Linkage Mount',
@@ -17,7 +17,7 @@ const products = [
     image: 'https://picsum.photos/seed/product-2/600/420',
     badges: [],
     tags: ['Auto-Lock', 'Silicone Grip'],
-    href: '/#/products/phone-mounts/magnetic-wireless-charger-pro',
+    href: '/products/phone-mounts/magnetic-wireless-charger-pro',
   },
   {
     title: 'Heavy Duty Suction Mount',
@@ -25,7 +25,7 @@ const products = [
     image: 'https://picsum.photos/seed/product-3/600/420',
     badges: ['New'],
     tags: ['Telescopic Arm', 'Sticky Gel Base'],
-    href: '/#/products/phone-mounts/magnetic-wireless-charger-pro',
+    href: '/products/phone-mounts/magnetic-wireless-charger-pro',
   },
   {
     title: 'MagSafe Dashboard Mount',
@@ -33,7 +33,7 @@ const products = [
     image: 'https://picsum.photos/seed/product-4/600/420',
     badges: [],
     tags: ['Zinc Alloy', 'Minimalist Design'],
-    href: '/#/products/phone-mounts/magnetic-wireless-charger-pro',
+    href: '/products/phone-mounts/magnetic-wireless-charger-pro',
   },
 ];
 
@@ -50,9 +50,9 @@ const ProductsIndex: React.FC = () => {
     <div className="bg-paper text-ink">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
         <div className="flex items-center gap-2 text-xs text-slate-500">
-          <a href="/#/" className="hover:text-ink">Home</a>
+          <a href="/" className="hover:text-ink">Home</a>
           <ChevronRight size={14} />
-          <a href="/#/products" className="hover:text-ink">Products</a>
+          <a href="/products" className="hover:text-ink">Products</a>
           <ChevronRight size={14} />
           <span className="text-slate-400">Phone Mounts & Holders</span>
         </div>
@@ -159,7 +159,7 @@ const ProductsIndex: React.FC = () => {
                 <p className="text-sm text-white/70 mt-1">
                   Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.
                 </p>
-                <a href="/#/contact" className="text-white/80 font-semibold text-sm mt-2 inline-block">Get Samples →</a>
+                <a href="/contact" className="text-white/80 font-semibold text-sm mt-2 inline-block">Get Samples →</a>
               </div>
             </div>
           </div>

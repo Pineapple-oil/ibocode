@@ -83,7 +83,7 @@ const BlogSingle: React.FC = () => {
 
         <div className="mt-10">
           <a
-            href="/#/blog"
+            href="/blog"
             className="inline-flex items-center gap-2 text-brand-text font-semibold hover:underline"
           >
             <ArrowLeft size={16} /> Back to Blog

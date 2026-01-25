@@ -108,7 +108,7 @@ const Blog: React.FC = () => {
                 </h2>
                 <p className="text-sm text-slate-600 mt-3">{post.excerpt}</p>
                 <a
-                  href="/#/blog/single"
+                  href="/blog/single"
                   className="inline-flex items-center gap-2 text-brand-text font-semibold text-sm mt-5 hover:underline"
                 >
                   Read Full Article <ArrowRight size={16} />
