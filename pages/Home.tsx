@@ -65,7 +65,7 @@ const Home: React.FC = () => {
       <section className="relative overflow-hidden bg-ink text-white">
         <div className="absolute inset-0">
           <img
-            src="https://server.cosunglobal.com/wp-content/uploads/2026/01/v2-e65250fb080106460193cb2195311779_1440w.jpg"
+            src="/images/home_hero_bg.png"
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -124,7 +124,7 @@ const Home: React.FC = () => {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden border border-white/20 shadow-[0_35px_90px_rgba(2,6,23,0.55)]">
                 <img
-                  src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-571-20260123-124836.jpg"
+                  src="/images/home_factory_preview.png"
                   alt="Automotive manufacturing"
                   className="w-full h-full object-cover"
                 />
@@ -189,7 +189,7 @@ const Home: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-497-20260123-120218.jpg" alt="Socket" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="/images/product_socket.png" alt="Socket" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Car cigarette lighter sockets</h3>
@@ -199,7 +199,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Charger" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="/images/product_charger.png" alt="Charger" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">USB car chargers</h3>
@@ -209,7 +209,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Mount" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="/images/product_mount.png" alt="Mount" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Phone holders and mounts</h3>
@@ -219,7 +219,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="/images/product_interior.png" alt="Interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Interior accessories</h3>
@@ -229,7 +229,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Parking plate" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="/images/product_parking_plate.png" alt="Parking plate" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Temporary parking plates</h3>
@@ -239,7 +239,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Adapter" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="/images/product_adapter.png" alt="Adapter" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Power adapters, splitters, and cables</h3>
