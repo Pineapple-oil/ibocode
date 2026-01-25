@@ -189,7 +189,7 @@ const Home: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://picsum.photos/seed/socket/600/400" alt="Socket" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-497-20260123-120218.jpg" alt="Socket" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Car cigarette lighter sockets</h3>
