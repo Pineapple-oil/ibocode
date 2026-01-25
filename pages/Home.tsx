@@ -199,7 +199,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://picsum.photos/seed/charger/600/400" alt="Charger" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Charger" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">USB car chargers</h3>
@@ -209,7 +209,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://picsum.photos/seed/mount/600/400" alt="Mount" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Mount" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Phone holders and mounts</h3>
@@ -219,7 +219,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://picsum.photos/seed/interior/600/400" alt="Interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Interior accessories</h3>
@@ -229,7 +229,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://picsum.photos/seed/parking/600/400" alt="Parking plate" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Parking plate" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Temporary parking plates</h3>
@@ -239,7 +239,7 @@ const Home: React.FC = () => {
           </div>
           <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
             <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="https://picsum.photos/seed/cable/600/400" alt="Adapter" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://server.cosunglobal.com/wp-content/uploads/2026/01/yunwu-edited-482-20260123-120436.jpg" alt="Adapter" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg mb-2 text-ink">Power adapters, splitters, and cables</h3>
