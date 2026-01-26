@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "image": "https://picsum.photos/seed/design/1920/800",
+    "title": "OEM & ODM Solutions",
+    "description": "OEM/ODM should not feel like a gamble. Buyers hesitate after missed deadlines, vague updates, and quality drift after the sample stage. Our program is built around clear checkpoints, documented revisions, and predictable execution - so you stay in control from prototype to mass production."
+  },
+  "engagementModels": {
+    "title": "Engagement Models",
+    "description": "Flexible ways to work with us, depending on your design readiness.",
+    "cards": [
+      {
+        "image": "https://picsum.photos/seed/oem/600/400",
+        "badge": "Most Popular",
+        "title": "OEM (Build-to-Print)",
+        "description": "You specify; we execute. Perfect for brands with existing designs needing manufacturing discipline.",
+        "bestFor": "Best for: Established Brands"
+      },
+      {
+        "image": "https://picsum.photos/seed/odm/600/400",
+        "title": "ODM (Design + Build)",
+        "description": "You select a base platform; we tailor appearance, specs, and packaging to make it yours.",
+        "bestFor": "Best for: Fast Launch"
+      },
+      {
+        "image": "https://picsum.photos/seed/hybrid/600/400",
+        "title": "Hybrid",
+        "description": "Start from an existing design for speed, then evolve into deeper customization over time.",
+        "bestFor": "Best for: Startups"
+      }
+    ]
+  },
+  "support": {
+    "title": "What We Support",
+    "items": [
+      {
+        "title": "Private Label Programs",
+        "description": "Logo application, retail packaging options, barcodes, inserts, QR cards, and listing-ready support."
+      },
+      {
+        "title": "Product Customization",
+        "description": "Port mix, output tiers, materials and finish, structure options, and usability details."
+      },
+      {
+        "title": "Engineering Collaboration",
+        "description": "DFM review, rapid prototyping, performance tuning, and failure-mode thinking."
+      },
+      {
+        "title": "Supply Chain & Cost Engineering",
+        "description": "Multi-tier BOM options, packaging optimization, pricing ladders, and forecast-friendly replenishment."
+      },
+      {
+        "title": "Documentation & Compliance Planning",
+        "description": "CE and RoHS readiness, FCC pathways, ISO 9001 aligned QMS documentation, and labeling planning."
+      },
+      {
+        "title": "Repeat-Order Stability",
+        "description": "Revision control, aligned inspection standards, lot traceability, and locked packaging specs."
+      }
+    ],
+    "links": [
+      {
+        "label": "View Customization Options",
+        "href": "/oem-odm/customization"
+      },
+      {
+        "label": "View Process Steps",
+        "href": "/oem-odm/process"
+      }
+    ],
+    "image": "https://picsum.photos/seed/custom_product/800/800"
+  },
+  "buyerWins": {
+    "title": "Where Buyers Win",
+    "description": "You win when your SKU earns positive reviews, stays in stock, and scales without surprises.",
+    "items": [
+      "Launch faster with prototyping support and practical engineering feedback",
+      "Reduce returns by addressing fit, heat, durability, and packaging protection up front",
+      "Protect brand reputation through consistent batches and controlled revisions",
+      "Build a long-term supply chain partner instead of switching factories"
+    ]
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Start an OEM/ODM RFQ",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical quote and clear next steps.",
+      "linkLabel": "Start RFQ",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request a Prototype Plan",
+      "description": "Share your reference product and timeline. We propose the fastest path from sample to stable mass production.",
+      "linkLabel": "Request Plan",
+      "href": "/contact"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "hero": {
+    "eyebrow": "Factory-direct OEM / ODM",
+    "title": "In-Vehicle Power, Built for Real Roads -- and Real Buyers.",
+    "description": "COSUN (Cosun Global Electronic Manufacturing) is a factory-direct manufacturer of car power accessories and in-vehicle electronics. Since 2010, we have helped wholesalers, brand owners, retailers, and importers launch reliable SKUs that earn repeat orders -- not return tickets.",
+    "buyerRealityLabel": "Buyer reality",
+    "buyerRealityText": "If you have ever been burned by inconsistent batches, unclear specs, or last-minute delays, you are not alone.",
+    "supportText": "B2B buyers in North America and Europe need three things: predictable quality, compliance-ready planning, and communication that does not waste time. That is exactly what our operation is built to deliver.",
+    "primaryCta": {
+      "label": "Request a Quote",
+      "href": "/contact"
+    },
+    "secondaryCta": {
+      "label": "Explore Factory",
+      "href": "/manufacturing/factory"
+    },
+    "highlights": [
+      "Repeat orders",
+      "Real-road reliability",
+      "No guessing games"
+    ],
+    "backgroundImage": "/images/home_hero_bg.png",
+    "heroImage": "/images/home_factory_preview.png",
+    "checklist": {
+      "title": "Consistency checklist",
+      "items": [
+        "Incoming checks and in-process controls",
+        "Final function and appearance verification",
+        "Export-ready packaging discipline"
+      ]
+    },
+    "cornerLabel": "OEM / ODM ready"
+  },
+  "stats": [
+    {
+      "value": "15+ Years",
+      "label": "Manufacturing exp."
+    },
+    {
+      "value": "200+",
+      "label": "Employees"
+    },
+    {
+      "value": "OEM / ODM",
+      "label": "Full capability"
+    },
+    {
+      "value": "Global",
+      "label": "Export support"
+    }
+  ],
+  "featuredProducts": {
+    "title": "Featured Product Entrances",
+    "description": "We focus on everyday automotive accessories that sell fast because they solve everyday problems.",
+    "items": [
+      {
+        "image": "/images/product_socket.png",
+        "title": "Car cigarette lighter sockets",
+        "description": "12V/24V replacement and panel-mount. Stable contact design with heat-resistant options.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_charger.png",
+        "title": "USB car chargers",
+        "description": "USB-A/USB-C and PD/QC options with protection design to reduce overheating complaints.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_mount.png",
+        "title": "Phone holders and mounts",
+        "description": "Magnetic and clamp styles built to hold steady over bumps and summer heat.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_interior.png",
+        "title": "Interior accessories",
+        "description": "Cup holders, ashtrays, and organizers designed for high-velocity retail SKUs.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_parking_plate.png",
+        "title": "Temporary parking plates",
+        "description": "Premium feel and clean visibility, ideal for high-velocity retail programs.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_adapter.png",
+        "title": "Power adapters, splitters, and cables",
+        "description": "Multi-port expansion designed for safety and stability in daily use.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      }
+    ]
+  },
+  "problems": {
+    "eyebrow": "Built for overseas B2B buyers",
+    "title": "The Problems We Remove",
+    "description": "If you have dealt with unstable batches or slow feedback, our process is designed to make each run feel repeatable and predictable.",
+    "items": [
+      {
+        "title": "Inconsistent batches",
+        "description": "Process checkpoints protect batch consistency, so the product you approve is the product your customers receive."
+      },
+      {
+        "title": "Unclear specs",
+        "description": "Buyer-first execution means clear specs, clear revisions, and clear next steps without guesswork."
+      },
+      {
+        "title": "Last-minute delays",
+        "description": "Fast response culture and launch support keep packaging, labeling, and timelines on track."
+      }
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Buyers Choose COSUN",
+    "description": "A supplier can make a good sample. A factory partner can make the same product again and again at scale.",
+    "cards": [
+      {
+        "title": "1) Company Advantages",
+        "subtitle": "Built for overseas B2B",
+        "items": [
+          "Buyer-first execution with clear specs and revisions.",
+          "Launch support for packaging, labeling, and listing details.",
+          "Fast response culture on quotes, samples, and feedback."
+        ]
+      },
+      {
+        "title": "2) Factory Advantages",
+        "subtitle": "Built for repeatability",
+        "items": [
+          "Incoming checks, in-process controls, and final verification.",
+          "Production flow designed for heat, vibration, and daily use.",
+          "Export-ready packaging options for bulk or retail-ready channels."
+        ]
+      },
+      {
+        "title": "3) Price Advantage",
+        "subtitle": "Competitive without surprises",
+        "items": [
+          "Factory-direct pricing with faster decisions and transparency.",
+          "Multiple spec tiers to hit target price without killing reliability.",
+          "Stable cost control that reduces rework and replacement costs."
+        ]
+      }
+    ]
+  },
+  "audience": {
+    "title": "For Whom We Build",
+    "description": "Whether you sell through Amazon, regional retail, automotive distributors, or fleet channels, the expectations are the same: the product must look right, fit right, and work reliably every time.",
+    "items": [
+      {
+        "title": "Wholesalers and importers",
+        "description": "Need stable replenishment and export-ready packaging."
+      },
+      {
+        "title": "Brand owners",
+        "description": "Building private-label programs with differentiated designs."
+      },
+      {
+        "title": "Retailers",
+        "description": "Demanding consistent appearance and fewer complaints."
+      },
+      {
+        "title": "E-commerce sellers",
+        "description": "Who live and die by reviews and return rates."
+      },
+      {
+        "title": "Fleet and commercial buyers",
+        "description": "Need stable performance in daily use and harsh conditions."
+      }
+    ],
+    "highlight": {
+      "title": "Factory strength you can show your team",
+      "items": [
+        "15+ years in automotive accessory manufacturing",
+        "200+ employees with factory-direct production and QC",
+        "Export support for North America and Europe",
+        "OEM/ODM: design, prototyping, testing, mass production, delivery"
+      ],
+      "linkLabel": "Read full company profile",
+      "linkHref": "/about/profile"
+    }
+  },
+  "pilotToScale": {
+    "eyebrow": "Pricing that scales with you",
+    "title": "Pilot to Scale, Without Quality Surprises",
+    "description": "Cheap is expensive when returns start coming in. We help you validate early and unlock better pricing as volumes grow.",
+    "cards": [
+      {
+        "title": "Pilot order",
+        "description": "Start with a pilot order to verify fit, finish, and market response."
+      },
+      {
+        "title": "Revision control",
+        "description": "Lock specs and revisions after validation to protect repeat orders."
+      },
+      {
+        "title": "Tiered pricing for scale",
+        "description": "Unlock better pricing as volumes grow, without cutting reliability."
+      }
+    ]
+  },
+  "compliance": {
+    "title": "Compliance-ready planning (for EU and US buyers)",
+    "description": "If you sell under your own brand, your business may be treated as the manufacturer for certain market requirements. We align documentation and labeling planning early.",
+    "cards": [
+      {
+        "title": "EU RoHS and CE",
+        "description": "Documentation pathways restricting hazardous substances and indicating conformity."
+      },
+      {
+        "title": "US FCC pathways",
+        "description": "Support for Certification and Supplier Declaration of Conformity depending on product type."
+      },
+      {
+        "title": "ISO 9001 aligned",
+        "description": "Quality management system support for vendor onboarding requirements."
+      }
+    ],
+    "note": "We align documentation and labeling planning based on destination market and product configuration."
+  },
+  "ordering": {
+    "eyebrow": "Simple ordering path",
+    "title": "A Simple, Supplier-Friendly Process",
+    "description": "Streamlined for global buyers who need clear steps, reliable timing, and transparent follow-through.",
+    "steps": [
+      {
+        "title": "Inquiry",
+        "description": "Requirements & Specs"
+      },
+      {
+        "title": "Quote",
+        "description": "Price & Timeline"
+      },
+      {
+        "title": "Artwork",
+        "description": "Design Confirmation"
+      },
+      {
+        "title": "Sample",
+        "description": "Prototype Approval"
+      },
+      {
+        "title": "Production",
+        "description": "Mass Manufacturing"
+      },
+      {
+        "title": "QC",
+        "description": "Quality Check"
+      },
+      {
+        "title": "Shipment",
+        "description": "Delivery & Support"
+      }
+    ],
+    "proTip": "Pro Tip: Include MOQ, target deadline, and artwork status in your RFQ to help us return a faster, comparable quotation."
+  }
+}

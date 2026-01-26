@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "eyebrow": "Insights for global buyers",
+    "title": "COSUN Blog: Market, Engineering, and Compliance Updates",
+    "description": "Practical insights for B2B buyers in auto accessories. Read about market shifts, QC tactics, and compliance checklists."
+  },
+  "posts": [
+    {
+      "category": "Market Trends",
+      "title": "The Shift to USB-C PD in Automotive: What Wholesalers Need to Know",
+      "excerpt": "As EU mandates USB-C for consumer electronics, the automotive aftermarket is racing to catch up. Here is why high-wattage PD matters.",
+      "date": "Oct 12, 2023",
+      "readTime": "5 min read",
+      "image": "https://picsum.photos/seed/blog-trends/900/620"
+    },
+    {
+      "category": "Engineering & Quality",
+      "title": "Reducing Return Rates: Why Heat Dissipation Matters in Car Chargers",
+      "excerpt": "High return rates often stem from a single invisible factor: heat. Learn how material choice and circuit design impact longevity.",
+      "date": "Sep 28, 2023",
+      "readTime": "4 min read",
+      "image": "https://picsum.photos/seed/blog-quality/900/620"
+    },
+    {
+      "category": "Compliance",
+      "title": "EU RoHS vs. REACH: Compliance Checklist for Auto Accessories",
+      "excerpt": "Navigating European compliance can be tricky. We break down the essential documentation you need before importing into the EU.",
+      "date": "Sep 15, 2023",
+      "readTime": "6 min read",
+      "image": "https://picsum.photos/seed/blog-compliance/900/620"
+    },
+    {
+      "category": "Sourcing Strategy",
+      "title": "Packaging for Retail vs. E-commerce: A Cost Analysis",
+      "excerpt": "Retail boxes need to sell. E-commerce boxes need to survive. How to choose the right packaging strategy for your channel.",
+      "date": "Aug 22, 2023",
+      "readTime": "5 min read",
+      "image": "https://picsum.photos/seed/blog-packaging/900/620"
+    },
+    {
+      "category": "Product News",
+      "title": "2025 Trend Report: Magnetic Mounts and MagSafe Ecosystems",
+      "excerpt": "The magnetic ecosystem is expanding beyond phones. See how new magnetic standards are influencing car mount designs.",
+      "date": "Aug 10, 2023",
+      "readTime": "3 min read",
+      "image": "https://picsum.photos/seed/blog-product/900/620"
+    },
+    {
+      "category": "Sourcing Strategy",
+      "title": "How to Choose the Right OEM Partner in China",
+      "excerpt": "Beyond the price tag: assessing communication, IP protection, and crisis management capabilities for long-term stability.",
+      "date": "Jul 05, 2023",
+      "readTime": "7 min read",
+      "image": "https://picsum.photos/seed/blog-partner/900/620"
+    }
+  ],
+  "pagination": {
+    "pages": [
+      "1",
+      "2",
+      "3"
+    ],
+    "active": "1"
+  }
+}

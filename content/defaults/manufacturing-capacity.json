@@ -1,0 +1,75 @@
+{
+  "intro": {
+    "title": "Capacity & Lead Time",
+    "description": "Lead time is where many sourcing projects fail. Our goal is to make timelines predictable - by confirming specs early, controlling revisions, and planning production to match your launch schedule.",
+    "promiseTitle": "Our Promise",
+    "promiseText": "We don't over-promise. You get a realistic schedule based on current line capacity and material availability.",
+    "image": "https://picsum.photos/seed/warehouse/800/600"
+  },
+  "planningFactors": {
+    "title": "Typical Planning Factors",
+    "items": [
+      {
+        "label": "Customization depth",
+        "text": "Logo only (fast) vs structure changes (requires tooling)."
+      },
+      {
+        "label": "Quantity",
+        "text": "Trial order (flexible) vs scaling orders (scheduled)."
+      },
+      {
+        "label": "Documentation",
+        "text": "Labeling requirements for EU/US."
+      },
+      {
+        "label": "Packaging style",
+        "text": "Bulk export vs retail-ready."
+      }
+    ]
+  },
+  "whatWeProvide": {
+    "title": "What We Can Provide",
+    "items": [
+      "Sampling timeline proposal (with checkpoints)",
+      "Mass production schedule aligned to your PO and forecast",
+      "Replenishment plan suggestions for repeat orders"
+    ]
+  },
+  "estimates": {
+    "title": "Standard Estimates (Placeholders)",
+    "cards": [
+      {
+        "label": "Sample Lead Time",
+        "value": "[Insert Data] days"
+      },
+      {
+        "label": "Mass Production",
+        "value": "[Insert Data] days"
+      },
+      {
+        "label": "MOQ",
+        "value": "[Insert Data]"
+      },
+      {
+        "label": "Incoterms",
+        "value": "EXW / FOB / CIF / DDP"
+      }
+    ],
+    "note": "* Estimates vary based on project complexity and customization."
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Request a Lead-Time Plan",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical schedule and next steps.",
+      "linkLabel": "Request Plan",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Start with a Pilot Order",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Start Pilot",
+      "href": "/contact"
+    }
+  }
+}

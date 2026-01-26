@@ -1,0 +1,53 @@
+{
+  "intro": {
+    "title": "Reliability Testing",
+    "description": "Cars are harsh environments: heat, vibration, and daily plugging. Reliability testing helps you reduce the most expensive issues - returns, bad reviews, and warranty claims."
+  },
+  "checksTitle": "Common Reliability Checks",
+  "checksTitle": "Common Reliability Checks",
+  "checks": [
+    {
+      "title": "High/low temperature exposure",
+      "description": "Interior heat resistance."
+    },
+    {
+      "title": "Vibration or shake tests",
+      "description": "Mount stability and connector integrity."
+    },
+    {
+      "title": "Aging/burn-in",
+      "description": "Stability over time (where applicable)."
+    },
+    {
+      "title": "Insertion cycle checks",
+      "description": "Ports, plugs, and moving joints."
+    },
+    {
+      "title": "Packaging drop tests",
+      "description": "Reduce transit damage and DOA issues."
+    }
+  ],
+  "images": [
+    "https://picsum.photos/seed/test1/400/600",
+    "https://picsum.photos/seed/test2/400/600"
+  ],
+  "highlight": {
+    "title": "Why Buyers Like This",
+    "description": "Testing is not just for engineers - it's a risk-reduction tool for procurement. It gives you evidence to defend your brand."
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Ask for a Test Plan Recommendation",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical test plan and next steps.",
+      "linkLabel": "Request Test Plan",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

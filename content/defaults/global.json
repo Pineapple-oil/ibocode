@@ -1,0 +1,266 @@
+﻿{
+  "topBar": {
+    "left": [
+      "Global Electronic Manufacturing",
+      "Factory Direct"
+    ],
+    "right": [
+      "North America",
+      "Europe"
+    ]
+  },
+  "navigation": {
+    "items": [
+      {
+        "label": "Home",
+        "path": "/"
+      },
+      {
+        "label": "Products",
+        "path": "/products"
+      },
+      {
+        "label": "About",
+        "path": "/about",
+        "subItems": [
+          {
+            "label": "Company Profile",
+            "path": "/about/profile"
+          },
+          {
+            "label": "Why Us",
+            "path": "/about/why-us"
+          },
+          {
+            "label": "Our Team",
+            "path": "/about/team"
+          }
+        ]
+      },
+      {
+        "label": "Manufacturing",
+        "path": "/manufacturing",
+        "subItems": [
+          {
+            "label": "Factory Overview",
+            "path": "/manufacturing/factory"
+          },
+          {
+            "label": "Production Lines",
+            "path": "/manufacturing/lines"
+          },
+          {
+            "label": "Capacity & Lead Time",
+            "path": "/manufacturing/capacity"
+          },
+          {
+            "label": "Engineering & Lab",
+            "path": "/manufacturing/engineering"
+          }
+        ]
+      },
+      {
+        "label": "OEM & ODM",
+        "path": "/oem-odm",
+        "subItems": [
+          {
+            "label": "Solutions Overview",
+            "path": "/oem-odm"
+          },
+          {
+            "label": "Customization Options",
+            "path": "/oem-odm/customization"
+          },
+          {
+            "label": "Process",
+            "path": "/oem-odm/process"
+          }
+        ]
+      },
+      {
+        "label": "Quality",
+        "path": "/quality",
+        "subItems": [
+          {
+            "label": "Overview",
+            "path": "/quality"
+          },
+          {
+            "label": "QC Process",
+            "path": "/quality/process"
+          },
+          {
+            "label": "Reliability Testing",
+            "path": "/quality/reliability"
+          },
+          {
+            "label": "Certifications",
+            "path": "/quality/certifications"
+          }
+        ]
+      },
+      {
+        "label": "FAQ",
+        "path": "/faq"
+      },
+      {
+        "label": "Contact",
+        "path": "/contact"
+      },
+      {
+        "label": "Blog",
+        "path": "/blog"
+      }
+    ],
+    "ctaLabel": "Request Quote"
+  },
+  "footer": {
+    "aboutText": "Your trusted partner for reliable, export-ready in-vehicle accessories. Built for compliance, repeat orders, and long-term scale.",
+    "responseNote": "We respond within 24 hours on most RFQs. Share target market, MOQ, and deadlines to speed up quotations.",
+    "socialLinks": [
+      {
+        "label": "Facebook",
+        "href": "https://facebook.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      },
+      {
+        "label": "YouTube",
+        "href": "https://youtube.com"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "WhatsApp",
+        "href": "https://wa.me/8613189394111"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "About Us",
+            "href": "/about"
+          },
+          {
+            "label": "Manufacturing",
+            "href": "/manufacturing"
+          },
+          {
+            "label": "Quality",
+            "href": "/quality"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact"
+          }
+        ]
+      },
+      {
+        "title": "Follow Us",
+        "links": [
+          {
+            "label": "OEM & ODM Programs",
+            "href": "/oem-odm"
+          },
+          {
+            "label": "Customization Options",
+            "href": "/oem-odm/customization"
+          },
+          {
+            "label": "Factory Overview",
+            "href": "/manufacturing/factory"
+          },
+          {
+            "label": "Compliance Updates",
+            "href": "/quality/certifications"
+          },
+          {
+            "label": "Blog Insights",
+            "href": "/blog"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Contact Us",
+      "phone": {
+        "value": "+86-13189394111",
+        "note": "Mon - Fri, 9am - 6pm"
+      },
+      "email": {
+        "value": "info@cosunglobal.com",
+        "note": "Response within 24h"
+      },
+      "address": {
+        "value": "Industrial Zone, Dongguan",
+        "note": "Guangdong, China"
+      }
+    },
+    "newsletter": {
+      "title": "Subscribe Our Newsletter",
+      "description": "Latest blog posts and compliance updates for global buyers.",
+      "links": [
+        {
+          "label": "The Shift to USB-C PD in Automotive",
+          "href": "/blog"
+        },
+        {
+          "label": "EU RoHS vs. REACH: Compliance Checklist",
+          "href": "/blog"
+        },
+        {
+          "label": "Choosing the Right OEM Partner in China",
+          "href": "/blog"
+        }
+      ]
+    },
+    "copyright": "Copyright 2026 COSUN Global Electronic Manufacturing. All rights reserved."
+  },
+  "quoteModal": {
+    "title": "Request a Quote",
+    "closeLabel": "Close",
+    "closeIcon": "X",
+    "intro": "Tell us about your project. We aim to respond within 24 hours with pricing and lead time.",
+    "labels": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company Name",
+      "product": "Product Interest",
+      "message": "Message / Requirements"
+    },
+    "placeholders": {
+      "name": "Your Name",
+      "email": "name@company.com",
+      "company": "Company Ltd.",
+      "product": "e.g., USB Car Charger, 3000 units",
+      "message": "Describe customization needs, target market, or timeline..."
+    },
+    "submitLabel": "Send Request",
+    "privacyNote": "We respect your privacy. Your information is only used for this inquiry."
+  },
+  "ctaDefaults": {
+    "title": "Next Steps",
+    "primary": {
+      "title": "Request a Quote",
+      "description": "Tell us your target market, quantity, and customization needs. We aim to respond within 24 hours with a practical quote and clear next steps.",
+      "linkLabel": "Start RFQ",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Get Samples",
+      "href": "/contact"
+    }
+  }
+}

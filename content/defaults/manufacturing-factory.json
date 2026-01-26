@@ -1,0 +1,110 @@
+{
+  "intro": {
+    "title": "Factory Overview",
+    "lead": "Factory-direct manufacturing is only valuable if it delivers what overseas buyers actually need: consistent batches, stable lead times, and communication you can rely on.",
+    "paragraph": "Since 2010, COSUN has built our production flow around repeatability - from disciplined assembly standards to export-ready packing checks.",
+    "highlights": [
+      "Faster launch cycles (prototype -> validation -> mass production)",
+      "Stable replenishment (repeatable process + controlled revisions)",
+      "Practical quality evidence (inspection checklists, test logic, photo confirmations)",
+      "Export-ready packing and carton marking"
+    ]
+  },
+  "images": {
+    "main": "/images/factory_floor_main.png",
+    "secondary": [
+      "/images/factory_assembly.png",
+      "/images/factory_testing.png"
+    ]
+  },
+  "lines": {
+    "title": "10 Production Lines & Work Cells",
+    "left": [
+      {
+        "title": "SMT / PCBA Line",
+        "description": "Controlled PCB assembly including placement + soldering profiles, with SPI/AOI."
+      },
+      {
+        "title": "THT / Hand-Solder & Rework Cell",
+        "description": "Manual refinement and controlled rework to keep yield stable."
+      },
+      {
+        "title": "Cable & Harness Prep",
+        "description": "Cutting, stripping, crimping, and continuity checks."
+      },
+      {
+        "title": "Plastic Parts Fit Control",
+        "description": "Incoming checks + fit verification for housings and clips."
+      },
+      {
+        "title": "Metal Parts Processing / Hardware Prep",
+        "description": "Metal part checks and assembly preparation for stable mechanical tolerances."
+      }
+    ],
+    "right": [
+      {
+        "title": "Car Charger Assembly Line",
+        "description": "Process checkpoints aimed at reducing heat and connection complaints."
+      },
+      {
+        "title": "Cigarette Lighter Socket Assembly",
+        "description": "Contact stability, assembly consistency, and packaging protection."
+      },
+      {
+        "title": "Phone Holder Assembly",
+        "description": "Clamp stability, surface protection, and holding performance."
+      },
+      {
+        "title": "100% Functional Test Line",
+        "description": "Functional checks plus visual inspection before outgoing shipment.",
+        "accent": "green"
+      },
+      {
+        "title": "Aging / Burn-In Line",
+        "description": "Detect early failures before products ship.",
+        "accent": "green"
+      }
+    ]
+  },
+  "qualityDiscipline": {
+    "title": "Quality Discipline That Protects Your Brand",
+    "items": [
+      "ESD control where it matters to protect sensitive electronics.",
+      "Inspection logic aligned to buyer expectations (AQL-aligned sampling where applicable).",
+      "Documented checkpoints and photo confirmations when needed."
+    ]
+  },
+  "expectations": {
+    "title": "What You Can Expect",
+    "items": [
+      "Clear checkpoints, clear revision control, clear next steps.",
+      "Production photos or videos when needed for alignment.",
+      "Stable execution designed for repeat orders, not one-time wins."
+    ]
+  },
+  "packing": {
+    "title": "Export-Ready Packing & Shipping Support",
+    "description": "A good product can still fail if packing fails. We support channel-appropriate packaging (bulk vs retail), carton marking, and protection planning.",
+    "items": [
+      "Custom Carton Marking",
+      "Palletization Support",
+      "Drop-Test Compliant Packing"
+    ],
+    "image": "/images/factory_packing.png"
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Request Factory Photos & Videos",
+      "description": "We will send real production visuals and a capability overview relevant to your product category.",
+      "linkLabel": "Request Media",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Stock samples or branded samples to verify fit, finish, and performance before you scale.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

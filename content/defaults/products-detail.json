@@ -1,0 +1,123 @@
+{
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Products",
+      "href": "/products"
+    },
+    {
+      "label": "Phone Mounts & Holders"
+    },
+    {
+      "label": "Magnetic Wireless Charger Pro"
+    }
+  ],
+  "title": "Magnetic Wireless Charger Pro",
+  "itemNumber": "Item #: CS-M15-PRO",
+  "gallery": [
+    "https://picsum.photos/seed/detail-1/1000/800",
+    "https://picsum.photos/seed/detail-2/1000/800",
+    "https://picsum.photos/seed/detail-3/1000/800",
+    "https://picsum.photos/seed/detail-4/1000/800",
+    "https://picsum.photos/seed/detail-5/1000/800"
+  ],
+  "details": [
+    {
+      "label": "Brand",
+      "value": "COSUN"
+    },
+    {
+      "label": "Model",
+      "value": "CS-M15-PRO"
+    },
+    {
+      "label": "Size",
+      "value": "65 x 65 x 90 mm"
+    },
+    {
+      "label": "Weight",
+      "value": "125 g"
+    },
+    {
+      "label": "Packaging",
+      "value": "Color Box / Blister (100 pcs/carton)"
+    },
+    {
+      "label": "Material",
+      "value": "Zinc Alloy + Tempered Glass + Silicone"
+    },
+    {
+      "label": "Customized",
+      "value": "Logo, Color, Packaging"
+    },
+    {
+      "label": "Shipping",
+      "value": "Air / Sea / Express (EXW/FOB)"
+    },
+    {
+      "label": "Accessories",
+      "value": "Air Vent Clip, USB-C Cable, User Manual"
+    }
+  ],
+  "primaryCta": {
+    "label": "Get a Quote",
+    "action": "quoteModal",
+    "href": "/contact"
+  },
+  "secondaryCta": {
+    "label": "Customization",
+    "href": "/contact",
+    "action": ""
+  },
+  "description": {
+    "title": "Product Description",
+    "text": "The Magnetic Wireless Charger Pro (CS-M15-PRO) is designed for B2B procurement, offering reliable performance and customizable options for your brand. Built with Zinc Alloy + Tempered Glass + Silicone, it ensures durability and heat control. We support full OEM customization including logo placement, packaging design, and specific functions.",
+    "images": [
+      "https://picsum.photos/seed/desc-1/600/420",
+      "https://picsum.photos/seed/desc-2/600/420",
+      "https://picsum.photos/seed/desc-3/600/420"
+    ]
+  },
+  "features": {
+    "title": "Key Features",
+    "items": [
+      "15W wireless fast charging",
+      "N52 magnet stability",
+      "Heat dissipation structure",
+      "Factory-direct pricing and QC control",
+      "Low MOQ for pilot orders"
+    ]
+  },
+  "oemSupport": {
+    "title": "OEM Support",
+    "items": [
+      "Logo and color matching",
+      "Packaging design and inserts",
+      "Compliance planning (CE, RoHS, FCC)",
+      "Performance tuning for target markets",
+      "Private-label barcode & labeling"
+    ]
+  },
+  "bottomCta": {
+    "title": "Ready to start your order?",
+    "items": [
+      {
+        "icon": ">",
+        "title": "Request a Quote",
+        "description": "Tell us your target market, quantity, and customization needs. We aim to respond within 24 hours.",
+        "linkLabel": "Start RFQ",
+        "action": "quoteModal"
+      },
+      {
+        "icon": ">",
+        "title": "Request Samples",
+        "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+        "linkLabel": "Get Samples",
+        "href": "/contact"
+      }
+    ]
+  }
+}

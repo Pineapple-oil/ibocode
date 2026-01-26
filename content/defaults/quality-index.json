@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "image": "https://picsum.photos/seed/inspection/1920/800",
+    "title": "Quality & Compliance",
+    "description": "In B2B, quality is not a nice-to-have - it is the cost of staying in business. Our approach is built around consistent batches, documented checkpoints, and destination-market readiness."
+  },
+  "cards": [
+    {
+      "image": "https://picsum.photos/seed/qc_process/600/400",
+      "title": "Quality Control Process",
+      "description": "IQC to IPQC to FQC/OQC workflows designed to prevent hidden defects.",
+      "linkLabel": "Explore Process",
+      "href": "/quality/process"
+    },
+    {
+      "image": "https://picsum.photos/seed/reliability/600/400",
+      "title": "Reliability Testing",
+      "description": "Heat, vibration, aging, and insertion cycle checks to reduce returns.",
+      "linkLabel": "View Tests",
+      "href": "/quality/reliability"
+    },
+    {
+      "image": "https://picsum.photos/seed/certs/600/400",
+      "title": "Certifications & Compliance",
+      "description": "Planning for CE, RoHS, FCC pathways and destination labeling.",
+      "linkLabel": "Check Compliance",
+      "href": "/quality/certifications"
+    }
+  ],
+  "highlight": "We provide decision-ready materials: spec sheets, packaging specs, inspection checklists, and clear revision control.",
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Request Quality Documentation Checklist",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical checklist and next steps.",
+      "linkLabel": "Request Checklist",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

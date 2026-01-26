@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "eyebrow": "Single Post",
+    "title": "Fix Your Cracked Phone Screen",
+    "meta": "July 16, 2025 / COSUN"
+  },
+  "heroImage": "https://picsum.photos/seed/blogsingle-hero/1400/700",
+  "body": {
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, eros ut congue bibendum, purus nibh tincidunt sapien, eget convallis enim elit at turpis. Donec varius sapien vitae ante vestibulum ultricies. Etiam tristique vestibulum felis, nec varius urna dapibus sit amet. Vestibulum lacinia, libero in posuere venenatis, justo urna luctus sapien, ut luctus est velit at orci.",
+      "Aenean venenatis, purus vitae volutpat convallis, orci elit convallis purus, ac pulvinar magna nibh eu leo. Aliquam posuere, lacus at venenatis efficitur, lacus risus egestas leo, in fermentum tortor lectus ac justo. Integer nec est euismod, vehicula nulla a, luctus lorem."
+    ],
+    "midImage": "https://picsum.photos/seed/blogsingle-mid/1200/900",
+    "sectionTitle": "Fix Your Cracked Phone Screen",
+    "sectionParagraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, eros ut congue bibendum, purus nibh tincidunt sapien, eget convallis enim elit at turpis. Donec varius sapien vitae ante vestibulum ultricies. Etiam tristique vestibulum felis, nec varius urna dapibus sit amet. Vestibulum lacinia, libero in posuere venenatis, justo urna luctus sapien, ut luctus est velit at orci. Aenean venenatis, purus vitae volutpat convallis, orci elit convallis purus, ac pulvinar magna nibh eu leo.",
+    "subheading": "Tips To Keep Gadgets Running",
+    "subParagraphs": [
+      "Curabitur efficitur auctor diam, in varius sapien hendrerit in. Fusce in nisi velit. Pellentesque imperdiet cursus lacus, ac fermentum tortor fermentum id. Nulla facilisi. Integer non nisi eros. Praesent fermentum leo ac nibh consequat, id consectetur sapien finibus.",
+      "Suspendisse nibh velit, posuere nec erat ut, blandit fermentum metus. Vivamus interdum sem nibh, a aliquet tellus dapibus sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc non finibus nulla. Pellentesque imperdiet cursus lacus, ac fermentum tortor fermentum id."
+    ]
+  },
+  "footer": {
+    "tagsLabel": "Post Tags:",
+    "tags": [
+      "mobile",
+      "phone",
+      "repair"
+    ],
+    "shareLabel": "Share:",
+    "shareItems": [
+      "f",
+      "x",
+      "in"
+    ],
+    "backLabel": "Back to Blog",
+    "backHref": "/blog"
+  }
+}

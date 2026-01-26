@@ -1,0 +1,119 @@
+{
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Products",
+      "href": "/products"
+    },
+    {
+      "label": "Phone Mounts & Holders"
+    }
+  ],
+  "title": "Phone Mounts & Holders",
+  "description": "Magnetic, gravity, and clamp-style mounts with industrial-grade suction and vent clips. Designed for stability on rough terrain.",
+  "countLabel": "4 Products Available",
+  "categories": [
+    {
+      "label": "Phone Mounts & Holders",
+      "active": true
+    },
+    {
+      "label": "USB Car Chargers"
+    },
+    {
+      "label": "Cables & Adapters"
+    },
+    {
+      "label": "Interior Accessories"
+    }
+  ],
+  "newArrivals": [
+    {
+      "title": "Heavy Duty Suction Mount",
+      "code": "CS-S20-MAX",
+      "image": "https://picsum.photos/seed/new-1/200/160"
+    },
+    {
+      "title": "Transparent 30W Charger",
+      "code": "CS-TR30-TECH",
+      "image": "https://picsum.photos/seed/new-2/200/160"
+    },
+    {
+      "title": "OBD Power Adapter",
+      "code": "CS-OBD-AIR",
+      "image": "https://picsum.photos/seed/new-3/200/160"
+    }
+  ],
+  "products": [
+    {
+      "title": "Magnetic Wireless Charger Pro",
+      "code": "CS-M15-PRO",
+      "image": "https://picsum.photos/seed/product-1/600/420",
+      "badges": [
+        "Hot"
+      ],
+      "tags": [
+        "15W Wireless",
+        "N52 Magnets"
+      ],
+      "href": "/products/phone-mounts/magnetic-wireless-charger-pro"
+    },
+    {
+      "title": "Gravity Linkage Mount",
+      "code": "CS-G10-STD",
+      "image": "https://picsum.photos/seed/product-2/600/420",
+      "badges": [],
+      "tags": [
+        "Auto-Lock",
+        "Silicone Grip"
+      ],
+      "href": "/products/phone-mounts/magnetic-wireless-charger-pro"
+    },
+    {
+      "title": "Heavy Duty Suction Mount",
+      "code": "CS-S20-MAX",
+      "image": "https://picsum.photos/seed/product-3/600/420",
+      "badges": [
+        "New"
+      ],
+      "tags": [
+        "Telescopic Arm",
+        "Sticky Gel Base"
+      ],
+      "href": "/products/phone-mounts/magnetic-wireless-charger-pro"
+    },
+    {
+      "title": "MagSafe Dashboard Mount",
+      "code": "CS-M12-DASH",
+      "image": "https://picsum.photos/seed/product-4/600/420",
+      "badges": [],
+      "tags": [
+        "Zinc Alloy",
+        "Minimalist Design"
+      ],
+      "href": "/products/phone-mounts/magnetic-wireless-charger-pro"
+    }
+  ],
+  "catalogCta": {
+    "title": "Request a Full Catalog PDF",
+    "items": [
+      {
+        "icon": ">",
+        "title": "Request a Quote",
+        "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical quote.",
+        "linkLabel": "Start RFQ",
+        "action": "quoteModal"
+      },
+      {
+        "icon": ">",
+        "title": "Request Samples",
+        "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+        "linkLabel": "Get Samples",
+        "href": "/contact"
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "intro": {
+    "title": "Customization Options",
+    "description": "Customization is not about adding complexity - it's about adding value buyers can see and feel.",
+    "note": "The strongest private-label SKUs share three traits: a distinct look, reliable performance, and packaging that communicates value instantly."
+  },
+  "cards": [
+    {
+      "image": "https://picsum.photos/seed/product_finish/600/400",
+      "title": "Product",
+      "items": [
+        {
+          "label": "Housing & Finish",
+          "text": "Color, texture, coating, logo placement."
+        },
+        {
+          "label": "Port Config",
+          "text": "USB-A/C mix, PD/QC protocols."
+        },
+        {
+          "label": "Structure",
+          "text": "Mount geometry, base stability, cable length."
+        },
+        {
+          "label": "UX",
+          "text": "Indicator lights, one-hand operation."
+        },
+        {
+          "label": "Project",
+          "text": "Custom molds and structure changes for true differentiation."
+        }
+      ]
+    },
+    {
+      "image": "https://picsum.photos/seed/retail_box/600/400",
+      "title": "Packaging",
+      "items": [
+        {
+          "text": "Retail color boxes, blister packs, window boxes, gift sets, or bulk export cartons."
+        },
+        {
+          "text": "SKU labeling: barcodes, QR instructions, inserts, multilingual warnings."
+        },
+        {
+          "text": "Photography support for listings."
+        }
+      ]
+    },
+    {
+      "image": "https://picsum.photos/seed/docs/600/400",
+      "title": "Compliance",
+      "items": [
+        {
+          "text": "CE and RoHS planning for EU and UK markets."
+        },
+        {
+          "text": "FCC authorization planning for US products with RF energy."
+        },
+        {
+          "text": "Destination-market documentation and labeling checklist."
+        }
+      ],
+      "note": "Tell us your destination market and product type and we will recommend a practical checklist."
+    }
+  ],
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Request a Customization Proposal",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical quote and clear next steps.",
+      "linkLabel": "Request Proposal",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Get a Branded Sample",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

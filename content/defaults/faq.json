@@ -1,0 +1,72 @@
+{
+  "intro": {
+    "image": "https://picsum.photos/seed/support/600/800",
+    "title": "FAQ",
+    "description": "These are the questions buyers ask before they trust a new supplier. If you do not see yours here, send it and we will answer directly."
+  },
+  "items": [
+    {
+      "question": "What's your MOQ?",
+      "answer": "MOQ depends on product type and customization depth. Share your target SKU and sales channel, and we will propose a practical MOQ that supports your launch."
+    },
+    {
+      "question": "Can I get samples before placing an order?",
+      "answer": "Yes. We offer stock samples for quick evaluation and branded samples for private-label validation."
+    },
+    {
+      "question": "What is your typical lead time?",
+      "answer": "Lead time depends on customization, quantity, and documentation needs. We can provide a sampling plan and a mass production schedule aligned to your launch date."
+    },
+    {
+      "question": "Do you support OEM/ODM projects?",
+      "answer": "Yes. We support everything from logo + packaging to structural customization and project-based molds."
+    },
+    {
+      "question": "Do you provide CE/RoHS/FCC documentation?",
+      "answer": "We support documentation and labeling planning based on product type and destination market requirements. Tell us where you will sell and what marks your channel requires."
+    },
+    {
+      "question": "How do you ensure batch consistency?",
+      "answer": "Through material control, process checkpoints (IQC/IPQC/FQC), and revision control so repeat orders stay consistent."
+    },
+    {
+      "question": "What's your warranty policy?",
+      "answer": "Warranty depends on product category and destination market. We align inspection standards and provide practical support to reduce claims."
+    },
+    {
+      "question": "What payment terms do you accept?",
+      "answer": "Common options include T/T and other terms depending on project type and order history. We confirm terms during RFQ."
+    },
+    {
+      "question": "Can you do custom packaging and barcodes?",
+      "answer": "Yes. We support private label packaging, inserts, barcodes, and QR instruction cards for e-commerce and retail."
+    },
+    {
+      "question": "How do you handle quality issues?",
+      "answer": "We rely on evidence, traceability, and root-cause analysis. Practical solutions can include replacement, credit, or corrective actions as agreed."
+    },
+    {
+      "question": "Can you ship to my forwarder or provide DDP?",
+      "answer": "We can ship to your forwarder and support common Incoterms (EXW/FOB/CIF). DDP options can be discussed by destination and order size."
+    },
+    {
+      "question": "Can you help with product photos?",
+      "answer": "We can provide clean product and packaging photos. Share your platform requirements and we will confirm what's available."
+    }
+  ],
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Still Have a Question? Request a Quote",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical quote and clear next steps.",
+      "linkLabel": "Request Quote",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

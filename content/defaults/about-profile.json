@@ -1,0 +1,132 @@
+{
+  "hero": {
+    "title": "Company Profile",
+    "lead": "Cosun Global Electronic Manufacturing (COSUN) was built for global B2B buyers who want less drama and more predictable outcomes.",
+    "paragraphs": [
+      "Since 2010, we've grown by solving the problems procurement teams remember most: inconsistent batches, unclear specs, slow replies, and shipments that don't match the approved sample.",
+      "Today, COSUN supports wholesalers, brand owners, retailers, and importers across North America and Europe with a simple promise: stable quality, factory-direct efficiency, and clear communication."
+    ],
+    "image": "https://picsum.photos/seed/building/800/800",
+    "imageOverlayTitle": "Founded 2010",
+    "imageOverlaySubtitle": "Dongguan, China"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To power the driving experience with practical in-vehicle accessories - built to survive real use, not just pass a photo test.",
+    "image": "https://picsum.photos/seed/mission/600/300"
+  },
+  "vision": {
+    "title": "Our Vision",
+    "description": "To become a long-term manufacturing partner for automotive accessory brands worldwide - helping customers launch faster, reduce returns, and scale repeat orders.",
+    "image": "https://picsum.photos/seed/vision/600/300"
+  },
+  "products": {
+    "title": "What We Make",
+    "description": "We focus on high-velocity automotive accessories that solve everyday needs and perform consistently in real car environments:",
+    "items": [
+      "Car cigarette lighter sockets (12V/24V replacement and panel-mount)",
+      "USB car chargers (USB-A/USB-C; PD/QC options by project)",
+      "Magnetic phone mounts and car holders",
+      "Temporary parking number plates",
+      "Car cup holders and ashtrays",
+      "In-vehicle power adapters and splitters"
+    ],
+    "gallery": [
+      "https://picsum.photos/seed/prod1/400/400",
+      "https://picsum.photos/seed/prod2/400/400",
+      "https://picsum.photos/seed/prod3/400/400",
+      "https://picsum.photos/seed/prod4/400/400"
+    ]
+  },
+  "audience": {
+    "title": "Who We Serve",
+    "items": [
+      {
+        "title": "Wholesalers & Importers",
+        "description": "Stable replenishment and fewer receiving surprises."
+      },
+      {
+        "title": "Brand Owners",
+        "description": "Private-label lines with differentiation customers can feel."
+      },
+      {
+        "title": "Retailers",
+        "description": "Shelf presentation, packaging clarity, and defect control."
+      },
+      {
+        "title": "E-commerce Sellers",
+        "description": "Fighting return rates, reviews, and listing compliance."
+      },
+      {
+        "title": "Fleet / Commercial",
+        "description": "Reliability and repeatable supply."
+      }
+    ]
+  },
+  "whyCosun": {
+    "title": "Why COSUN",
+    "cards": [
+      {
+        "title": "Factory Advantages",
+        "items": [
+          "10 structured production lines or work cells for scale-ready workflow",
+          "Standardized work instructions and checkpoints reduce variation",
+          "Functional testing aligned to common failure causes",
+          "Revision control so approved stays approved"
+        ]
+      },
+      {
+        "title": "Company Advantages",
+        "items": [
+          "Clear RFQ inputs for faster, accurate quotes",
+          "Faster decisions with engineering and production aligned",
+          "Photo or video confirmations during pilot runs",
+          "Export-ready communication that respects your timeline"
+        ]
+      },
+      {
+        "title": "Pricing Advantage",
+        "items": [
+          "Factory-direct efficiency with clear cost structure",
+          "Value engineering tiers to hit target price",
+          "Stable repeat orders reduce rework and claims"
+        ]
+      }
+    ]
+  },
+  "compliance": {
+    "title": "Quality and Compliance Mindset",
+    "description": "Compliance planning protects your listings, reduces customs delays, and strengthens buyer confidence. We align documentation and labeling based on your product configuration and destination market.",
+    "items": [
+      "EU Declaration of Conformity and CE readiness",
+      "RoHS substance restrictions for electronics",
+      "FCC equipment authorization pathways",
+      "ISO 9001 aligned QMS documentation if required"
+    ]
+  },
+  "howWeWork": {
+    "title": "How We Work",
+    "steps": [
+      "Confirm market requirements, channel expectations, and reliability specs.",
+      "Prototype quickly to validate fit, finish, and user experience.",
+      "Lock spec, packaging, and labeling before mass production.",
+      "Run production with checkpoints and documented revisions.",
+      "Support export packing and repeat-order stability as you scale."
+    ]
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Start an RFQ",
+      "description": "Share target market, quantity, and customization needs. We respond within 24 hours with a practical quote and clear next steps.",
+      "linkLabel": "Start RFQ",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Validate fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

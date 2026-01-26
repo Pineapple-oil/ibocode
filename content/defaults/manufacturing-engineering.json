@@ -1,0 +1,53 @@
+{
+  "intro": {
+    "title": "Engineering & Lab",
+    "description": "Speed to market doesn't come from rushing - it comes from reducing revision loops. Our engineering support helps you move from concept to manufacturable product with fewer surprises.",
+    "image": "https://picsum.photos/seed/circuit/800/400"
+  },
+  "supportAreas": {
+    "title": "Engineering Support Areas",
+    "items": [
+      {
+        "title": "DFM Review (Design for Manufacturing)",
+        "description": "Prevent tooling mistakes and reduce cost risk before we cut steel."
+      },
+      {
+        "title": "Rapid Prototyping",
+        "description": "Confirm fit, finish, and user experience with 3D prints or CNC samples."
+      },
+      {
+        "title": "Performance Tuning",
+        "description": "Power profiles, charging protocols, and circuit protection design."
+      },
+      {
+        "title": "Validation Planning",
+        "description": "Define test items that match your target market expectations."
+      }
+    ]
+  },
+  "whatYouSend": {
+    "title": "What You Send Us",
+    "items": [
+      "Reference link or competitor SKU",
+      "Target market and channel (Amazon, retail, fleet)",
+      "Desired differentiation (look, spec, packaging)",
+      "Launch timeline and forecast"
+    ]
+  },
+  "labImage": "https://picsum.photos/seed/lab_test/800/500",
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Request an Engineering Review",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with practical guidance and next steps.",
+      "linkLabel": "Request Review",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request a Prototype Plan",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Plan",
+      "href": "/contact"
+    }
+  }
+}

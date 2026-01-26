@@ -1,0 +1,56 @@
+{
+  "intro": {
+    "title": "Production Lines & Equipment",
+    "description": "Buyers in mature markets care about process discipline. When you scale from 500 units to 50,000 units, you need the product to stay the same. We use automated and semi-automated lines to ensure consistency.",
+    "image": "https://picsum.photos/seed/equip/800/600"
+  },
+  "processControl": {
+    "title": "Process Control Focus",
+    "items": [
+      {
+        "step": "01",
+        "title": "Assembly Fixtures",
+        "description": "Fit controls and jigs for repeatable installation, reducing operator error."
+      },
+      {
+        "step": "02",
+        "title": "ESD Protection",
+        "description": "Static control flooring and wrist straps for electronic component handling."
+      },
+      {
+        "step": "03",
+        "title": "Functional Testing",
+        "description": "Test checks designed around real failure causes, not just appearance."
+      },
+      {
+        "step": "04",
+        "title": "Final Packing Check",
+        "description": "Packing verification to prevent shipping damage and receiving errors."
+      }
+    ]
+  },
+  "gallery": [
+    "https://picsum.photos/seed/line1/600/400",
+    "https://picsum.photos/seed/line2/600/400",
+    "https://picsum.photos/seed/line3/600/400"
+  ],
+  "highlight": {
+    "title": "Why It Matters",
+    "description": "This reduces variation, rework, and customer complaints - helping your SKU stay profitable at scale."
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Request a Process Flow Snapshot",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical process view and next steps.",
+      "linkLabel": "Request Snapshot",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}
