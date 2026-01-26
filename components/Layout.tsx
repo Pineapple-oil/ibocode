@@ -1,5 +1,8 @@
-﻿import React, { useState } from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+﻿'use client';
+
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import {
   Menu,
   X,
@@ -18,10 +21,11 @@ import { Logo } from './Logo';
 import { useQuoteModal } from './QuoteModal';
 import { useSiteContent } from '../content/SiteContentContext';
 
-export const Layout: React.FC = () => {
+export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const location = useLocation();
+  const pathname = usePathname();
+  const currentPath = pathname || '/';
   const quoteModal = useQuoteModal();
   const { global } = useSiteContent();
   const navItems = global.navigation.items;
@@ -89,7 +93,7 @@ export const Layout: React.FC = () => {
           <div className="flex justify-between h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <Link to="/" className="flex items-center gap-3 text-ink">
+              <Link href="/" className="flex items-center gap-3 text-ink">
                 <Logo className="h-10 w-auto" />
               </Link>
             </div>
@@ -100,15 +104,15 @@ export const Layout: React.FC = () => {
                 <div key={item.label} className="relative group">
                   {item.subItems ? (
                     <button
-                      className={`px-3 py-2 rounded-md text-sm font-semibold flex items-center gap-1 tracking-wide hover:text-ink transition-colors ${location.pathname.startsWith(item.path) ? 'text-ink' : 'text-ink/60'}`}
+                      className={`px-3 py-2 rounded-md text-sm font-semibold flex items-center gap-1 tracking-wide hover:text-ink transition-colors ${currentPath.startsWith(item.path) ? 'text-ink' : 'text-ink/60'}`}
                     >
                       {item.label}
                       <ChevronDown size={14} />
                     </button>
                   ) : (
                     <Link
-                      to={item.path}
-                      className={`px-3 py-2 rounded-md text-sm font-semibold tracking-wide hover:text-ink transition-colors ${location.pathname === item.path ? 'text-ink' : 'text-ink/60'}`}
+                      href={item.path}
+                      className={`px-3 py-2 rounded-md text-sm font-semibold tracking-wide hover:text-ink transition-colors ${currentPath === item.path ? 'text-ink' : 'text-ink/60'}`}
                     >
                       {item.label}
                     </Link>
@@ -121,7 +125,7 @@ export const Layout: React.FC = () => {
                         {item.subItems.map((subItem) => (
                           <Link
                             key={subItem.path}
-                            to={subItem.path}
+                            href={subItem.path}
                             className="block px-4 py-3 text-sm text-ink/80 hover:bg-brand/15 hover:text-ink border-l-4 border-transparent hover:border-brand"
                             role="menuitem"
                           >
@@ -142,7 +146,7 @@ export const Layout: React.FC = () => {
                   {ctaLabel}
                 </button>
               ) : (
-                <Link to="/contact" className="ml-4 bg-brand text-ink px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-hover transition-colors shadow-sm">
+                <Link href="/contact" className="ml-4 bg-brand text-ink px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-hover transition-colors shadow-sm">
                   {ctaLabel}
                 </Link>
               )}
@@ -180,7 +184,7 @@ export const Layout: React.FC = () => {
                           {item.subItems.map((subItem) => (
                             <Link
                               key={subItem.path}
-                              to={subItem.path}
+                              href={subItem.path}
                               onClick={() => setIsMobileMenuOpen(false)}
                               className="block px-3 py-2 rounded-md text-sm font-medium text-ink/70 hover:text-ink"
                             >
@@ -192,7 +196,7 @@ export const Layout: React.FC = () => {
                     </>
                   ) : (
                     <Link
-                      to={item.path}
+                      href={item.path}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="block px-3 py-3 rounded-md text-base font-medium text-ink/80 hover:bg-white/70"
                     >
@@ -212,7 +216,7 @@ export const Layout: React.FC = () => {
                   </button>
                 ) : (
                   <Link
-                    to="/contact"
+                    href="/contact"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block w-full text-center bg-brand text-ink px-5 py-3 rounded-md text-base font-bold hover:bg-brand-hover"
                   >
@@ -227,7 +231,7 @@ export const Layout: React.FC = () => {
 
       {/* Main Content */}
       <main className="flex-grow">
-        <Outlet />
+        {children}
       </main>
 
       {/* Footer */}
@@ -282,7 +286,7 @@ export const Layout: React.FC = () => {
                             {link.label}
                           </a>
                         ) : (
-                          <Link to={link.href} className="hover:text-white transition-colors">
+                          <Link href={link.href} className="hover:text-white transition-colors">
                             {link.label}
                           </Link>
                         )
@@ -309,7 +313,7 @@ export const Layout: React.FC = () => {
                             {link.label}
                           </a>
                         ) : (
-                          <Link to={link.href} className="hover:text-white transition-colors">
+                          <Link href={link.href} className="hover:text-white transition-colors">
                             {link.label}
                           </Link>
                         )
@@ -371,7 +375,7 @@ export const Layout: React.FC = () => {
                           {link.label}
                         </a>
                       ) : (
-                        <Link to={link.href} className="hover:text-white transition-colors">
+                        <Link href={link.href} className="hover:text-white transition-colors">
                           {link.label}
                         </Link>
                       )
@@ -392,3 +396,4 @@ export const Layout: React.FC = () => {
     </div>
   );
 };
+

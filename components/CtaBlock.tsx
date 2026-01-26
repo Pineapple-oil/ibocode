@@ -1,5 +1,7 @@
+﻿'use client';
+
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ArrowRight, Box } from 'lucide-react';
 import { useQuoteModal } from './QuoteModal';
 import { useSiteContent } from '../content/SiteContentContext';
@@ -58,7 +60,7 @@ export const CtaBlock: React.FC<CtaBlockProps> = ({ title, primary, secondary })
                     {primaryCta.linkLabel} &rarr;
                   </button>
                 ) : (
-                  <Link to={primaryHref} className="inline-block mt-3 text-brand font-semibold hover:text-white transition-colors">
+                  <Link href={primaryHref} className="inline-block mt-3 text-brand font-semibold hover:text-white transition-colors">
                     {primaryCta.linkLabel} &rarr;
                   </Link>
                 )}
@@ -82,7 +84,7 @@ export const CtaBlock: React.FC<CtaBlockProps> = ({ title, primary, secondary })
                     {secondaryCta.linkLabel} &rarr;
                   </button>
                 ) : (
-                  <Link to={secondaryHref} className="inline-block mt-3 text-white/70 font-semibold hover:text-white transition-colors">
+                  <Link href={secondaryHref} className="inline-block mt-3 text-white/70 font-semibold hover:text-white transition-colors">
                     {secondaryCta.linkLabel} &rarr;
                   </Link>
                 )}
@@ -94,3 +96,4 @@ export const CtaBlock: React.FC<CtaBlockProps> = ({ title, primary, secondary })
     </div>
   );
 };
+

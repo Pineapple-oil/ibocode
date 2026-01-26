@@ -65,12 +65,22 @@ export const defaultSiteContent = {
 
 export type SiteContent = typeof defaultSiteContent;
 
-const API_BASE = import.meta.env.VITE_WP_API_BASE || 'https://server.cosunglobal.com';
+const API_BASE = process.env.NEXT_PUBLIC_WP_API_BASE || 'https://server.cosunglobal.com';
 const API_ROOT = API_BASE.replace(/\/$/, '');
 const SITE_CONTENT_URL = `${API_ROOT}/wp-json/cosun/v1/site-content`;
 
 const isPlainObject = (value: unknown): value is Record<string, unknown> => {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+};
+
+const hasBackendPayload = (value: unknown): value is SiteContent => {
+  if (!isPlainObject(value)) {
+    return false;
+  }
+
+  const hasGlobal = Object.prototype.hasOwnProperty.call(value, 'global');
+  const hasPages = Object.prototype.hasOwnProperty.call(value, 'pages');
+  return hasGlobal || hasPages;
 };
 
 const mergeDeep = <T>(base: T, override: unknown): T => {
@@ -101,7 +111,10 @@ export const fetchSiteContent = async (): Promise<SiteContent> => {
     if (!response.ok) {
       throw new Error(`Request failed: ${response.status}`);
     }
-    const data = (await response.json()) as SiteContent;
+    const data = (await response.json()) as unknown;
+    if (!hasBackendPayload(data)) {
+      return defaultSiteContent;
+    }
     return mergeDeep(defaultSiteContent, data);
   } catch (error) {
     return defaultSiteContent;

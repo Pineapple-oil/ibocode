@@ -1,4 +1,6 @@
-﻿import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
+﻿'use client';
+
+import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { Send } from 'lucide-react';
 import { useSiteContent } from '../content/SiteContentContext';
 
@@ -133,3 +135,4 @@ export const QuoteModalProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     </QuoteModalContext.Provider>
   );
 };
+

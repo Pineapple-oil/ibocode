@@ -1,3 +1,5 @@
+﻿'use client';
+
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { defaultSiteContent, fetchSiteContent, SiteContent } from './siteContent';
 
@@ -31,3 +33,4 @@ export const SiteContentProvider: React.FC<{ children: React.ReactNode }> = ({ c
 };
 
 export const useSiteContent = () => useContext(SiteContentContext);
+
