@@ -1,5 +1,6 @@
-import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
+﻿import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { Send } from 'lucide-react';
+import { useSiteContent } from '../content/SiteContentContext';
 
 interface QuoteModalContextValue {
   open: () => void;
@@ -12,6 +13,8 @@ export const useQuoteModal = () => useContext(QuoteModalContext);
 
 export const QuoteModalProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { global } = useSiteContent();
+  const modal = global.quoteModal;
 
   useEffect(() => {
     const handleKeydown = (event: KeyboardEvent) => {
@@ -53,65 +56,65 @@ export const QuoteModalProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           <div
             role="dialog"
             aria-modal="true"
-            aria-label="Request a quote"
+            aria-label={modal.title}
             className="relative w-full max-w-lg rounded-3xl bg-white shadow-2xl border border-ink/10 overflow-hidden"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="flex items-center justify-between px-6 py-5 border-b border-slate-100">
-              <h3 className="text-lg font-semibold text-ink">Request a Quote</h3>
+              <h3 className="text-lg font-semibold text-ink">{modal.title}</h3>
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}
                 className="w-9 h-9 rounded-full border border-slate-200 text-slate-500 hover:text-ink hover:border-slate-300 transition-colors flex items-center justify-center"
-                aria-label="Close"
+                aria-label={modal.closeLabel}
               >
-                ×
+                {modal.closeIcon || 'X'}
               </button>
             </div>
             <div className="px-6 py-6">
               <div className="bg-slate-50 border border-slate-100 rounded-xl p-4 text-sm text-slate-600 mb-6">
-                Tell us about your project. We aim to respond within 24 hours with pricing and lead time.
+                {modal.intro}
               </div>
               <form className="space-y-4" onSubmit={(event) => event.preventDefault()}>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <label className="text-sm font-medium text-ink">
-                    Name <span className="text-red-500">*</span>
+                    {modal.labels.name} <span className="text-red-500">*</span>
                     <input
                       type="text"
-                      placeholder="Your Name"
+                      placeholder={modal.placeholders.name}
                       className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:border-brand/70 focus:ring-2 focus:ring-brand/40 outline-none"
                     />
                   </label>
                   <label className="text-sm font-medium text-ink">
-                    Email <span className="text-red-500">*</span>
+                    {modal.labels.email} <span className="text-red-500">*</span>
                     <input
                       type="email"
-                      placeholder="name@company.com"
+                      placeholder={modal.placeholders.email}
                       className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:border-brand/70 focus:ring-2 focus:ring-brand/40 outline-none"
                     />
                   </label>
                 </div>
                 <label className="text-sm font-medium text-ink">
-                  Company Name
+                  {modal.labels.company}
                   <input
                     type="text"
-                    placeholder="Company Ltd."
+                    placeholder={modal.placeholders.company}
                     className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:border-brand/70 focus:ring-2 focus:ring-brand/40 outline-none"
                   />
                 </label>
                 <label className="text-sm font-medium text-ink">
-                  Product Interest <span className="text-red-500">*</span>
+                  {modal.labels.product} <span className="text-red-500">*</span>
                   <input
                     type="text"
-                    placeholder="e.g., USB Car Charger, 3000 units"
+                    placeholder={modal.placeholders.product}
                     className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:border-brand/70 focus:ring-2 focus:ring-brand/40 outline-none"
                   />
                 </label>
                 <label className="text-sm font-medium text-ink">
-                  Message / Requirements
+                  {modal.labels.message}
                   <textarea
                     rows={4}
-                    placeholder="Describe customization needs, target market, or timeline..."
+                    placeholder={modal.placeholders.message}
                     className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:border-brand/70 focus:ring-2 focus:ring-brand/40 outline-none resize-none"
                   />
                 </label>
@@ -119,12 +122,10 @@ export const QuoteModalProvider: React.FC<{ children: React.ReactNode }> = ({ ch
                   type="submit"
                   className="w-full rounded-xl bg-brand text-ink font-bold py-3 hover:bg-brand-hover transition-colors inline-flex items-center justify-center gap-2"
                 >
-                  Send Request <Send size={18} />
+                  {modal.submitLabel} <Send size={18} />
                 </button>
               </form>
-              <p className="text-center text-xs text-slate-500 mt-4">
-                We respect your privacy. Your information is only used for this inquiry.
-              </p>
+              <p className="text-center text-xs text-slate-500 mt-4">{modal.privacyNote}</p>
             </div>
           </div>
         </div>

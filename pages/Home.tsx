@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Section } from '../components/Section';
 import { CtaBlock } from '../components/CtaBlock';
 import { useQuoteModal } from '../components/QuoteModal';
+import { useSiteContent } from '../content/SiteContentContext';
 import {
   AlertTriangle,
   CheckCircle,
@@ -26,16 +27,26 @@ import {
 
 const Home: React.FC = () => {
   const quoteModal = useQuoteModal();
+  const { pages } = useSiteContent();
+  const home = pages.home;
   const heroBgRef = useRef<HTMLImageElement | null>(null);
-  const processSteps = [
-    { title: 'Inquiry', desc: 'Requirements & Specs', Icon: MessageCircle },
-    { title: 'Quote', desc: 'Price & Timeline', Icon: FileText },
-    { title: 'Artwork', desc: 'Design Confirmation', Icon: PenTool },
-    { title: 'Sample', desc: 'Prototype Approval', Icon: Package },
-    { title: 'Production', desc: 'Mass Manufacturing', Icon: Settings },
-    { title: 'QC', desc: 'Quality Check', Icon: ShieldCheck },
-    { title: 'Shipment', desc: 'Delivery & Support', Icon: Truck },
-  ];
+  const processIcons = [MessageCircle, FileText, PenTool, Package, Settings, ShieldCheck, Truck];
+  const problemIcons = [AlertTriangle, FileText, Clock];
+  const whyIcons = [Truck, Layout, Zap];
+  const audienceIcons = [Package, Layers, ShoppingBag, Globe, Users];
+  const pilotIcons = [ClipboardList, CheckCircle, TrendingUp];
+  const complianceIcons = [ShieldCheck, Globe, CheckCircle];
+  const processSteps = home.ordering.steps.map((step, index) => ({
+    title: step.title,
+    desc: step.description,
+    Icon: processIcons[index] ?? Package,
+  }));
+  const proTipParts = home.ordering.proTip.split(':');
+  const proTipLabel = proTipParts[0];
+  const proTipText = proTipParts.length > 1 ? proTipParts.slice(1).join(':').trim() : '';
+  const heroPrimaryCta = home.hero.primaryCta;
+  const heroSecondaryCta = home.hero.secondaryCta;
+  const heroPrimaryUsesModal = Boolean(quoteModal) && heroPrimaryCta.href === '/contact';
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -65,7 +76,7 @@ const Home: React.FC = () => {
       <section className="relative overflow-hidden bg-ink text-white">
         <div className="absolute inset-0">
           <img
-            src="/images/home_hero_bg.png"
+            src={home.hero.backgroundImage}
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -80,74 +91,74 @@ const Home: React.FC = () => {
           <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
             <div className="space-y-7">
               <div className="inline-flex items-center gap-2 px-4 py-2 border border-brand/50 text-brand text-xs uppercase tracking-[0.28em]">
-                Factory-direct OEM / ODM
+                {home.hero.eyebrow}
               </div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight reveal-up">
-                In-Vehicle Power, Built for Real Roads -- and Real Buyers.
+                {home.hero.title}
               </h1>
               <p className="text-lg text-slate-200 max-w-2xl reveal-up" style={{ animationDelay: '0.1s' }}>
-                COSUN (Cosun Global Electronic Manufacturing) is a factory-direct manufacturer of car power accessories and
-                in-vehicle electronics. Since 2010, we have helped wholesalers, brand owners, retailers, and importers launch
-                reliable SKUs that earn repeat orders -- not return tickets.
+                {home.hero.description}
               </p>
               <div className="border-l-2 border-brand/60 pl-4 text-slate-200 reveal-up" style={{ animationDelay: '0.2s' }}>
-                <p className="text-xs uppercase tracking-[0.22em] text-brand/80 mb-2">Buyer reality</p>
-                <p className="text-base">
-                  If you have ever been burned by inconsistent batches, unclear specs, or last-minute delays, you are not alone.
-                </p>
+                <p className="text-xs uppercase tracking-[0.22em] text-brand/80 mb-2">{home.hero.buyerRealityLabel}</p>
+                <p className="text-base">{home.hero.buyerRealityText}</p>
               </div>
               <p className="text-sm text-slate-300 max-w-2xl reveal-up" style={{ animationDelay: '0.3s' }}>
-                B2B buyers in North America and Europe need three things: predictable quality, compliance-ready planning, and
-                communication that does not waste time. That is exactly what our operation is built to deliver.
+                {home.hero.supportText}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 reveal-up" style={{ animationDelay: '0.4s' }}>
-                <button
-                  type="button"
-                  onClick={() => quoteModal?.open()}
-                  className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-full text-ink bg-brand hover:bg-brand-hover transition-colors"
-                >
-                  Request a Quote
-                </button>
+                {heroPrimaryUsesModal ? (
+                  <button
+                    type="button"
+                    onClick={() => quoteModal?.open()}
+                    className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-full text-ink bg-brand hover:bg-brand-hover transition-colors"
+                  >
+                    {heroPrimaryCta.label}
+                  </button>
+                ) : (
+                  <Link
+                    to={heroPrimaryCta.href}
+                    className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-full text-ink bg-brand hover:bg-brand-hover transition-colors"
+                  >
+                    {heroPrimaryCta.label}
+                  </Link>
+                )}
                 <Link
-                  to="/manufacturing/factory"
+                  to={heroSecondaryCta.href}
                   className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-full text-white border border-white/30 hover:bg-white/10 transition-colors"
                 >
-                  Explore Factory
+                  {heroSecondaryCta.label}
                 </Link>
               </div>
               <div className="flex flex-wrap gap-3 text-xs uppercase tracking-[0.2em] text-white/70">
-                <span className="px-3 py-2 border border-white/15">Repeat orders</span>
-                <span className="px-3 py-2 border border-white/15">Real-road reliability</span>
-                <span className="px-3 py-2 border border-white/15">No guessing games</span>
+                {home.hero.highlights.map((item, index) => (
+                  <span key={`${item}-${index}`} className="px-3 py-2 border border-white/15">
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
             <div className="relative">
               <div className="rounded-3xl overflow-hidden border border-white/20 shadow-[0_35px_90px_rgba(2,6,23,0.55)]">
                 <img
-                  src="/images/home_factory_preview.png"
-                  alt="Automotive manufacturing"
+                  src={home.hero.heroImage}
+                  alt={home.hero.title}
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-10 -left-8 bg-paper text-ink p-6 rounded-2xl shadow-xl border border-ink/10 w-64">
-                <h3 className="font-display text-lg mb-3">Consistency checklist</h3>
+                <h3 className="font-display text-lg mb-3">{home.hero.checklist.title}</h3>
                 <ul className="space-y-2 text-sm text-slate-700">
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-brand" />
-                    Incoming checks and in-process controls
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-brand" />
-                    Final function and appearance verification
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-brand" />
-                    Export-ready packaging discipline
-                  </li>
+                  {home.hero.checklist.items.map((item, index) => (
+                    <li key={`${item}-${index}`} className="flex items-start gap-2">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-brand" />
+                      {item}
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="absolute -top-6 right-6 bg-slate-900/80 text-white/90 px-4 py-3 rounded-xl border border-white/10 text-xs uppercase tracking-[0.18em]">
-                OEM / ODM ready
+                {home.hero.cornerLabel}
               </div>
             </div>
           </div>
@@ -158,22 +169,12 @@ const Home: React.FC = () => {
       <div className="bg-brand text-ink py-8 border-b border-ink/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div className="border border-ink/10 rounded-2xl py-4 bg-white/20">
-              <div className="text-3xl font-display">15+ Years</div>
-              <div className="text-xs font-semibold uppercase tracking-[0.25em]">Manufacturing exp.</div>
-            </div>
-            <div className="border border-ink/10 rounded-2xl py-4 bg-white/20">
-              <div className="text-3xl font-display">200+</div>
-              <div className="text-xs font-semibold uppercase tracking-[0.25em]">Employees</div>
-            </div>
-            <div className="border border-ink/10 rounded-2xl py-4 bg-white/20">
-              <div className="text-3xl font-display">OEM / ODM</div>
-              <div className="text-xs font-semibold uppercase tracking-[0.25em]">Full capability</div>
-            </div>
-            <div className="border border-ink/10 rounded-2xl py-4 bg-white/20">
-              <div className="text-3xl font-display">Global</div>
-              <div className="text-xs font-semibold uppercase tracking-[0.25em]">Export support</div>
-            </div>
+            {home.stats.map((stat, index) => (
+              <div key={`${stat.value}-${index}`} className="border border-ink/10 rounded-2xl py-4 bg-white/20">
+                <div className="text-3xl font-display">{stat.value}</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.25em]">{stat.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -181,155 +182,76 @@ const Home: React.FC = () => {
       {/* What We Manufacture */}
       <Section>
         <div className="text-center mb-12">
-          <h2 className="font-display text-3xl text-ink mb-4">Featured Product Entrances</h2>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            We focus on everyday automotive accessories that sell fast because they solve everyday problems.
-          </p>
+          <h2 className="font-display text-3xl text-ink mb-4">{home.featuredProducts.title}</h2>
+          <p className="text-lg text-slate-600 max-w-3xl mx-auto">{home.featuredProducts.description}</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
-            <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="/images/product_socket.png" alt="Socket" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          {home.featuredProducts.items.map((item, index) => (
+            <div key={`${item.title}-${index}`} className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
+              <div className="h-48 bg-slate-100 relative overflow-hidden">
+                <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6">
+                <h3 className="font-display text-lg mb-2 text-ink">{item.title}</h3>
+                <p className="text-sm text-slate-600 mb-4">{item.description}</p>
+                <Link to={item.linkHref} className="text-brand-text font-semibold text-sm hover:underline">
+                  {item.linkLabel}
+                </Link>
+              </div>
             </div>
-            <div className="p-6">
-              <h3 className="font-display text-lg mb-2 text-ink">Car cigarette lighter sockets</h3>
-              <p className="text-sm text-slate-600 mb-4">12V/24V replacement and panel-mount. Stable contact design with heat-resistant options.</p>
-              <Link to="/oem-odm" className="text-brand-text font-semibold text-sm hover:underline">View capabilities</Link>
-            </div>
-          </div>
-          <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
-            <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="/images/product_charger.png" alt="Charger" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="p-6">
-              <h3 className="font-display text-lg mb-2 text-ink">USB car chargers</h3>
-              <p className="text-sm text-slate-600 mb-4">USB-A/USB-C and PD/QC options with protection design to reduce overheating complaints.</p>
-              <Link to="/oem-odm" className="text-brand-text font-semibold text-sm hover:underline">View capabilities</Link>
-            </div>
-          </div>
-          <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
-            <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="/images/product_mount.png" alt="Mount" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="p-6">
-              <h3 className="font-display text-lg mb-2 text-ink">Phone holders and mounts</h3>
-              <p className="text-sm text-slate-600 mb-4">Magnetic and clamp styles built to hold steady over bumps and summer heat.</p>
-              <Link to="/oem-odm" className="text-brand-text font-semibold text-sm hover:underline">View capabilities</Link>
-            </div>
-          </div>
-          <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
-            <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="/images/product_interior.png" alt="Interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="p-6">
-              <h3 className="font-display text-lg mb-2 text-ink">Interior accessories</h3>
-              <p className="text-sm text-slate-600 mb-4">Cup holders, ashtrays, and organizers designed for high-velocity retail SKUs.</p>
-              <Link to="/oem-odm" className="text-brand-text font-semibold text-sm hover:underline">View capabilities</Link>
-            </div>
-          </div>
-          <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
-            <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="/images/product_parking_plate.png" alt="Parking plate" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="p-6">
-              <h3 className="font-display text-lg mb-2 text-ink">Temporary parking plates</h3>
-              <p className="text-sm text-slate-600 mb-4">Premium feel and clean visibility, ideal for high-velocity retail programs.</p>
-              <Link to="/oem-odm" className="text-brand-text font-semibold text-sm hover:underline">View capabilities</Link>
-            </div>
-          </div>
-          <div className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
-            <div className="h-48 bg-slate-100 relative overflow-hidden">
-              <img src="/images/product_adapter.png" alt="Adapter" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="p-6">
-              <h3 className="font-display text-lg mb-2 text-ink">Power adapters, splitters, and cables</h3>
-              <p className="text-sm text-slate-600 mb-4">Multi-port expansion designed for safety and stability in daily use.</p>
-              <Link to="/oem-odm" className="text-brand-text font-semibold text-sm hover:underline">View capabilities</Link>
-            </div>
-          </div>
+          ))}
         </div>
       </Section>
 
       {/* Problems We Remove */}
       <Section className="bg-white">
         <div className="text-center mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Built for overseas B2B buyers</p>
-          <h2 className="font-display text-3xl md:text-4xl text-ink mt-4">The Problems We Remove</h2>
-          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-            If you have dealt with unstable batches or slow feedback, our process is designed to make each run feel repeatable
-            and predictable.
-          </p>
+          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">{home.problems.eyebrow}</p>
+          <h2 className="font-display text-3xl md:text-4xl text-ink mt-4">{home.problems.title}</h2>
+          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{home.problems.description}</p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="p-7 rounded-2xl border border-ink/10 bg-paper shadow-sm">
-            <div className="bg-ink text-brand w-12 h-12 rounded-xl flex items-center justify-center mb-5">
-              <AlertTriangle size={22} />
-            </div>
-            <h3 className="font-display text-xl mb-3">Inconsistent batches</h3>
-            <p className="text-sm text-slate-600">
-              Process checkpoints protect batch consistency, so the product you approve is the product your customers receive.
-            </p>
-          </div>
-          <div className="p-7 rounded-2xl border border-ink/10 bg-paper shadow-sm">
-            <div className="bg-ink text-brand w-12 h-12 rounded-xl flex items-center justify-center mb-5">
-              <FileText size={22} />
-            </div>
-            <h3 className="font-display text-xl mb-3">Unclear specs</h3>
-            <p className="text-sm text-slate-600">
-              Buyer-first execution means clear specs, clear revisions, and clear next steps without guesswork.
-            </p>
-          </div>
-          <div className="p-7 rounded-2xl border border-ink/10 bg-paper shadow-sm">
-            <div className="bg-ink text-brand w-12 h-12 rounded-xl flex items-center justify-center mb-5">
-              <Clock size={22} />
-            </div>
-            <h3 className="font-display text-xl mb-3">Last-minute delays</h3>
-            <p className="text-sm text-slate-600">
-              Fast response culture and launch support keep packaging, labeling, and timelines on track.
-            </p>
-          </div>
+          {home.problems.items.map((item, index) => {
+            const Icon = problemIcons[index] ?? AlertTriangle;
+            return (
+              <div key={`${item.title}-${index}`} className="p-7 rounded-2xl border border-ink/10 bg-paper shadow-sm">
+                <div className="bg-ink text-brand w-12 h-12 rounded-xl flex items-center justify-center mb-5">
+                  <Icon size={22} />
+                </div>
+                <h3 className="font-display text-xl mb-3">{item.title}</h3>
+                <p className="text-sm text-slate-600">{item.description}</p>
+              </div>
+            );
+          })}
         </div>
       </Section>
 
       {/* Why Choose COSUN */}
       <Section>
         <div className="text-center mb-14">
-          <h2 className="font-display text-3xl md:text-4xl text-ink">Why Buyers Choose COSUN</h2>
-          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-            A supplier can make a good sample. A factory partner can make the same product again and again at scale.
-          </p>
+          <h2 className="font-display text-3xl md:text-4xl text-ink">{home.whyChoose.title}</h2>
+          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{home.whyChoose.description}</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-2xl border border-ink/10 hover:shadow-lg transition-shadow">
-            <div className="bg-brand/40 p-3 rounded-full w-fit mb-6 text-ink"><Truck size={30} /></div>
-            <h3 className="font-display text-xl mb-2">1) Company Advantages</h3>
-            <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-[0.2em] mb-4">Built for overseas B2B</h4>
-            <ul className="space-y-3 text-slate-600 text-sm">
-              <li className="flex items-start gap-2"><CheckCircle size={16} className="text-brand mt-1" /> Buyer-first execution with clear specs and revisions.</li>
-              <li className="flex items-start gap-2"><CheckCircle size={16} className="text-brand mt-1" /> Launch support for packaging, labeling, and listing details.</li>
-              <li className="flex items-start gap-2"><CheckCircle size={16} className="text-brand mt-1" /> Fast response culture on quotes, samples, and feedback.</li>
-            </ul>
-          </div>
-          <div className="bg-white p-8 rounded-2xl border border-ink/10 hover:shadow-lg transition-shadow">
-            <div className="bg-brand/40 p-3 rounded-full w-fit mb-6 text-ink"><Layout size={30} /></div>
-            <h3 className="font-display text-xl mb-2">2) Factory Advantages</h3>
-            <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-[0.2em] mb-4">Built for repeatability</h4>
-            <ul className="space-y-3 text-slate-600 text-sm">
-              <li className="flex items-start gap-2"><CheckCircle size={16} className="text-brand mt-1" /> Incoming checks, in-process controls, and final verification.</li>
-              <li className="flex items-start gap-2"><CheckCircle size={16} className="text-brand mt-1" /> Production flow designed for heat, vibration, and daily use.</li>
-              <li className="flex items-start gap-2"><CheckCircle size={16} className="text-brand mt-1" /> Export-ready packaging options for bulk or retail-ready channels.</li>
-            </ul>
-          </div>
-          <div className="bg-white p-8 rounded-2xl border border-ink/10 hover:shadow-lg transition-shadow">
-            <div className="bg-brand/40 p-3 rounded-full w-fit mb-6 text-ink"><Zap size={30} /></div>
-            <h3 className="font-display text-xl mb-2">3) Price Advantage</h3>
-            <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-[0.2em] mb-4">Competitive without surprises</h4>
-            <ul className="space-y-3 text-slate-600 text-sm">
-              <li className="flex items-start gap-2"><CheckCircle size={16} className="text-brand mt-1" /> Factory-direct pricing with faster decisions and transparency.</li>
-              <li className="flex items-start gap-2"><CheckCircle size={16} className="text-brand mt-1" /> Multiple spec tiers to hit target price without killing reliability.</li>
-              <li className="flex items-start gap-2"><CheckCircle size={16} className="text-brand mt-1" /> Stable cost control that reduces rework and replacement costs.</li>
-            </ul>
-          </div>
+          {home.whyChoose.cards.map((card, index) => {
+            const Icon = whyIcons[index] ?? Truck;
+            return (
+              <div key={`${card.title}-${index}`} className="bg-white p-8 rounded-2xl border border-ink/10 hover:shadow-lg transition-shadow">
+                <div className="bg-brand/40 p-3 rounded-full w-fit mb-6 text-ink">
+                  <Icon size={30} />
+                </div>
+                <h3 className="font-display text-xl mb-2">{card.title}</h3>
+                <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-[0.2em] mb-4">{card.subtitle}</h4>
+                <ul className="space-y-3 text-slate-600 text-sm">
+                  {card.items.map((item, itemIndex) => (
+                    <li key={`${item}-${itemIndex}`} className="flex items-start gap-2">
+                      <CheckCircle size={16} className="text-brand mt-1" /> {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </Section>
 
@@ -337,72 +259,36 @@ const Home: React.FC = () => {
       <Section className="bg-white">
         <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
           <div>
-            <h2 className="font-display text-3xl text-ink mb-6">For Whom We Build</h2>
-            <p className="text-slate-600 text-lg mb-8">
-              Whether you sell through Amazon, regional retail, automotive distributors, or fleet channels, the expectations are
-              the same: the product must look right, fit right, and work reliably every time.
-            </p>
+            <h2 className="font-display text-3xl text-ink mb-6">{home.audience.title}</h2>
+            <p className="text-slate-600 text-lg mb-8">{home.audience.description}</p>
             <div className="grid sm:grid-cols-2 gap-6">
-              <div className="flex gap-4">
-                <div className="bg-paper p-3 h-fit rounded text-ink"><Package /></div>
-                <div>
-                  <h4 className="font-semibold text-ink">Wholesalers and importers</h4>
-                  <p className="text-sm text-slate-600 mt-1">Need stable replenishment and export-ready packaging.</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="bg-paper p-3 h-fit rounded text-ink"><Layers /></div>
-                <div>
-                  <h4 className="font-semibold text-ink">Brand owners</h4>
-                  <p className="text-sm text-slate-600 mt-1">Building private-label programs with differentiated designs.</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="bg-paper p-3 h-fit rounded text-ink"><ShoppingBag /></div>
-                <div>
-                  <h4 className="font-semibold text-ink">Retailers</h4>
-                  <p className="text-sm text-slate-600 mt-1">Demanding consistent appearance and fewer complaints.</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="bg-paper p-3 h-fit rounded text-ink"><Globe /></div>
-                <div>
-                  <h4 className="font-semibold text-ink">E-commerce sellers</h4>
-                  <p className="text-sm text-slate-600 mt-1">Who live and die by reviews and return rates.</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="bg-paper p-3 h-fit rounded text-ink"><Users /></div>
-                <div>
-                  <h4 className="font-semibold text-ink">Fleet and commercial buyers</h4>
-                  <p className="text-sm text-slate-600 mt-1">Need stable performance in daily use and harsh conditions.</p>
-                </div>
-              </div>
+              {home.audience.items.map((item, index) => {
+                const Icon = audienceIcons[index] ?? Package;
+                return (
+                  <div key={`${item.title}-${index}`} className="flex gap-4">
+                    <div className="bg-paper p-3 h-fit rounded text-ink"><Icon /></div>
+                    <div>
+                      <h4 className="font-semibold text-ink">{item.title}</h4>
+                      <p className="text-sm text-slate-600 mt-1">{item.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
           <div className="bg-paper rounded-2xl p-8 h-full flex flex-col justify-center border border-ink/10">
-            <h3 className="font-display text-2xl text-ink mb-4">Factory strength you can show your team</h3>
+            <h3 className="font-display text-2xl text-ink mb-4">{home.audience.highlight.title}</h3>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-brand rounded-full" />
-                <span className="text-slate-700 font-medium">15+ years in automotive accessory manufacturing</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-brand rounded-full" />
-                <span className="text-slate-700 font-medium">200+ employees with factory-direct production and QC</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-brand rounded-full" />
-                <span className="text-slate-700 font-medium">Export support for North America and Europe</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-brand rounded-full" />
-                <span className="text-slate-700 font-medium">OEM/ODM: design, prototyping, testing, mass production, delivery</span>
-              </li>
+              {home.audience.highlight.items.map((item, index) => (
+                <li key={`${item}-${index}`} className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-brand rounded-full" />
+                  <span className="text-slate-700 font-medium">{item}</span>
+                </li>
+              ))}
             </ul>
             <div className="mt-8">
-              <Link to="/about/profile" className="text-brand-text font-semibold hover:underline inline-flex items-center gap-2">
-                Read full company profile <PenTool size={16} />
+              <Link to={home.audience.highlight.linkHref} className="text-brand-text font-semibold hover:underline inline-flex items-center gap-2">
+                {home.audience.highlight.linkLabel} <PenTool size={16} />
               </Link>
             </div>
           </div>
@@ -412,40 +298,25 @@ const Home: React.FC = () => {
       {/* Pilot to Scale */}
       <Section className="bg-white">
         <div className="text-center mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Pricing that scales with you</p>
-          <h2 className="font-display text-3xl md:text-4xl text-ink mt-4">Pilot to Scale, Without Quality Surprises</h2>
-          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-            Cheap is expensive when returns start coming in. We help you validate early and unlock better pricing as volumes grow.
-          </p>
+          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">{home.pilotToScale.eyebrow}</p>
+          <h2 className="font-display text-3xl md:text-4xl text-ink mt-4">{home.pilotToScale.title}</h2>
+          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{home.pilotToScale.description}</p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="p-7 rounded-2xl border border-ink/10 bg-paper">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-ink text-brand w-11 h-11 rounded-xl flex items-center justify-center">
-                <ClipboardList size={20} />
+          {home.pilotToScale.cards.map((card, index) => {
+            const Icon = pilotIcons[index] ?? ClipboardList;
+            return (
+              <div key={`${card.title}-${index}`} className="p-7 rounded-2xl border border-ink/10 bg-paper">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-ink text-brand w-11 h-11 rounded-xl flex items-center justify-center">
+                    <Icon size={20} />
+                  </div>
+                  <h3 className="font-display text-lg">{card.title}</h3>
+                </div>
+                <p className="text-sm text-slate-600">{card.description}</p>
               </div>
-              <h3 className="font-display text-lg">Pilot order</h3>
-            </div>
-            <p className="text-sm text-slate-600">Start with a pilot order to verify fit, finish, and market response.</p>
-          </div>
-          <div className="p-7 rounded-2xl border border-ink/10 bg-paper">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-ink text-brand w-11 h-11 rounded-xl flex items-center justify-center">
-                <CheckCircle size={20} />
-              </div>
-              <h3 className="font-display text-lg">Revision control</h3>
-            </div>
-            <p className="text-sm text-slate-600">Lock specs and revisions after validation to protect repeat orders.</p>
-          </div>
-          <div className="p-7 rounded-2xl border border-ink/10 bg-paper">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-ink text-brand w-11 h-11 rounded-xl flex items-center justify-center">
-                <TrendingUp size={20} />
-              </div>
-              <h3 className="font-display text-lg">Tiered pricing for scale</h3>
-            </div>
-            <p className="text-sm text-slate-600">Unlock better pricing as volumes grow, without cutting reliability.</p>
-          </div>
+            );
+          })}
         </div>
       </Section>
 
@@ -453,31 +324,23 @@ const Home: React.FC = () => {
       <div className="bg-ink py-16 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="font-display text-2xl md:text-3xl mb-4">Compliance-ready planning (for EU and US buyers)</h2>
-            <p className="text-slate-300 max-w-3xl mx-auto">
-              If you sell under your own brand, your business may be treated as the manufacturer for certain market requirements.
-              We align documentation and labeling planning early.
-            </p>
+            <h2 className="font-display text-2xl md:text-3xl mb-4">{home.compliance.title}</h2>
+            <p className="text-slate-300 max-w-3xl mx-auto">{home.compliance.description}</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-              <ShieldCheck size={48} className="text-brand mx-auto mb-4" />
-              <h3 className="text-white font-semibold text-lg mb-2">EU RoHS and CE</h3>
-              <p className="text-slate-300 text-sm">Documentation pathways restricting hazardous substances and indicating conformity.</p>
-            </div>
-            <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-              <Globe size={48} className="text-brand mx-auto mb-4" />
-              <h3 className="text-white font-semibold text-lg mb-2">US FCC pathways</h3>
-              <p className="text-slate-300 text-sm">Support for Certification and Supplier Declaration of Conformity depending on product type.</p>
-            </div>
-            <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-              <CheckCircle size={48} className="text-brand mx-auto mb-4" />
-              <h3 className="text-white font-semibold text-lg mb-2">ISO 9001 aligned</h3>
-              <p className="text-slate-300 text-sm">Quality management system support for vendor onboarding requirements.</p>
-            </div>
+            {home.compliance.cards.map((card, index) => {
+              const Icon = complianceIcons[index] ?? ShieldCheck;
+              return (
+                <div key={`${card.title}-${index}`} className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                  <Icon size={48} className="text-brand mx-auto mb-4" />
+                  <h3 className="text-white font-semibold text-lg mb-2">{card.title}</h3>
+                  <p className="text-slate-300 text-sm">{card.description}</p>
+                </div>
+              );
+            })}
           </div>
           <p className="text-center text-xs text-slate-400 mt-8">
-            We align documentation and labeling planning based on destination market and product configuration.
+            {home.compliance.note}
           </p>
         </div>
       </div>
@@ -485,11 +348,9 @@ const Home: React.FC = () => {
       {/* Ordering Process */}
       <Section>
         <div className="text-center mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Simple ordering path</p>
-          <h2 className="font-display text-3xl md:text-4xl text-ink mt-4">A Simple, Supplier-Friendly Process</h2>
-          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-            Streamlined for global buyers who need clear steps, reliable timing, and transparent follow-through.
-          </p>
+          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">{home.ordering.eyebrow}</p>
+          <h2 className="font-display text-3xl md:text-4xl text-ink mt-4">{home.ordering.title}</h2>
+          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{home.ordering.description}</p>
         </div>
         <div className="relative">
           <div className="hidden md:block absolute left-6 right-6 top-7 h-px bg-ink/10" />
@@ -514,8 +375,13 @@ const Home: React.FC = () => {
         <div className="mt-10 max-w-3xl mx-auto">
           <div className="bg-white border border-ink/10 rounded-2xl px-6 py-5 shadow-sm text-center">
             <p className="text-sm text-slate-600">
-              <span className="font-semibold text-ink">Pro Tip:</span> Include MOQ, target deadline, and artwork status in your RFQ
-              to help us return a faster, comparable quotation.
+              {proTipText ? (
+                <>
+                  <span className="font-semibold text-ink">{proTipLabel}:</span> {proTipText}
+                </>
+              ) : (
+                home.ordering.proTip
+              )}
             </p>
           </div>
         </div>

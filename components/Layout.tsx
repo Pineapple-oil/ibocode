@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import {
   Menu,
@@ -16,58 +16,34 @@ import {
 } from 'lucide-react';
 import { Logo } from './Logo';
 import { useQuoteModal } from './QuoteModal';
-
-const navItems = [
-  { label: 'Home', path: '/' },
-  { label: 'Products', path: '/products' },
-  {
-    label: 'About',
-    path: '/about',
-    subItems: [
-      { label: 'Company Profile', path: '/about/profile' },
-      { label: 'Why Us', path: '/about/why-us' },
-      { label: 'Our Team', path: '/about/team' },
-    ],
-  },
-  {
-    label: 'Manufacturing',
-    path: '/manufacturing',
-    subItems: [
-      { label: 'Factory Overview', path: '/manufacturing/factory' },
-      { label: 'Production Lines', path: '/manufacturing/lines' },
-      { label: 'Capacity & Lead Time', path: '/manufacturing/capacity' },
-      { label: 'Engineering & Lab', path: '/manufacturing/engineering' },
-    ],
-  },
-  {
-    label: 'OEM & ODM',
-    path: '/oem-odm',
-    subItems: [
-      { label: 'Solutions Overview', path: '/oem-odm' },
-      { label: 'Customization Options', path: '/oem-odm/customization' },
-      { label: 'Process', path: '/oem-odm/process' },
-    ],
-  },
-  {
-    label: 'Quality',
-    path: '/quality',
-    subItems: [
-      { label: 'Overview', path: '/quality' },
-      { label: 'QC Process', path: '/quality/process' },
-      { label: 'Reliability Testing', path: '/quality/reliability' },
-      { label: 'Certifications', path: '/quality/certifications' },
-    ],
-  },
-  { label: 'FAQ', path: '/faq' },
-  { label: 'Contact', path: '/contact' },
-  { label: 'Blog', path: '/blog' },
-];
+import { useSiteContent } from '../content/SiteContentContext';
 
 export const Layout: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const location = useLocation();
   const quoteModal = useQuoteModal();
+  const { global } = useSiteContent();
+  const navItems = global.navigation.items;
+  const footer = global.footer;
+  const footerColumns = footer.columns ?? [];
+  const primaryFooterColumn = footerColumns[0];
+  const secondaryFooterColumn = footerColumns[1];
+  const ctaLabel = global.navigation.ctaLabel || 'Request Quote';
+  const topBarLeft = global.topBar?.left ?? [];
+  const topBarRight = global.topBar?.right ?? [];
+
+  const getSocialIcon = (label: string) => {
+    const normalized = label.toLowerCase();
+    if (normalized.includes('facebook')) return Facebook;
+    if (normalized.includes('linkedin')) return Linkedin;
+    if (normalized.includes('youtube')) return Youtube;
+    if (normalized.includes('instagram')) return Instagram;
+    if (normalized.includes('whatsapp')) return MessageCircle;
+    return Globe;
+  };
+
+  const isExternalLink = (href: string) => /^https?:\/\//i.test(href);
 
   const handleQuoteClick = () => {
     if (quoteModal) {
@@ -89,12 +65,21 @@ export const Layout: React.FC = () => {
       {/* Top Bar */}
       <div className="bg-ink text-white/70 text-[11px] py-2 px-4 sm:px-8 hidden md:flex justify-between items-center uppercase tracking-[0.2em]">
         <div className="flex space-x-6">
-          <span className="flex items-center gap-1"><Globe size={12} /> Global Electronic Manufacturing</span>
-          <span className="flex items-center gap-1"><MapPin size={12} /> Factory Direct</span>
+          {topBarLeft.map((item, index) => {
+            const Icon = index === 0 ? Globe : index === 1 ? MapPin : Globe;
+            return (
+              <span key={`${item}-${index}`} className="flex items-center gap-1">
+                <Icon size={12} /> {item}
+              </span>
+            );
+          })}
         </div>
         <div className="flex space-x-6">
-          <span className="hover:text-white cursor-pointer transition-colors">North America</span>
-          <span className="hover:text-white cursor-pointer transition-colors">Europe</span>
+          {topBarRight.map((item, index) => (
+            <span key={`${item}-${index}`} className="hover:text-white cursor-pointer transition-colors">
+              {item}
+            </span>
+          ))}
         </div>
       </div>
 
@@ -154,11 +139,11 @@ export const Layout: React.FC = () => {
                   onClick={handleQuoteClick}
                   className="ml-4 bg-brand text-ink px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-hover transition-colors shadow-sm"
                 >
-                  Request Quote
+                  {ctaLabel}
                 </button>
               ) : (
                 <Link to="/contact" className="ml-4 bg-brand text-ink px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-hover transition-colors shadow-sm">
-                  Request Quote
+                  {ctaLabel}
                 </Link>
               )}
             </div>
@@ -223,7 +208,7 @@ export const Layout: React.FC = () => {
                     onClick={handleQuoteClick}
                     className="block w-full text-center bg-brand text-ink px-5 py-3 rounded-md text-base font-bold hover:bg-brand-hover"
                   >
-                    Request Quote
+                    {ctaLabel}
                   </button>
                 ) : (
                   <Link
@@ -231,7 +216,7 @@ export const Layout: React.FC = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block w-full text-center bg-brand text-ink px-5 py-3 rounded-md text-base font-bold hover:bg-brand-hover"
                   >
-                    Request Quote
+                    {ctaLabel}
                   </Link>
                 )}
               </div>
@@ -259,85 +244,96 @@ export const Layout: React.FC = () => {
                 <Logo className="h-10 w-auto text-white" variant="dark" />
               </div>
               <p className="text-sm leading-relaxed text-white/70 max-w-md">
-                Your trusted partner for reliable, export-ready in-vehicle accessories. Built for compliance, repeat orders, and
-                long-term scale.
+                {footer.aboutText}
               </p>
               <div className="flex items-center gap-3 mt-6">
-                <a
-                  href="https://facebook.com"
-                  aria-label="Facebook"
-                  className="w-10 h-10 rounded-full bg-brand text-ink flex items-center justify-center shadow-sm hover:bg-brand-hover transition-colors"
-                >
-                  <Facebook size={16} />
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  aria-label="LinkedIn"
-                  className="w-10 h-10 rounded-full bg-brand text-ink flex items-center justify-center shadow-sm hover:bg-brand-hover transition-colors"
-                >
-                  <Linkedin size={16} />
-                </a>
-                <a
-                  href="https://youtube.com"
-                  aria-label="YouTube"
-                  className="w-10 h-10 rounded-full bg-brand text-ink flex items-center justify-center shadow-sm hover:bg-brand-hover transition-colors"
-                >
-                  <Youtube size={16} />
-                </a>
-                <a
-                  href="https://instagram.com"
-                  aria-label="Instagram"
-                  className="w-10 h-10 rounded-full bg-brand text-ink flex items-center justify-center shadow-sm hover:bg-brand-hover transition-colors"
-                >
-                  <Instagram size={16} />
-                </a>
-                <a
-                  href="https://wa.me/8613189394111"
-                  aria-label="WhatsApp"
-                  className="w-10 h-10 rounded-full bg-brand text-ink flex items-center justify-center shadow-sm hover:bg-brand-hover transition-colors"
-                >
-                  <MessageCircle size={16} />
-                </a>
+                {footer.socialLinks.map((link, index) => {
+                  const Icon = getSocialIcon(link.label);
+                  return (
+                    <a
+                      key={`${link.label}-${index}`}
+                      href={link.href}
+                      aria-label={link.label}
+                      className="w-10 h-10 rounded-full bg-brand text-ink flex items-center justify-center shadow-sm hover:bg-brand-hover transition-colors"
+                    >
+                      <Icon size={16} />
+                    </a>
+                  );
+                })}
               </div>
             </div>
             <div className="text-sm text-white/60">
-              We respond within 24 hours on most RFQs. Share target market, MOQ, and deadlines to speed up quotations.
+              {footer.responseNote}
             </div>
           </div>
 
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            <div>
-              <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">Quick Links</h4>
-              <ul className="space-y-3 text-sm">
-                <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="/about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="/manufacturing" className="hover:text-white transition-colors">Manufacturing</a></li>
-                <li><a href="/quality" className="hover:text-white transition-colors">Quality</a></li>
-                <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
-              </ul>
-            </div>
+            {primaryFooterColumn && (
+              <div>
+                <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">
+                  {primaryFooterColumn.title}
+                </h4>
+                <ul className="space-y-3 text-sm">
+                  {primaryFooterColumn.links.map((link, linkIndex) => (
+                    <li key={`${link.label}-${linkIndex}`}>
+                      {link.href ? (
+                        isExternalLink(link.href) ? (
+                          <a href={link.href} className="hover:text-white transition-colors">
+                            {link.label}
+                          </a>
+                        ) : (
+                          <Link to={link.href} className="hover:text-white transition-colors">
+                            {link.label}
+                          </Link>
+                        )
+                      ) : (
+                        <span className="text-white/70">{link.label}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {secondaryFooterColumn && (
+              <div>
+                <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">
+                  {secondaryFooterColumn.title}
+                </h4>
+                <ul className="space-y-3 text-sm">
+                  {secondaryFooterColumn.links.map((link, linkIndex) => (
+                    <li key={`${link.label}-${linkIndex}`}>
+                      {link.href ? (
+                        isExternalLink(link.href) ? (
+                          <a href={link.href} className="hover:text-white transition-colors">
+                            {link.label}
+                          </a>
+                        ) : (
+                          <Link to={link.href} className="hover:text-white transition-colors">
+                            {link.label}
+                          </Link>
+                        )
+                      ) : (
+                        <span className="text-white/70">{link.label}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             <div>
-              <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">Follow Us</h4>
-              <ul className="space-y-3 text-sm">
-                <li><a href="/oem-odm" className="hover:text-white transition-colors">OEM & ODM Programs</a></li>
-                <li><a href="/oem-odm/customization" className="hover:text-white transition-colors">Customization Options</a></li>
-                <li><a href="/manufacturing/factory" className="hover:text-white transition-colors">Factory Overview</a></li>
-                <li><a href="/quality/certifications" className="hover:text-white transition-colors">Compliance Updates</a></li>
-                <li><a href="/blog" className="hover:text-white transition-colors">Blog Insights</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">Contact Us</h4>
+              <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">
+                {footer.contact.title}
+              </h4>
               <ul className="space-y-4 text-sm">
                 <li className="flex items-start gap-3">
                   <span className="w-9 h-9 rounded-full bg-brand text-ink flex items-center justify-center">
                     <Phone size={16} />
                   </span>
                   <div>
-                    <p className="text-white">+86-13189394111</p>
-                    <p className="text-xs text-white/50">Mon - Fri, 9am - 6pm</p>
+                    <p className="text-white">{footer.contact.phone.value}</p>
+                    <p className="text-xs text-white/50">{footer.contact.phone.note}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -345,8 +341,8 @@ export const Layout: React.FC = () => {
                     <Mail size={16} />
                   </span>
                   <div>
-                    <p className="text-white">info@cosunglobal.com</p>
-                    <p className="text-xs text-white/50">Response within 24h</p>
+                    <p className="text-white">{footer.contact.email.value}</p>
+                    <p className="text-xs text-white/50">{footer.contact.email.note}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -354,38 +350,42 @@ export const Layout: React.FC = () => {
                     <MapPin size={16} />
                   </span>
                   <div>
-                    <p className="text-white">Industrial Zone, Dongguan</p>
-                    <p className="text-xs text-white/50">Guangdong, China</p>
+                    <p className="text-white">{footer.contact.address.value}</p>
+                    <p className="text-xs text-white/50">{footer.contact.address.note}</p>
                   </div>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">Subscribe Our Newsletter</h4>
-              <p className="text-sm text-white/60 mb-4">Latest blog posts and compliance updates for global buyers.</p>
+              <h4 className="text-white text-sm font-semibold uppercase tracking-[0.2em] mb-4">
+                {footer.newsletter.title}
+              </h4>
+              <p className="text-sm text-white/60 mb-4">{footer.newsletter.description}</p>
               <ul className="space-y-3 text-sm">
-                <li>
-                  <a href="/blog" className="hover:text-white transition-colors">
-                    The Shift to USB-C PD in Automotive
-                  </a>
-                </li>
-                <li>
-                  <a href="/blog" className="hover:text-white transition-colors">
-                    EU RoHS vs. REACH: Compliance Checklist
-                  </a>
-                </li>
-                <li>
-                  <a href="/blog" className="hover:text-white transition-colors">
-                    Choosing the Right OEM Partner in China
-                  </a>
-                </li>
+                {footer.newsletter.links.map((link, linkIndex) => (
+                  <li key={`${link.label}-${linkIndex}`}>
+                    {link.href ? (
+                      isExternalLink(link.href) ? (
+                        <a href={link.href} className="hover:text-white transition-colors">
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link to={link.href} className="hover:text-white transition-colors">
+                          {link.label}
+                        </Link>
+                      )
+                    ) : (
+                      <span className="text-white/70">{link.label}</span>
+                    )}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
 
           <div className="border-t border-white/10 mt-12 pt-8 text-xs text-center text-white/40">
-            © 2026 COSUN Global Electronic Manufacturing. All rights reserved.
+            {footer.copyright}
           </div>
         </div>
       </footer>
