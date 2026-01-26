@@ -6,12 +6,57 @@ import Link from 'next/link';
 import { useQuoteModal } from '../../components/QuoteModal';
 import { useSiteContent } from '../../content/SiteContentContext';
 
-const ProductsIndex: React.FC = () => {
+interface CategoryItem {
+  id?: number;
+  label: string;
+  slug?: string;
+  count?: number;
+  image?: string;
+  active?: boolean;
+}
+
+interface ProductCard {
+  id?: number;
+  title: string;
+  slug?: string;
+  code?: string;
+  image?: string;
+  badges?: string[];
+  tags?: string[];
+  href: string;
+}
+
+interface ProductsIndexProps {
+  categories?: CategoryItem[];
+  products?: ProductCard[];
+  activeCategory?: string;
+  title?: string;
+  description?: string;
+  countLabel?: string;
+  error?: string;
+}
+
+const ProductsIndex: React.FC<ProductsIndexProps> = ({
+  categories,
+  products,
+  activeCategory,
+  title,
+  description,
+  countLabel,
+  error,
+}) => {
   const quoteModal = useQuoteModal();
   const { pages } = useSiteContent();
   const content = pages.products.index;
 
   const isExternalLink = (href: string) => /^https?:\/\//i.test(href);
+  const hasOverrides = Boolean(categories || products || title || description || countLabel);
+  const useFallback = !error && !hasOverrides;
+  const categoryItems = useFallback ? (content.categories as CategoryItem[]) : categories ?? [];
+  const productItems = useFallback ? (content.products as ProductCard[]) : products ?? [];
+  const resolvedTitle = title ?? content.title;
+  const resolvedDescription = description ?? content.description;
+  const resolvedCountLabel = error ? '' : countLabel ?? content.countLabel;
 
   return (
     <div className="bg-paper text-ink">
@@ -44,28 +89,64 @@ const ProductsIndex: React.FC = () => {
         </div>
         <div className="mt-6 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
           <div>
-            <h1 className="font-display text-3xl md:text-4xl text-ink">{content.title}</h1>
-            <p className="mt-3 text-slate-600 max-w-2xl">{content.description}</p>
+            <h1 className="font-display text-3xl md:text-4xl text-ink">{resolvedTitle}</h1>
+            <p className="mt-3 text-slate-600 max-w-2xl">{resolvedDescription}</p>
           </div>
-          <div className="text-xs text-slate-500 uppercase tracking-[0.2em]">{content.countLabel}</div>
+          {resolvedCountLabel ? (
+            <div className="text-xs text-slate-500 uppercase tracking-[0.2em]">{resolvedCountLabel}</div>
+          ) : null}
         </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        {error ? (
+          <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm text-amber-900">
+            <p className="font-semibold">WooCommerce 数据加载失败</p>
+            <p className="mt-1 text-amber-700">{error}</p>
+            <p className="mt-2 text-amber-700">
+              请检查 <span className="font-semibold">WC_API_BASE / WC_CONSUMER_KEY / WC_CONSUMER_SECRET</span> 是否正确，并重启开发服务器。
+            </p>
+          </div>
+        ) : null}
         <div className="grid lg:grid-cols-[280px_1fr] gap-10">
           <aside className="space-y-6">
             <div className="bg-white border border-ink/10 rounded-2xl p-5 shadow-sm">
               <h3 className="text-xs uppercase tracking-[0.28em] text-slate-500 mb-4">Categories</h3>
               <ul className="space-y-3 text-sm">
-                {content.categories.map((category, index) => (
-                  <li
-                    key={`${category.label}-${index}`}
-                    className={`flex items-center justify-between ${category.active ? 'text-ink font-semibold' : 'text-slate-500 hover:text-ink transition-colors'}`}
-                  >
-                    {category.label}
-                    {category.active ? <ChevronRight size={14} /> : null}
-                  </li>
-                ))}
+                {categoryItems.map((category, index) => {
+                  const isActive = activeCategory ? category.slug === activeCategory : category.active;
+                  const href =
+                    category.slug === 'all'
+                      ? '/products'
+                      : category.slug
+                        ? `/products?category=${category.slug}`
+                        : undefined;
+
+                  const contentNode = (
+                    <>
+                      <span>{category.label}</span>
+                      <span className="flex items-center gap-2 text-slate-400">
+                        {typeof category.count === 'number' ? <span>{category.count}</span> : null}
+                        {isActive ? <ChevronRight size={14} /> : null}
+                      </span>
+                    </>
+                  );
+
+                  return (
+                    <li
+                      key={`${category.label}-${index}`}
+                      className={`flex items-center justify-between ${isActive ? 'text-ink font-semibold' : 'text-slate-500 hover:text-ink transition-colors'}`}
+                    >
+                      {href ? (
+                        <Link href={href} className="flex w-full items-center justify-between">
+                          {contentNode}
+                        </Link>
+                      ) : (
+                        contentNode
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 
@@ -86,11 +167,17 @@ const ProductsIndex: React.FC = () => {
           </aside>
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
-            {content.products.map((product) => (
-              <div key={product.code} className="bg-white border border-ink/10 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow">
+            {productItems.map((product) => (
+              <div key={product.slug ?? product.code ?? product.title} className="bg-white border border-ink/10 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow">
                 <div className="relative h-44 overflow-hidden">
-                  <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
-                  {product.badges.map((badge) => (
+                  {product.image ? (
+                    <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white text-sm font-semibold">
+                      {product.title}
+                    </div>
+                  )}
+                  {(product.badges ?? []).map((badge) => (
                     <span
                       key={badge}
                       className="absolute top-3 left-3 bg-brand text-ink text-[11px] font-semibold uppercase px-2 py-1 rounded-full"
@@ -100,10 +187,12 @@ const ProductsIndex: React.FC = () => {
                   ))}
                 </div>
                 <div className="p-5 space-y-3">
-                  <p className="text-[11px] uppercase tracking-[0.24em] text-slate-400">{product.code}</p>
+                  {product.code ? (
+                    <p className="text-[11px] uppercase tracking-[0.24em] text-slate-400">{product.code}</p>
+                  ) : null}
                   <h3 className="font-display text-lg text-ink">{product.title}</h3>
                   <div className="flex flex-wrap gap-2">
-                    {product.tags.map((tag) => (
+                    {(product.tags ?? []).map((tag) => (
                       <span key={tag} className="text-[11px] px-2 py-1 bg-slate-100 text-slate-600 rounded-full">
                         {tag}
                       </span>
@@ -169,5 +258,3 @@ const ProductsIndex: React.FC = () => {
 };
 
 export default ProductsIndex;
-
-

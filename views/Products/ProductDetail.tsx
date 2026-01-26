@@ -1,33 +1,96 @@
 ﻿'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { useQuoteModal } from '../../components/QuoteModal';
 import { useSiteContent } from '../../content/SiteContentContext';
+import { stripHtml } from '../../lib/wp';
+import type { WooProduct } from '../../lib/woocommerce';
 
-const ProductDetail: React.FC = () => {
+interface ProductDetailProps {
+  product?: WooProduct | null;
+}
+
+const buildDetails = (product: WooProduct) => {
+  const details = [];
+
+  if (product.sku) {
+    details.push({ label: 'SKU', value: product.sku });
+  }
+
+  if (product.price) {
+    details.push({ label: 'Price', value: product.price });
+  }
+
+  if (product.stock_status) {
+    details.push({ label: 'Stock', value: product.stock_status });
+  }
+
+  if (product.categories?.length) {
+    details.push({ label: 'Categories', value: product.categories.map((item) => item.name).join(', ') });
+  }
+
+  if (product.tags?.length) {
+    details.push({ label: 'Tags', value: product.tags.map((item) => item.name).join(', ') });
+  }
+
+  product.attributes?.forEach((attribute) => {
+    if (!attribute.options?.length) return;
+    details.push({ label: attribute.name, value: attribute.options.join(', ') });
+  });
+
+  return details;
+};
+
+const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
   const { pages } = useSiteContent();
   const content = pages.products.detail;
   const quoteModal = useQuoteModal();
-  const [activeImage, setActiveImage] = useState(content.gallery[0] || '');
+  const gallery = useMemo(() => {
+    const images = product?.images?.map((image) => image.src).filter(Boolean) ?? [];
+    return images.length ? images : content.gallery;
+  }, [product, content.gallery]);
+
+  const [activeImage, setActiveImage] = useState(gallery[0] || '');
 
   useEffect(() => {
-    if (content.gallery.length) {
-      setActiveImage(content.gallery[0]);
+    if (gallery.length) {
+      setActiveImage(gallery[0]);
     }
-  }, [content.gallery]);
+  }, [gallery]);
 
   const isExternalLink = (href: string) => /^https?:\/\//i.test(href);
   const primaryUsesModal = content.primaryCta.action === 'quoteModal' && quoteModal;
   const secondaryUsesModal = content.secondaryCta.action === 'quoteModal' && quoteModal;
 
+  const title = product?.name ?? content.title;
+  const itemNumber = product?.sku ? `Item #: ${product.sku}` : content.itemNumber;
+  const computedDetails = product ? buildDetails(product) : [];
+  const details = computedDetails.length ? computedDetails : content.details;
+  const rawDescription = product
+    ? stripHtml(product.short_description || product.description || '')
+    : '';
+  const descriptionText = rawDescription.trim() ? rawDescription : content.description.text;
+  const descriptionImages = product?.images?.length ? product.images.slice(1, 4).map((image) => image.src) : content.description.images;
+  const breadcrumbItems = product?.categories?.length
+    ? [
+        { label: 'Home', href: '/' },
+        { label: 'Products', href: '/products' },
+        {
+          label: product.categories[0].name,
+          href: `/products?category=${product.categories[0].slug}`,
+        },
+        { label: title },
+      ]
+    : content.breadcrumbs;
+
   return (
     <div className="bg-paper text-ink">
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
         <div className="flex items-center gap-2 text-xs text-slate-500">
-          {content.breadcrumbs.map((crumb, index) => {
-            const isLast = index === content.breadcrumbs.length - 1;
+          {breadcrumbItems.map((crumb, index) => {
+            const isLast = index === breadcrumbItems.length - 1;
             const label = crumb.label;
             const href = crumb.href;
 
@@ -58,18 +121,22 @@ const ProductDetail: React.FC = () => {
           <div>
             <div className="relative rounded-2xl overflow-hidden bg-white border border-ink/10 shadow-sm">
               {activeImage ? (
-                <img src={activeImage} alt={content.title} className="w-full h-[360px] md:h-[420px] object-cover" />
-              ) : null}
+                <img src={activeImage} alt={title} className="w-full h-[360px] md:h-[420px] object-cover" />
+              ) : (
+                <div className="w-full h-[360px] md:h-[420px] flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white text-sm font-semibold">
+                  {title}
+                </div>
+              )}
             </div>
             <div className="grid grid-cols-4 sm:grid-cols-5 gap-3 mt-4">
-              {content.gallery.map((img) => (
+              {gallery.map((img) => (
                 <button
                   key={img}
                   type="button"
                   onClick={() => setActiveImage(img)}
                   className={`rounded-xl overflow-hidden border ${activeImage === img ? 'border-brand' : 'border-ink/10'}`}
                 >
-                  <img src={img} alt={content.title} className="w-full h-16 object-cover" />
+                  <img src={img} alt={title} className="w-full h-16 object-cover" />
                 </button>
               ))}
             </div>
@@ -77,11 +144,11 @@ const ProductDetail: React.FC = () => {
 
           <div className="bg-white border border-ink/10 rounded-2xl p-6 shadow-sm">
             <div className="flex items-center justify-between">
-              <h1 className="font-display text-2xl md:text-3xl text-ink">{content.title}</h1>
-              <span className="text-xs uppercase tracking-[0.2em] text-slate-400">{content.itemNumber}</span>
+              <h1 className="font-display text-2xl md:text-3xl text-ink">{title}</h1>
+              <span className="text-xs uppercase tracking-[0.2em] text-slate-400">{itemNumber}</span>
             </div>
             <div className="mt-4 space-y-3 text-sm">
-              {content.details.map((detail) => (
+              {details.map((detail) => (
                 <div key={detail.label} className="flex items-start justify-between gap-4 border-b border-slate-100 pb-2">
                   <span className="text-slate-500">{detail.label}</span>
                   <span className="text-ink font-medium text-right">{detail.value}</span>
@@ -143,10 +210,10 @@ const ProductDetail: React.FC = () => {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="bg-white border border-ink/10 rounded-2xl p-8 shadow-sm">
           <h2 className="font-display text-2xl mb-4">{content.description.title}</h2>
-          <p className="text-sm text-slate-600 leading-7 max-w-3xl">{content.description.text}</p>
+          <p className="text-sm text-slate-600 leading-7 max-w-3xl">{descriptionText}</p>
 
           <div className="grid md:grid-cols-3 gap-6 mt-8">
-            {content.description.images.map((img) => (
+            {descriptionImages.map((img) => (
               <img key={img} src={img} alt={content.description.title} className="rounded-2xl object-cover h-48 w-full" />
             ))}
           </div>
@@ -216,5 +283,3 @@ const ProductDetail: React.FC = () => {
 };
 
 export default ProductDetail;
-
-
