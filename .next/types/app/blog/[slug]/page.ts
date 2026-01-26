@@ -1,4 +1,4 @@
-// File: E:\newcosun-main\newcosun-main\app\blog\[slug]\page.tsx
+// File: L:\MYGitHub\newcosun-main\app\blog\[slug]\page.tsx
 import * as entry from '../../../../../app/blog/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

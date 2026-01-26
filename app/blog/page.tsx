@@ -1,16 +1,13 @@
 ﻿import Blog from '@/views/Blog';
 import { fetchPosts } from '@/lib/wp';
 
-interface BlogPageProps {
-  searchParams?: {
-    page?: string | string[];
-  };
-}
+type BlogPageProps = PageProps<'/blog'>;
 
 export default async function Page({ searchParams }: BlogPageProps) {
-  const rawPage = Array.isArray(searchParams?.page)
-    ? searchParams?.page[0]
-    : searchParams?.page;
+  const resolvedSearchParams = (await searchParams) ?? {};
+  const rawPage = Array.isArray(resolvedSearchParams.page)
+    ? resolvedSearchParams.page[0]
+    : resolvedSearchParams.page;
   const pageParam = Number(rawPage ?? '1');
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const { posts, totalPages, total } = await fetchPosts(page, 9);

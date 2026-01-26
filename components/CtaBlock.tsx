@@ -33,8 +33,8 @@ export const CtaBlock: React.FC<CtaBlockProps> = ({ title, primary, secondary })
   const secondaryCta = secondary ?? defaults.secondary;
   const primaryHref = primaryCta.href ?? '/contact';
   const secondaryHref = secondaryCta.href ?? '/contact';
-  const primaryUsesModal = primaryCta.action === 'quoteModal' || primaryHref === '/contact';
-  const secondaryUsesModal = secondaryCta.action === 'quoteModal' || secondaryHref === '/contact';
+  const primaryUsesModal = ('action' in primaryCta && primaryCta.action === 'quoteModal') || primaryHref === '/contact';
+  const secondaryUsesModal = ('action' in secondaryCta && secondaryCta.action === 'quoteModal') || secondaryHref === '/contact';
 
   return (
     <div className="relative overflow-hidden bg-ink rounded-2xl p-8 md:p-12 text-white mt-12">
@@ -96,4 +96,3 @@ export const CtaBlock: React.FC<CtaBlockProps> = ({ title, primary, secondary })
     </div>
   );
 };
-

@@ -1,5 +1,26 @@
 {
-  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/about/why-us/page": "app/about/why-us/page.js",
+  "/about/profile/page": "app/about/profile/page.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js",
+  "/about/team/page": "app/about/team/page.js",
   "/blog/page": "app/blog/page.js",
-  "/blog/[slug]/page": "app/blog/[slug]/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/manufacturing/capacity/page": "app/manufacturing/capacity/page.js",
+  "/manufacturing/engineering/page": "app/manufacturing/engineering/page.js",
+  "/manufacturing/factory/page": "app/manufacturing/factory/page.js",
+  "/manufacturing/lines/page": "app/manufacturing/lines/page.js",
+  "/manufacturing/page": "app/manufacturing/page.js",
+  "/oem-odm/customization/page": "app/oem-odm/customization/page.js",
+  "/oem-odm/page": "app/oem-odm/page.js",
+  "/oem-odm/process/page": "app/oem-odm/process/page.js",
+  "/page": "app/page.js",
+  "/products/page": "app/products/page.js",
+  "/quality/page": "app/quality/page.js",
+  "/quality/certifications/page": "app/quality/certifications/page.js",
+  "/products/phone-mounts/magnetic-wireless-charger-pro/page": "app/products/phone-mounts/magnetic-wireless-charger-pro/page.js",
+  "/quality/process/page": "app/quality/process/page.js",
+  "/quality/reliability/page": "app/quality/reliability/page.js"
 }
