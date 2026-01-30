@@ -18,9 +18,9 @@
     }
   ],
   "images": [
-    "https://picsum.photos/seed/iqc/600/400",
-    "https://picsum.photos/seed/ipqc/600/400",
-    "https://picsum.photos/seed/fqc/600/400"
+    "/images/quality/process/iqc.png",
+    "/images/quality/process/ipqc.png",
+    "/images/quality/process/fqc.png"
   ],
   "note": {
     "title": "Optional: Inspection Standards Agreement",

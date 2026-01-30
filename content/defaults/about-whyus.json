@@ -5,7 +5,7 @@
   },
   "pillars": [
     {
-      "image": "https://picsum.photos/seed/qc_check/600/800",
+      "image": "/images/about/whyus/quality_control.png",
       "title": "1) Fewer Returns",
       "subtitle": "Built for Real Car Conditions",
       "description": "Returns usually come from fit problems, unstable connections, heat issues, weak mounts, or packaging damage. We reduce those risks by treating mass production as a controlled system.",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "image": "https://picsum.photos/seed/speed/600/800",
+      "image": "/images/about/whyus/rapid_prototyping.png",
       "title": "2) Faster Launches",
       "subtitle": "Speed Without Chaos",
       "description": "Speed-to-market matters - but only if you do not pay for it later with defects and rework.",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "image": "https://picsum.photos/seed/stock/600/800",
+      "image": "/images/about/whyus/warehouse_logistics.png",
       "title": "3) Stable Replenishment",
       "subtitle": "Predictable Repeat Orders",
       "description": "A supplier can win the first order. A real partner helps you scale repeat orders smoothly.",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "image": "https://picsum.photos/seed/comm/600/800",
+      "image": "/images/about/whyus/communication_meeting.png",
       "title": "4) Clear Communication",
       "subtitle": "The Hidden Cost Saver",
       "description": "Most B2B sourcing problems are communication problems. We keep it simple and decision-ready.",

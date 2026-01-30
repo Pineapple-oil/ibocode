@@ -1,6 +1,6 @@
 {
   "hero": {
-    "image": "https://picsum.photos/seed/contact_hero/1920/600",
+    "image": "/images/contact/hero.png",
     "title": "Contact Us",
     "description": "Tell us your project needs and we will come back with a practical quote - spec, MOQ, lead time, customization options, and next steps.",
     "note": "Response target: within 24 hours on business days."
@@ -42,7 +42,7 @@
     ]
   },
   "map": {
-    "image": "https://picsum.photos/seed/map/800/600"
+    "image": "/images/contact/map_bg.png"
   },
   "samples": {
     "title": "Get Samples",

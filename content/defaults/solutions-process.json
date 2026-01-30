@@ -30,7 +30,7 @@
       }
     ]
   },
-  "sideImage": "https://picsum.photos/seed/process_chart/800/1000",
+  "sideImage": "/images/solutions/process/side_image.png",
   "rfqChecklist": {
     "title": "RFQ Checklist (What We Need)",
     "items": [

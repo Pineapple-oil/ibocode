@@ -4,7 +4,7 @@
     "description": "Cars are harsh environments: heat, vibration, and daily plugging. Reliability testing helps you reduce the most expensive issues - returns, bad reviews, and warranty claims."
   },
   "checksTitle": "Common Reliability Checks",
-  "checksTitle": "Common Reliability Checks",
+
   "checks": [
     {
       "title": "High/low temperature exposure",
@@ -28,8 +28,8 @@
     }
   ],
   "images": [
-    "https://picsum.photos/seed/test1/400/600",
-    "https://picsum.photos/seed/test2/400/600"
+    "/images/quality/reliability/durability_test.png",
+    "/images/quality/reliability/env_test.png"
   ],
   "highlight": {
     "title": "Why Buyers Like This",

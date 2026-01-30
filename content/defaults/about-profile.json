@@ -6,19 +6,19 @@
       "Since 2010, we've grown by solving the problems procurement teams remember most: inconsistent batches, unclear specs, slow replies, and shipments that don't match the approved sample.",
       "Today, COSUN supports wholesalers, brand owners, retailers, and importers across North America and Europe with a simple promise: stable quality, factory-direct efficiency, and clear communication."
     ],
-    "image": "https://picsum.photos/seed/building/800/800",
+    "image": "/images/about/hero.png",
     "imageOverlayTitle": "Founded 2010",
     "imageOverlaySubtitle": "Dongguan, China"
   },
   "mission": {
     "title": "Our Mission",
     "description": "To power the driving experience with practical in-vehicle accessories - built to survive real use, not just pass a photo test.",
-    "image": "https://picsum.photos/seed/mission/600/300"
+    "image": "/images/about/mission.png"
   },
   "vision": {
     "title": "Our Vision",
     "description": "To become a long-term manufacturing partner for automotive accessory brands worldwide - helping customers launch faster, reduce returns, and scale repeat orders.",
-    "image": "https://picsum.photos/seed/vision/600/300"
+    "image": "/images/about/vision.png"
   },
   "products": {
     "title": "What We Make",
@@ -32,10 +32,10 @@
       "In-vehicle power adapters and splitters"
     ],
     "gallery": [
-      "https://picsum.photos/seed/prod1/400/400",
-      "https://picsum.photos/seed/prod2/400/400",
-      "https://picsum.photos/seed/prod3/400/400",
-      "https://picsum.photos/seed/prod4/400/400"
+      "/images/about/prod_charger.png",
+      "/images/about/prod_mount.png",
+      "/images/about/prod_adapter.png",
+      "/images/about/prod_parking.png"
     ]
   },
   "audience": {

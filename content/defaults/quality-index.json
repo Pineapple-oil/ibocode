@@ -1,26 +1,26 @@
 {
   "hero": {
-    "image": "https://picsum.photos/seed/inspection/1920/800",
+    "image": "/images/quality/index/hero.png",
     "title": "Quality & Compliance",
     "description": "In B2B, quality is not a nice-to-have - it is the cost of staying in business. Our approach is built around consistent batches, documented checkpoints, and destination-market readiness."
   },
   "cards": [
     {
-      "image": "https://picsum.photos/seed/qc_process/600/400",
+      "image": "/images/quality/index/process_card.png",
       "title": "Quality Control Process",
       "description": "IQC to IPQC to FQC/OQC workflows designed to prevent hidden defects.",
       "linkLabel": "Explore Process",
       "href": "/quality/process"
     },
     {
-      "image": "https://picsum.photos/seed/reliability/600/400",
+      "image": "/images/quality/index/reliability_card.png",
       "title": "Reliability Testing",
       "description": "Heat, vibration, aging, and insertion cycle checks to reduce returns.",
       "linkLabel": "View Tests",
       "href": "/quality/reliability"
     },
     {
-      "image": "https://picsum.photos/seed/certs/600/400",
+      "image": "/images/quality/index/certs_card.png",
       "title": "Certifications & Compliance",
       "description": "Planning for CE, RoHS, FCC pathways and destination labeling.",
       "linkLabel": "Check Compliance",

@@ -6,7 +6,7 @@
   },
   "cards": [
     {
-      "image": "https://picsum.photos/seed/product_finish/600/400",
+      "image": "/images/solutions/customization/product_finish.png",
       "title": "Product",
       "items": [
         {
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "image": "https://picsum.photos/seed/retail_box/600/400",
+      "image": "/images/solutions/customization/packaging.png",
       "title": "Packaging",
       "items": [
         {
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "image": "https://picsum.photos/seed/docs/600/400",
+      "image": "/images/solutions/customization/compliance_docs.png",
       "title": "Compliance",
       "items": [
         {

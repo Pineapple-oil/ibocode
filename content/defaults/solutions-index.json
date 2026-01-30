@@ -1,6 +1,6 @@
 {
   "hero": {
-    "image": "https://picsum.photos/seed/design/1920/800",
+    "image": "/images/solutions/oem_hero.png",
     "title": "OEM & ODM Solutions",
     "description": "OEM/ODM should not feel like a gamble. Buyers hesitate after missed deadlines, vague updates, and quality drift after the sample stage. Our program is built around clear checkpoints, documented revisions, and predictable execution - so you stay in control from prototype to mass production."
   },
@@ -9,20 +9,20 @@
     "description": "Flexible ways to work with us, depending on your design readiness.",
     "cards": [
       {
-        "image": "https://picsum.photos/seed/oem/600/400",
+        "image": "/images/solutions/model_oem.png",
         "badge": "Most Popular",
         "title": "OEM (Build-to-Print)",
         "description": "You specify; we execute. Perfect for brands with existing designs needing manufacturing discipline.",
         "bestFor": "Best for: Established Brands"
       },
       {
-        "image": "https://picsum.photos/seed/odm/600/400",
+        "image": "/images/solutions/model_odm.png",
         "title": "ODM (Design + Build)",
         "description": "You select a base platform; we tailor appearance, specs, and packaging to make it yours.",
         "bestFor": "Best for: Fast Launch"
       },
       {
-        "image": "https://picsum.photos/seed/hybrid/600/400",
+        "image": "/images/solutions/model_hybrid.png",
         "title": "Hybrid",
         "description": "Start from an existing design for speed, then evolve into deeper customization over time.",
         "bestFor": "Best for: Startups"
@@ -67,7 +67,7 @@
         "href": "/oem-odm/process"
       }
     ],
-    "image": "https://picsum.photos/seed/custom_product/800/800"
+    "image": "/images/solutions/support_customization.png"
   },
   "buyerWins": {
     "title": "Where Buyers Win",
