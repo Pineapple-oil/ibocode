@@ -109,10 +109,10 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         {error ? (
           <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm text-amber-900">
-            <p className="font-semibold">WooCommerce 数据加载失败</p>
+            <p className="font-semibold">WooCommerce data failed to load</p>
             <p className="mt-1 text-amber-700">{error}</p>
             <p className="mt-2 text-amber-700">
-              请检查 <span className="font-semibold">WC_API_BASE / WC_CONSUMER_KEY / WC_CONSUMER_SECRET</span> 是否正确，并重启开发服务器。
+              Check <span className="font-semibold">WC_API_BASE / WC_CONSUMER_KEY / WC_CONSUMER_SECRET</span> and restart the dev server.
             </p>
           </div>
         ) : null}
