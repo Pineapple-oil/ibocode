@@ -184,12 +184,26 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
             {productItems.map((product) => (
               <div key={product.slug ?? product.code ?? product.title} className="bg-white border border-ink/10 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow">
                 <div className="relative w-full aspect-square overflow-hidden">
-                  {product.image ? (
-                    <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+                  {isExternalLink(product.href) ? (
+                    <a href={product.href} className="block h-full w-full" aria-label={product.title}>
+                      {product.image ? (
+                        <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white text-sm font-semibold">
+                          {product.title}
+                        </div>
+                      )}
+                    </a>
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white text-sm font-semibold">
-                      {product.title}
-                    </div>
+                    <Link href={product.href} className="block h-full w-full" aria-label={product.title}>
+                      {product.image ? (
+                        <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white text-sm font-semibold">
+                          {product.title}
+                        </div>
+                      )}
+                    </Link>
                   )}
                   {(product.badges ?? []).map((badge) => (
                     <span
@@ -204,7 +218,17 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
                   {product.code ? (
                     <p className="text-[11px] uppercase tracking-[0.24em] text-slate-400">{product.code}</p>
                   ) : null}
-                  <h3 className="font-display text-lg text-ink">{product.title}</h3>
+                  <h3 className="font-display text-lg text-ink">
+                    {isExternalLink(product.href) ? (
+                      <a href={product.href} className="hover:text-brand-text transition-colors">
+                        {product.title}
+                      </a>
+                    ) : (
+                      <Link href={product.href} className="hover:text-brand-text transition-colors">
+                        {product.title}
+                      </Link>
+                    )}
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {(product.tags ?? []).map((tag) => (
                       <span key={tag} className="text-[11px] px-2 py-1 bg-slate-100 text-slate-600 rounded-full">

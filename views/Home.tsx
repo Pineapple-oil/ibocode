@@ -262,16 +262,22 @@ const Home: React.FC<HomeProps> = ({ featuredCategoryCards = [], featuredProduct
             {featuredCards.map((item, index) => (
               <div key={`${item.id}-${item.title}-${index}`} className="group border border-ink/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all bg-white">
                 <div className="h-48 bg-slate-100 relative overflow-hidden">
-                  {item.image ? (
-                    <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 flex items-center justify-center px-6 text-center text-white text-lg font-display">
-                      {item.title}
-                    </div>
-                  )}
+                  <Link href={item.href} className="block h-full w-full" aria-label={item.title}>
+                    {item.image ? (
+                      <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 flex items-center justify-center px-6 text-center text-white text-lg font-display">
+                        {item.title}
+                      </div>
+                    )}
+                  </Link>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-display text-lg mb-2 text-ink">{item.title}</h3>
+                  <h3 className="font-display text-lg mb-2 text-ink">
+                    <Link href={item.href} className="hover:text-brand-text transition-colors">
+                      {item.title}
+                    </Link>
+                  </h3>
                   <p className="text-sm text-slate-600 mb-4">{item.description}</p>
                   <Link href={item.href} className="text-brand-text font-semibold text-sm hover:underline">
                     {home.featuredProducts.items[index]?.linkLabel || 'View capabilities'}
