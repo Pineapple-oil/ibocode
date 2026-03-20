@@ -68,9 +68,13 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
   const itemNumber = product?.sku ? `Item #: ${product.sku}` : content.itemNumber;
   const computedDetails = product ? buildDetails(product) : [];
   const details = computedDetails.length ? computedDetails : content.details;
-  const rawDescription = product
-    ? stripHtml(product.short_description || product.description || '')
-    : '';
+  const productDescriptionHtml = product?.description?.trim() || product?.short_description?.trim() || '';
+  const normalizedDescriptionHtml = productDescriptionHtml
+    .replace(/&nbsp;/gi, '')
+    .replace(/<p>\s*<\/p>/gi, '')
+    .trim();
+  const hasProductDescriptionHtml = normalizedDescriptionHtml.length > 0;
+  const rawDescription = product ? stripHtml(product.short_description || product.description || '') : '';
   const descriptionText = rawDescription.trim() ? rawDescription : content.description.text;
   const descriptionImages = product?.images?.length ? product.images.slice(1, 4).map((image) => image.src) : content.description.images;
   const breadcrumbItems = product?.categories?.length
@@ -210,32 +214,41 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="bg-white border border-ink/10 rounded-2xl p-8 shadow-sm">
           <h2 className="font-display text-2xl mb-4">{content.description.title}</h2>
-          <p className="text-sm text-slate-600 leading-7 max-w-3xl">{descriptionText}</p>
+          {hasProductDescriptionHtml ? (
+            <div
+              className="text-base text-slate-700 leading-7 max-w-none [&>p]:mt-5 [&>h2]:mt-8 [&>h2]:text-2xl [&>h2]:font-display [&>h3]:mt-6 [&>h3]:text-xl [&>h3]:font-display [&>h4]:mt-5 [&>h4]:text-lg [&>h4]:font-semibold [&>ul]:mt-5 [&>ul]:list-disc [&>ul]:pl-6 [&>ol]:mt-5 [&>ol]:list-decimal [&>ol]:pl-6 [&_a]:text-brand-text [&_a]:font-semibold [&_a:hover]:underline [&_img]:rounded-2xl [&_img]:mt-6 [&_img]:h-auto [&_img]:max-w-full [&_figure]:mt-6 [&_figure]:space-y-3 [&_blockquote]:border-l-4 [&_blockquote]:border-brand [&_blockquote]:pl-4 [&_blockquote]:text-slate-600 [&_table]:mt-6 [&_table]:w-full [&_td]:border [&_td]:border-slate-200 [&_td]:p-3 [&_th]:border [&_th]:border-slate-200 [&_th]:bg-slate-50 [&_th]:p-3"
+              dangerouslySetInnerHTML={{ __html: productDescriptionHtml }}
+            />
+          ) : (
+            <>
+              <p className="text-sm text-slate-600 leading-7 max-w-3xl">{descriptionText}</p>
 
-          <div className="grid md:grid-cols-3 gap-6 mt-8">
-            {descriptionImages.map((img) => (
-              <img key={img} src={img} alt={content.description.title} className="rounded-2xl object-cover h-48 w-full" />
-            ))}
-          </div>
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                {descriptionImages.map((img) => (
+                  <img key={img} src={img} alt={content.description.title} className="rounded-2xl object-cover h-48 w-full" />
+                ))}
+              </div>
 
-          <div className="mt-8 grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="font-semibold text-lg">{content.features.title}</h3>
-              <ul className="mt-3 space-y-2 text-sm text-slate-600 list-disc list-inside">
-                {content.features.items.map((item, index) => (
-                  <li key={`${item}-${index}`}>{item}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg">{content.oemSupport.title}</h3>
-              <ul className="mt-3 space-y-2 text-sm text-slate-600 list-disc list-inside">
-                {content.oemSupport.items.map((item, index) => (
-                  <li key={`${item}-${index}`}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+              <div className="mt-8 grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="font-semibold text-lg">{content.features.title}</h3>
+                  <ul className="mt-3 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                    {content.features.items.map((item, index) => (
+                      <li key={`${item}-${index}`}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">{content.oemSupport.title}</h3>
+                  <ul className="mt-3 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                    {content.oemSupport.items.map((item, index) => (
+                      <li key={`${item}-${index}`}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </section>
 

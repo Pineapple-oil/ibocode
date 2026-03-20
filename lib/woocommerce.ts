@@ -77,14 +77,46 @@ interface WooStoreProduct {
   name: string;
   slug: string;
   permalink?: string;
+  sku?: string;
   short_description?: string;
   description?: string;
+  on_sale?: boolean;
+  prices?: {
+    price?: string;
+    regular_price?: string;
+    sale_price?: string;
+    currency_symbol?: string;
+    currency_prefix?: string;
+    currency_suffix?: string;
+  };
+  stock_availability?: {
+    text?: string;
+  };
   images?: Array<{
     id?: number;
     src?: string;
     thumbnail?: string;
     alt?: string;
     name?: string;
+  }>;
+  categories?: Array<{
+    id?: number;
+    name?: string;
+    slug?: string;
+  }>;
+  tags?: Array<{
+    id?: number;
+    name?: string;
+    slug?: string;
+  }>;
+  attributes?: Array<{
+    id?: number;
+    name?: string;
+    terms?: Array<{
+      id?: number;
+      name?: string;
+      slug?: string;
+    }>;
   }>;
 }
 
@@ -346,29 +378,59 @@ const mapWpProductToWooProduct = (product: WpProduct): WooProduct => {
   };
 };
 
-const mapWooStoreProductToWooProduct = (product: WooStoreProduct): WooProduct => ({
-  id: product.id,
-  name: stripHtml(product.name),
-  slug: product.slug,
-  description: product.description || '',
-  short_description: product.short_description || '',
-  sku: '',
-  price: '',
-  regular_price: '',
-  sale_price: '',
-  on_sale: false,
-  featured: true,
-  stock_status: 'instock',
-  images: (product.images ?? []).map((image, index) => ({
-    id: image.id ?? index + 1,
-    src: image.src || image.thumbnail || '',
-    name: image.name,
-    alt: image.alt,
-  })),
-  categories: [],
-  tags: [],
-  attributes: [],
-});
+const mapWooStoreProductToWooProduct = (product: WooStoreProduct): WooProduct => {
+  const imageMap = new Map<string, WooImage>();
+
+  (product.images ?? []).forEach((image, index) => {
+    const src = image.src || image.thumbnail || '';
+    if (!src || imageMap.has(src)) return;
+    imageMap.set(src, {
+      id: image.id ?? index + 1,
+      src,
+      name: image.name,
+      alt: image.alt,
+    });
+  });
+
+  const currencyPrefix = product.prices?.currency_prefix ?? product.prices?.currency_symbol ?? '';
+  const currencySuffix = product.prices?.currency_suffix ?? '';
+  const formattedPrice = product.prices?.price ? `${currencyPrefix}${product.prices.price}${currencySuffix}`.trim() : '';
+
+  return {
+    id: product.id,
+    name: stripHtml(product.name),
+    slug: product.slug,
+    description: product.description || '',
+    short_description: product.short_description || '',
+    sku: product.sku || '',
+    price: formattedPrice,
+    regular_price: product.prices?.regular_price || '',
+    sale_price: product.prices?.sale_price || '',
+    on_sale: Boolean(product.on_sale),
+    featured: true,
+    stock_status: product.stock_availability?.text || 'instock',
+    images: Array.from(imageMap.values()),
+    categories: (product.categories ?? [])
+      .filter((category) => category.id && category.name && category.slug)
+      .map((category) => ({
+        id: category.id as number,
+        name: category.name as string,
+        slug: category.slug as string,
+      })),
+    tags: (product.tags ?? [])
+      .filter((tag) => tag.id && tag.name && tag.slug)
+      .map((tag) => ({
+        id: tag.id as number,
+        name: tag.name as string,
+        slug: tag.slug as string,
+      })),
+    attributes: (product.attributes ?? []).map((attribute) => ({
+      id: attribute.id ?? 0,
+      name: attribute.name ?? '',
+      options: (attribute.terms ?? []).map((term) => term.name).filter(Boolean) as string[],
+    })),
+  };
+};
 
 export const fetchProductCategories = async (): Promise<WooListResult<WooCategory[]>> => {
   const result = await fetchWoo<WooCategory[]>('/products/categories', {
@@ -491,6 +553,14 @@ export const fetchProductBySlug = async (slug: string) => {
 
   if (result.ok && result.data?.[0]) {
     return result.data[0];
+  }
+
+  const storeResult = await fetchWooStore<WooStoreProduct[]>('/products', {
+    slug,
+  });
+
+  if (storeResult.ok && storeResult.data?.[0]) {
+    return mapWooStoreProductToWooProduct(storeResult.data[0]);
   }
 
   const wpResult = await fetchWpProducts<WpProduct[]>('/product', {

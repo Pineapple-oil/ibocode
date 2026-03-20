@@ -73,6 +73,7 @@ export default async function Page({ searchParams }: ProductsPageProps) {
     title: product.name,
     code: product.sku || `#${product.id}`,
     image: product.images?.[0]?.src,
+    href: `/products/${product.slug}`,
   }));
 
   const hasWooProducts = productCards.length > 0;
