@@ -435,7 +435,7 @@ const mapWooStoreProductToWooProduct = (product: WooStoreProduct): WooProduct =>
 export const fetchProductCategories = async (): Promise<WooListResult<WooCategory[]>> => {
   const result = await fetchWoo<WooCategory[]>('/products/categories', {
     per_page: 100,
-    hide_empty: 'true',
+    hide_empty: 'false',
     orderby: 'name',
     order: 'asc',
   });
