@@ -144,6 +144,8 @@ export const fetchProducts = async (options?: {
   categoryId?: number;
   search?: string;
   featured?: boolean;
+  orderby?: string;
+  order?: 'asc' | 'desc';
 }): Promise<WooListResult<WooProduct[]>> => {
   const result = await fetchWoo<WooProduct[]>('/products', {
     per_page: options?.perPage ?? 12,
@@ -151,6 +153,8 @@ export const fetchProducts = async (options?: {
     category: options?.categoryId,
     search: options?.search,
     featured: options?.featured ? 'true' : undefined,
+    orderby: options?.orderby,
+    order: options?.order,
     status: 'publish',
   });
   return {

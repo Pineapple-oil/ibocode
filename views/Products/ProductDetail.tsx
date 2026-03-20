@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useEffect, useMemo, useState } from 'react';
 import { ChevronRight } from 'lucide-react';
@@ -121,9 +121,9 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
           <div>
             <div className="relative rounded-2xl overflow-hidden bg-white border border-ink/10 shadow-sm">
               {activeImage ? (
-                <img src={activeImage} alt={title} className="w-full h-[360px] md:h-[420px] object-cover" />
+                <img src={activeImage} alt={title} className="w-full aspect-square object-cover" />
               ) : (
-                <div className="w-full h-[360px] md:h-[420px] flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white text-sm font-semibold">
+                <div className="w-full aspect-square flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white text-sm font-semibold">
                   {title}
                 </div>
               )}
@@ -136,7 +136,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                   onClick={() => setActiveImage(img)}
                   className={`rounded-xl overflow-hidden border ${activeImage === img ? 'border-brand' : 'border-ink/10'}`}
                 >
-                  <img src={img} alt={title} className="w-full h-16 object-cover" />
+                  <img src={img} alt={title} className="w-full aspect-square object-cover" />
                 </button>
               ))}
             </div>

@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
@@ -26,9 +26,16 @@ interface ProductCard {
   href: string;
 }
 
+interface NewArrivalItem {
+  title: string;
+  code?: string;
+  image?: string;
+}
+
 interface ProductsIndexProps {
   categories?: CategoryItem[];
   products?: ProductCard[];
+  newArrivals?: NewArrivalItem[];
   activeCategory?: string;
   title?: string;
   description?: string;
@@ -39,6 +46,7 @@ interface ProductsIndexProps {
 const ProductsIndex: React.FC<ProductsIndexProps> = ({
   categories,
   products,
+  newArrivals,
   activeCategory,
   title,
   description,
@@ -153,11 +161,17 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
             <div className="bg-white border border-ink/10 rounded-2xl p-5 shadow-sm">
               <h3 className="text-xs uppercase tracking-[0.28em] text-slate-500 mb-4">New Arrivals</h3>
               <div className="space-y-4">
-                {content.newArrivals.map((item) => (
-                  <div key={item.code} className="flex items-center gap-3">
-                    <img src={item.image} alt={item.title} className="w-12 h-12 rounded-lg object-cover" />
-                    <div>
-                      <p className="text-sm font-semibold text-ink">{item.title}</p>
+                {(newArrivals ?? content.newArrivals).map((item, index) => (
+                  <div key={item.code ?? `${item.title}-${index}`} className="flex items-center gap-3">
+                    {item.image ? (
+                      <img src={item.image} alt={item.title} className="w-12 h-12 rounded-lg object-cover flex-shrink-0" />
+                    ) : (
+                      <div className="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0 text-[10px] text-slate-400 text-center leading-tight px-1">
+                        {item.title.slice(0, 2)}
+                      </div>
+                    )}
+                    <div className="min-w-0">
+                      <p className="text-sm font-semibold text-ink truncate">{item.title}</p>
                       <p className="text-xs text-slate-500">{item.code}</p>
                     </div>
                   </div>
@@ -169,7 +183,7 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {productItems.map((product) => (
               <div key={product.slug ?? product.code ?? product.title} className="bg-white border border-ink/10 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow">
-                <div className="relative h-44 overflow-hidden">
+                <div className="relative w-full aspect-square overflow-hidden">
                   {product.image ? (
                     <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
                   ) : (

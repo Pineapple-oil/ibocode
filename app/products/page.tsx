@@ -14,19 +14,28 @@ export default async function Page({ searchParams }: ProductsPageProps) {
       ? rawCategory
       : undefined;
 
-  const categoriesResult = await fetchProductCategories();
-  const activeCategory = activeCategorySlug
-    ? categoriesResult.data.find((category) => category.slug === activeCategorySlug)
-    : undefined;
-  const resolvedActiveSlug = activeCategory?.slug;
-  const productsResult = await fetchProducts({
-    categoryId: activeCategory?.id,
-    perPage: 12,
-  });
+  const [categoriesResult, productsResult, newArrivalsResult] = await Promise.all([
+    fetchProductCategories(),
+    fetchProducts({
+      categoryId: undefined, // resolved below after categories load
+      perPage: 12,
+    }),
+    fetchProducts({ perPage: 3, orderby: 'date', order: 'desc' }),
+  ]);
 
   const categories = categoriesResult.data;
-  const products = productsResult.data;
-  const errorMessage = categoriesResult.error ?? productsResult.error;
+  const activeCategory = activeCategorySlug
+    ? categories.find((category) => category.slug === activeCategorySlug)
+    : undefined;
+  const resolvedActiveSlug = activeCategory?.slug;
+
+  // If a category filter is active, re-fetch filtered products
+  const filteredResult = activeCategorySlug
+    ? await fetchProducts({ categoryId: activeCategory?.id, perPage: 12 })
+    : productsResult;
+
+  const products = filteredResult.data;
+  const errorMessage = categoriesResult.error ?? filteredResult.error;
 
   const totalCount = categories.reduce((sum, category) => sum + (category.count ?? 0), 0);
   const categoryLinks = [
@@ -60,6 +69,12 @@ export default async function Page({ searchParams }: ProductsPageProps) {
     href: `/products/${product.slug}`,
   }));
 
+  const newArrivals = newArrivalsResult.data.map((product) => ({
+    title: product.name,
+    code: product.sku || `#${product.id}`,
+    image: product.images?.[0]?.src,
+  }));
+
   const hasWooProducts = productCards.length > 0;
   const description = activeCategory?.description ? stripHtml(activeCategory.description) : undefined;
   const countLabel = hasWooProducts ? `${productCards.length} Products Available` : undefined;
@@ -69,6 +84,7 @@ export default async function Page({ searchParams }: ProductsPageProps) {
       error={errorMessage}
       categories={categoryLinks}
       products={productCards}
+      newArrivals={newArrivals.length > 0 ? newArrivals : undefined}
       activeCategory={resolvedActiveSlug}
       title={activeCategory?.name}
       description={description}

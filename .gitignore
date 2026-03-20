@@ -7,29 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependencies
 node_modules
-
-# Next.js / build output
-.next
-out
-*.tsbuildinfo
-
-# Vercel
-.vercel
-
-# Legacy build directories
 dist
 dist-ssr
-
-# Environment files
-.env
-.env.*
 *.local
-
-# Temporary / backup files
-*.bak
-*.tmp
 
 # Editor directories and files
 .vscode/*
