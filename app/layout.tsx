@@ -20,6 +20,11 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: 'COSUN | Global Electronic Manufacturing',
   description: 'Global electronic manufacturing partner for automotive accessories and OEM/ODM programs.',
+  icons: {
+    icon: 'https://server.cosunglobal.com/wp-content/uploads/2026/03/COSUN_white_tz.png',
+    shortcut: 'https://server.cosunglobal.com/wp-content/uploads/2026/03/COSUN_white_tz.png',
+    apple: 'https://server.cosunglobal.com/wp-content/uploads/2026/03/COSUN_white_tz.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

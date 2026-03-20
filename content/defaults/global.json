@@ -1,4 +1,4 @@
-﻿{
+{
   "topBar": {
     "left": [
       "Global Electronic Manufacturing",
@@ -262,5 +262,11 @@
       "linkLabel": "Get Samples",
       "href": "/contact"
     }
+  },
+  "branding": {
+    "logoUrl": "https://server.cosunglobal.com/wp-content/uploads/2026/03/1COSUN_white_t.png",
+    "logoAlt": "COSUN logo",
+    "markUrl": "https://server.cosunglobal.com/wp-content/uploads/2026/03/COSUN_white_tz.png",
+    "markAlt": "COSUN mark"
   }
 }

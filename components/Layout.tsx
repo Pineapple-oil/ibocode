@@ -36,6 +36,9 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   const ctaLabel = global.navigation.ctaLabel || 'Request Quote';
   const topBarLeft = global.topBar?.left ?? [];
   const topBarRight = global.topBar?.right ?? [];
+  const branding = global.branding ?? {};
+  const logoUrl = branding.logoUrl as string | undefined;
+  const logoAlt = (branding.logoAlt as string | undefined) || 'COSUN logo';
 
   const getSocialIcon = (label: string) => {
     const normalized = label.toLowerCase();
@@ -94,7 +97,11 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="flex items-center gap-3 text-ink">
-                <Logo className="h-10 w-auto" />
+                {logoUrl ? (
+                  <img src={logoUrl} alt={logoAlt} className="h-10 w-auto" />
+                ) : (
+                  <Logo className="h-10 w-auto" />
+                )}
               </Link>
             </div>
 
@@ -245,7 +252,11 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-start">
             <div>
               <div className="mb-5">
-                <Logo className="h-10 w-auto text-white" variant="dark" />
+                {logoUrl ? (
+                  <img src={logoUrl} alt={logoAlt} className="h-10 w-auto" />
+                ) : (
+                  <Logo className="h-10 w-auto text-white" variant="dark" />
+                )}
               </div>
               <p className="text-sm leading-relaxed text-white/70 max-w-md">
                 {footer.aboutText}
