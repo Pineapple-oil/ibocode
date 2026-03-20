@@ -36,9 +36,12 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   const ctaLabel = global.navigation.ctaLabel || 'Request Quote';
   const topBarLeft = global.topBar?.left ?? [];
   const topBarRight = global.topBar?.right ?? [];
-  const branding = global.branding ?? {};
-  const logoUrl = branding.logoUrl as string | undefined;
-  const logoAlt = (branding.logoAlt as string | undefined) || 'COSUN logo';
+  const branding = (global.branding ?? {}) as {
+    logoUrl?: string;
+    logoAlt?: string;
+  };
+  const logoUrl = branding.logoUrl;
+  const logoAlt = branding.logoAlt || 'COSUN logo';
 
   const getSocialIcon = (label: string) => {
     const normalized = label.toLowerCase();
