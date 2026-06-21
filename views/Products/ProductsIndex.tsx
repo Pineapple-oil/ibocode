@@ -69,9 +69,9 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
   const resolvedCountLabel = error ? '' : countLabel ?? content.countLabel;
 
   return (
-    <div className="bg-paper text-ink">
+    <div className="bg-paper text-ink overflow-x-hidden">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
-        <div className="flex items-center gap-2 text-xs text-slate-500">
+        <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500 min-w-0">
           {content.breadcrumbs.map((crumb, index) => {
             const isLast = index === content.breadcrumbs.length - 1;
             const label = crumb.label;
@@ -81,16 +81,16 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
               <React.Fragment key={`${label}-${index}`}>
                 {href ? (
                   isExternalLink(href) ? (
-                    <a href={href} className="hover:text-ink">
+                    <a href={href} className="hover:text-ink break-words">
                       {label}
                     </a>
                   ) : (
-                    <Link href={href} className="hover:text-ink">
+                    <Link href={href} className="hover:text-ink break-words">
                       {label}
                     </Link>
                   )
                 ) : (
-                  <span className={isLast ? 'text-slate-400' : undefined}>{label}</span>
+                  <span className={`break-words ${isLast ? 'text-slate-400' : ''}`.trim()}>{label}</span>
                 )}
                 {!isLast && <ChevronRight size={14} />}
               </React.Fragment>
@@ -98,8 +98,8 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
           })}
         </div>
         <div className="mt-6 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-          <div>
-            <h1 className="font-display text-3xl md:text-4xl text-ink">{resolvedTitle}</h1>
+          <div className="min-w-0">
+            <h1 className="font-display text-3xl md:text-4xl text-ink break-words">{resolvedTitle}</h1>
             <p className="mt-3 text-slate-600 max-w-2xl">{resolvedDescription}</p>
           </div>
           {resolvedCountLabel ? (
@@ -118,8 +118,8 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
             </p>
           </div>
         ) : null}
-        <div className="grid lg:grid-cols-[280px_1fr] gap-10">
-          <aside className="space-y-6">
+        <div className="grid lg:grid-cols-[280px_minmax(0,1fr)] gap-10">
+          <aside className="space-y-6 min-w-0">
             <div className="bg-white border border-ink/10 rounded-2xl p-5 shadow-sm">
               <h3 className="text-xs uppercase tracking-[0.28em] text-slate-500 mb-4">Categories</h3>
               <ul className="space-y-3 text-sm">
@@ -134,8 +134,8 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
 
                   const contentNode = (
                     <>
-                      <span>{category.label}</span>
-                      <span className="flex items-center gap-2 text-slate-400">
+                      <span className="min-w-0 pr-3 break-words">{category.label}</span>
+                      <span className="flex items-center gap-2 text-slate-400 flex-shrink-0">
                         {typeof category.count === 'number' ? <span>{category.count}</span> : null}
                         {isActive ? <ChevronRight size={14} /> : null}
                       </span>
@@ -199,7 +199,7 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
             </div>
           </aside>
 
-          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 min-w-0">
             {productItems.map((product) => (
               <div key={product.slug ?? product.code ?? product.title} className="bg-white border border-ink/10 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow">
                 <div className="relative w-full aspect-square overflow-hidden">
@@ -237,7 +237,7 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
                   {product.code ? (
                     <p className="text-[11px] uppercase tracking-[0.24em] text-slate-400">{product.code}</p>
                   ) : null}
-                  <h3 className="font-display text-lg text-ink">
+                  <h3 className="font-display text-lg text-ink break-words">
                     {isExternalLink(product.href) ? (
                       <a href={product.href} className="hover:text-brand-text transition-colors">
                         {product.title}
