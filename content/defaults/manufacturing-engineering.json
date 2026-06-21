@@ -13,11 +13,11 @@
       },
       {
         "title": "Rapid Prototyping",
-        "description": "Confirm fit, finish, and user experience with 3D prints or CNC samples."
+        "description": "Confirm ergonomics, fit, and user experience with 3D prints or CNC samples."
       },
       {
-        "title": "Performance Tuning",
-        "description": "Power profiles, charging protocols, and circuit protection design."
+        "title": "Scan Performance Tuning",
+        "description": "Scan engine selection, read-rate optimization, and interface (USB / RS232 / Bluetooth) design."
       },
       {
         "title": "Validation Planning",
@@ -29,8 +29,8 @@
     "title": "What You Send Us",
     "items": [
       "Reference link or competitor SKU",
-      "Target market and channel (Amazon, retail, fleet)",
-      "Desired differentiation (look, spec, packaging)",
+      "Target market and channel (Amazon, retail, POS integrator)",
+      "Desired differentiation (look, scan engine, interface, packaging)",
       "Launch timeline and forecast"
     ]
   },
@@ -39,13 +39,13 @@
     "title": "Next Step",
     "primary": {
       "title": "Request an Engineering Review",
-      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with practical guidance and next steps.",
+      "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with practical guidance and next steps.",
       "linkLabel": "Request Review",
       "href": "/contact"
     },
     "secondary": {
       "title": "Request a Prototype Plan",
-      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "description": "Verify read performance, ergonomics, and durability before you scale. Stock samples or branded samples are both available.",
       "linkLabel": "Request Plan",
       "href": "/contact"
     }

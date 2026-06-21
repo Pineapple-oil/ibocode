@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "eyebrow": "Single Post",
+    "title": "1D vs 2D Scan Engines: A Practical Buyer's Guide",
+    "meta": "June 18, 2026 / Ibocode"
+  },
+  "heroImage": "https://picsum.photos/seed/blogsingle-hero/1400/700",
+  "body": {
+    "paragraphs": [
+      "Choosing between a 1D laser scanner and a 2D imager is one of the first decisions buyers face when sourcing barcode equipment. The right choice depends on the symbologies you need to read today and the codes your customers will bring tomorrow.",
+      "A 2D imager reads both 1D and 2D barcodes, including QR codes, DataMatrix, and PDF417 - and crucially, barcodes displayed on mobile phone screens. For retail and hospitality environments where mobile payment and loyalty codes are common, a 2D engine is quickly becoming the safer long-term investment."
+    ],
+    "midImage": "https://picsum.photos/seed/blogsingle-mid/1200/900",
+    "sectionTitle": "What Drives the Price Difference",
+    "sectionParagraph": "Engine cost, optics, and decode processing power are the main variables between entry-level and premium scanners. For B2B buyers, the key is matching the engine to the real-world reading distance, lighting, and barcode quality at the point of scan - not overpaying for capability you will never use.",
+    "subheading": "Specs Worth Checking",
+    "subParagraphs": [
+      "Look at print contrast minimum, ambient light immunity, and drop rating. A scanner rated for 1.5m drops and 100,000 Lux will survive busy retail floors far longer than a budget unit that fails after the first month.",
+      "Also confirm the interfaces you need - USB, RS232, or Bluetooth - and whether the firmware supports the data formats your POS or ERP system expects. Getting this right at the RFQ stage prevents costly integration work later."
+    ]
+  },
+  "footer": {
+    "tagsLabel": "Post Tags:",
+    "tags": [
+      "barcode scanner",
+      "2D imager",
+      "sourcing"
+    ],
+    "shareLabel": "Share:",
+    "shareItems": [
+      "f",
+      "x",
+      "in"
+    ],
+    "backLabel": "Back to Blog",
+    "backHref": "/blog"
+  }
+}

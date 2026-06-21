@@ -314,7 +314,7 @@ const Home: React.FC<HomeProps> = ({ featuredCategoryCards = [], featuredProduct
         </FadeInSection>
       </Section>
 
-      {/* Why Choose COSUN */}
+      {/* Why Choose Ibocode */}
       <Section>
         <FadeInSection>
           <div className="text-center mb-14">

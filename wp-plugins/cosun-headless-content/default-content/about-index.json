@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "image": "/images/about/index/hero.png",
+    "eyebrow": "About",
+    "title": "About Ibocode",
+    "description": "Behind every reliable scan is a manufacturer that respects the buyer risk. For over 10 years, Ibocode has focused on one mission: build barcode scanners, thermal printers, and POS equipment that read fast, perform consistently, and scale cleanly."
+  },
+  "intro": {
+    "eyebrow": "Explore",
+    "title": "Three ways to know us fast",
+    "cards": [
+      {
+        "image": "/images/about/hero.png",
+        "title": "Company Profile",
+        "description": "Our story, focus, and mission built for global B2B buyers who value predictability.",
+        "linkLabel": "Read Profile",
+        "linkHref": "/about/profile"
+      },
+      {
+        "image": "/images/about/whyus/quality_control.png",
+        "title": "Why Us",
+        "description": "What buyers gain when they partner with Ibocode, from repeatability to compliance planning.",
+        "linkLabel": "See Advantages",
+        "linkHref": "/about/why-us"
+      },
+      {
+        "image": "/images/team_engineering.png",
+        "title": "Our Team",
+        "description": "Practical, fast communication and execution with clear handoffs.",
+        "linkLabel": "Meet the Team",
+        "linkHref": "/about/team"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Download a Company Introduction Pack",
+      "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with a practical quote and clear next steps.",
+      "linkLabel": "Request the Pack",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Get Samples",
+      "description": "Verify read performance, ergonomics, and durability before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

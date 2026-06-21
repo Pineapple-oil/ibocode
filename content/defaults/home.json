@@ -1,11 +1,11 @@
 {
   "hero": {
     "eyebrow": "Factory-direct OEM / ODM",
-    "title": "In-Vehicle Power, Built for Real Roads -- and Real Buyers.",
-    "description": "COSUN (Cosun Global Electronic Manufacturing) is a factory-direct manufacturer of car power accessories and in-vehicle electronics. Since 2010, we have helped wholesalers, brand owners, retailers, and importers launch reliable SKUs that earn repeat orders -- not return tickets.",
+    "title": "Barcode Scanners & POS, Built for Real Retail -- and Real Buyers.",
+    "description": "Ibocode (Guangzhou Ibocode Electronic Technology Co., Ltd.) is a factory-direct manufacturer of barcode scanners, thermal printers, cash drawers, and POS machines. For over 10 years, we have helped wholesalers, brand owners, retailers, software integrators, and hardware distributors launch reliable hardware that earns repeat orders -- not return tickets.",
     "buyerRealityLabel": "Buyer reality",
-    "buyerRealityText": "If you have ever been burned by inconsistent batches, unclear specs, or last-minute delays, you are not alone.",
-    "supportText": "B2B buyers in North America and Europe need three things: predictable quality, compliance-ready planning, and communication that does not waste time. That is exactly what our operation is built to deliver.",
+    "buyerRealityText": "If you have ever been burned by inconsistent read rates, unclear specs, or last-minute delays, you are not alone.",
+    "supportText": "B2B buyers worldwide need three things: predictable read performance, compliance-ready planning, and communication that does not waste time. That is exactly what our operation is built to deliver.",
     "primaryCta": {
       "label": "Request a Quote",
       "href": "/contact"
@@ -16,7 +16,7 @@
     },
     "highlights": [
       "Repeat orders",
-      "Real-road reliability",
+      "Reliable reads",
       "No guessing games"
     ],
     "backgroundImage": "/images/home_hero_bg.png",
@@ -25,7 +25,7 @@
       "title": "Consistency checklist",
       "items": [
         "Incoming checks and in-process controls",
-        "Final function and appearance verification",
+        "100% function and aging verification",
         "Export-ready packaging discipline"
       ]
     },
@@ -33,12 +33,12 @@
   },
   "stats": [
     {
-      "value": "15+ Years",
-      "label": "Manufacturing exp."
+      "value": "10+ Years",
+      "label": "AIDC experience"
     },
     {
-      "value": "200+",
-      "label": "Employees"
+      "value": "100%",
+      "label": "Aging tested"
     },
     {
       "value": "OEM / ODM",
@@ -50,48 +50,48 @@
     }
   ],
   "featuredProducts": {
-    "title": "Featured Product Entrances",
-    "description": "We focus on everyday automotive accessories that sell fast because they solve everyday problems.",
+    "title": "Featured Product Categories",
+    "description": "We focus on barcode scanning, printing, and POS hardware that sells fast because it solves everyday retail and industrial problems.",
     "items": [
       {
         "image": "/images/product_socket.png",
-        "title": "Car cigarette lighter sockets",
-        "description": "12V/24V replacement and panel-mount. Stable contact design with heat-resistant options.",
+        "title": "Handheld Barcode Scanners",
+        "description": "Wired, wireless, and Bluetooth 2D imagers for fast, accurate 1D/2D reading.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
         "image": "/images/product_charger.png",
-        "title": "USB car chargers",
-        "description": "USB-A/USB-C and PD/QC options with protection design to reduce overheating complaints.",
+        "title": "Desktop & Platform Scanners",
+        "description": "Omni-directional and mountable scanners for hands-free retail checkout.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
         "image": "/images/product_mount.png",
-        "title": "Phone holders and mounts",
-        "description": "Magnetic and clamp styles built to hold steady over bumps and summer heat.",
+        "title": "Thermal Receipt Printers",
+        "description": "2\"/3\" receipt printers with stable media feeding and long printhead life.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
         "image": "/images/product_interior.png",
-        "title": "Interior accessories",
-        "description": "Cup holders, ashtrays, and organizers designed for high-velocity retail SKUs.",
+        "title": "Thermal Label Printers",
+        "description": "3\"/4\" label printers built for high-volume shipping and retail labeling.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
         "image": "/images/product_parking_plate.png",
-        "title": "Temporary parking plates",
-        "description": "Premium feel and clean visibility, ideal for high-velocity retail programs.",
+        "title": "POS Machines & Cash Drawers",
+        "description": "Integrated POS terminals and durable cash drawers for complete checkout.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
         "image": "/images/product_adapter.png",
-        "title": "Power adapters, splitters, and cables",
-        "description": "Multi-port expansion designed for safety and stability in daily use.",
+        "title": "Card Readers & Portable Scanners",
+        "description": "Portable readers and card readers that drop into any workflow.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       }
@@ -100,7 +100,7 @@
   "problems": {
     "eyebrow": "Built for overseas B2B buyers",
     "title": "The Problems We Remove",
-    "description": "If you have dealt with unstable batches or slow feedback, our process is designed to make each run feel repeatable and predictable.",
+    "description": "If you have dealt with inconsistent read rates or slow feedback, our process is designed to make each run feel repeatable and predictable.",
     "items": [
       {
         "title": "Inconsistent batches",
@@ -118,37 +118,33 @@
   },
   "whyChoose": {
     "eyebrow": "Core Advantages",
-    "title": "Your Reliable Partner for High-Volume Automotive Accessories",
+    "title": "Your Reliable Partner for Barcode Scanners, Printers & POS",
     "description": "Built for buyers who need scale, repeatability, and faster market response without sacrificing margin or supply stability.",
     "cards": [
       {
         "title": "01. Unbeatable Pricing",
         "subtitle": "Factory Direct + Scale",
-        "description": "Leveraging our massive sales volume in China, averaging 4,000 orders per day, we compress raw material costs to industry minimums. Partnering with us means bypassing middlemen and directly sharing the dividends of our economies of scale."
+        "description": "By combining factory-direct production with strong volume purchasing on scan engines and components, we keep costs competitive. Partnering with us means bypassing middlemen and directly sharing the dividends of our scale."
       },
       {
         "title": "02. Robust Inventory & Rapid Fulfillment",
         "subtitle": "Ready to ship",
-        "description": "With a vast, permanent inventory, we support instant dispatch upon ordering. For international buyers, this shortens procurement cycles, improves capital turnover, and reduces the risk of stockouts."
+        "description": "With permanent inventory of popular scanner and printer models, we support fast dispatch. For international buyers, this shortens procurement cycles, improves capital turnover, and reduces the risk of stockouts."
       },
       {
         "title": "03. Market-Proven Product DNA",
         "subtitle": "Best-sellers with evidence",
-        "description": "Our car ashtrays, phone holders, and cables are long-standing best-sellers. While newer to the global market, their designs and durability are already market-tested by thousands of daily users, helping you sell products buyers actually want."
+        "description": "Our handheld and platform scanners are long-standing sellers across retail and industrial use. Their designs and durability are already field-tested by daily users, helping you sell products buyers actually want."
       },
       {
         "title": "04. High Flexibility & Partnership Growth",
         "subtitle": "Built for international collaboration",
-        "description": "As an emerging partner in the international market, we value every client. We offer flexible MOQs and rapid response times, working closely with you to explore and grow your local market together."
+        "description": "As an active partner in the international market, we value every client. We offer flexible MOQs and rapid response times, working closely with you to explore and grow your local market together."
       }
     ],
     "glance": {
       "title": "Why Choose Us? At a Glance",
       "items": [
-        {
-          "feature": "4,000+ Daily Sales",
-          "benefit": "Proven quality and high market demand."
-        },
         {
           "feature": "Factory Direct",
           "benefit": "Maximum profit margins for your business."
@@ -156,6 +152,10 @@
         {
           "feature": "Ready-to-Ship",
           "benefit": "Zero stock pressure and faster cash flow."
+        },
+        {
+          "feature": "100% Aging Tested",
+          "benefit": "Lower DOA and return rates."
         },
         {
           "feature": "Lean Production",
@@ -166,7 +166,7 @@
   },
   "audience": {
     "title": "For Whom We Build",
-    "description": "Whether you sell through Amazon, regional retail, automotive distributors, or fleet channels, the expectations are the same: the product must look right, fit right, and work reliably every time.",
+    "description": "Whether you sell through Amazon, regional retail, POS distributors, or system-integration channels, the expectations are the same: the product must read right, feel right, and work reliably every time.",
     "items": [
       {
         "title": "Wholesalers and importers",
@@ -174,7 +174,7 @@
       },
       {
         "title": "Brand owners",
-        "description": "Building private-label programs with differentiated designs."
+        "description": "Building private-label scanner and printer programs with differentiated designs."
       },
       {
         "title": "Retailers",
@@ -185,17 +185,17 @@
         "description": "Who live and die by reviews and return rates."
       },
       {
-        "title": "Fleet and commercial buyers",
-        "description": "Need stable performance in daily use and harsh conditions."
+        "title": "System integrators & ISVs",
+        "description": "Need stable hardware that integrates with POS, ERP, and warehouse systems."
       }
     ],
     "highlight": {
       "title": "Factory strength you can show your team",
       "items": [
-        "15+ years in automotive accessory manufacturing",
-        "200+ employees with factory-direct production and QC",
-        "Export support for North America and Europe",
-        "OEM/ODM: design, prototyping, testing, mass production, delivery"
+        "10+ years in barcode scanner and POS manufacturing",
+        "In-house R&D, QC, sales & after-sales teams",
+        "Worldwide export support",
+        "OEM/ODM: design, prototyping, 100% aging test, mass production, delivery"
       ],
       "linkLabel": "Read full company profile",
       "linkHref": "/about/profile"
@@ -208,7 +208,7 @@
     "cards": [
       {
         "title": "Pilot order",
-        "description": "Start with a pilot order to verify fit, finish, and market response."
+        "description": "Start with a pilot order to verify read performance, ergonomics, and market response."
       },
       {
         "title": "Revision control",

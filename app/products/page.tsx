@@ -1,5 +1,5 @@
 import ProductsIndex from '@/views/Products/ProductsIndex';
-import { fetchProductCategories, fetchProducts } from '@/lib/woocommerce';
+import { fetchProductCategories, fetchProducts, canUseWoo } from '@/lib/woocommerce';
 import { stripHtml } from '@/lib/wp';
 
 type ProductsPageProps = PageProps<'/products'>;
@@ -13,6 +13,11 @@ export default async function Page({ searchParams }: ProductsPageProps) {
     typeof rawCategory === 'string' && rawCategory.trim() && rawCategory !== 'all'
       ? rawCategory
       : undefined;
+
+  // When WooCommerce is not configured, render the catalog from site-content defaults.
+  if (!canUseWoo()) {
+    return <ProductsIndex />;
+  }
 
   const [categoriesResult, productsResult, newArrivalsResult] = await Promise.all([
     fetchProductCategories(),
@@ -79,6 +84,12 @@ export default async function Page({ searchParams }: ProductsPageProps) {
   const hasWooProducts = productCards.length > 0;
   const description = activeCategory?.description ? stripHtml(activeCategory.description) : undefined;
   const countLabel = hasWooProducts ? `${productCards.length} Products Available` : undefined;
+
+  // If WooCommerce is configured but the store is unreachable and returned nothing,
+  // fall back to the site-content default catalog so the page is never empty.
+  if (!hasWooProducts && errorMessage) {
+    return <ProductsIndex />;
+  }
 
   return (
     <ProductsIndex

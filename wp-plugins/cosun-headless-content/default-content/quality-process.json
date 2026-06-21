@@ -1,0 +1,44 @@
+{
+  "intro": {
+    "title": "Quality Control Process",
+    "description": "Batch consistency is what separates a one-time supplier from a long-term factory partner. Our QC process is structured to keep small variations from becoming big problems."
+  },
+  "steps": [
+    {
+      "title": "IQC  -  Incoming Quality Control",
+      "description": "Key materials and components are verified before they enter production to prevent hidden defects from surfacing after shipping."
+    },
+    {
+      "title": "IPQC  -  In-Process Quality Control",
+      "description": "Critical points are checked during assembly to reduce rework, protect timelines, and improve repeatability."
+    },
+    {
+      "title": "FQC/OQC  -  Final & Outgoing Check",
+      "description": "Functional checks, appearance inspections, and packing verification to ensure the product you approved is the product you receive."
+    }
+  ],
+  "images": [
+    "/images/quality/process/iqc.png",
+    "/images/quality/process/ipqc.png",
+    "/images/quality/process/fqc.png"
+  ],
+  "note": {
+    "title": "Optional: Inspection Standards Agreement",
+    "description": "For buyers who need stronger control, we can align on inspection items, photo checklists, and acceptance criteria (AQL)."
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Ask for a QC Checklist Sample",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical checklist and next steps.",
+      "linkLabel": "Request Checklist",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Start a Pilot Order",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Start Pilot",
+      "href": "/contact"
+    }
+  }
+}

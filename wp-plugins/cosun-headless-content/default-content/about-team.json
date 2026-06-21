@@ -1,0 +1,47 @@
+{
+  "intro": {
+    "title": "Our Team",
+    "description": "The difference between a smooth project and a stressful one is rarely the product - it is communication. Our team is structured around fast decisions and clear handoffs between R&D, quality control, operations, and sales & after-sales."
+  },
+  "teams": [
+    {
+      "image": "/images/team_engineering.png",
+      "title": "Engineering & R&D",
+      "description": "Scan engine selection, DFM, and prototyping."
+    },
+    {
+      "image": "/images/team_quality.png",
+      "title": "Quality Control",
+      "description": "Incoming, in-process, aging, and final inspections."
+    },
+    {
+      "image": "/images/team_ops.png",
+      "title": "Operations",
+      "description": "Scheduling, packing, and shipping coordination."
+    },
+    {
+      "image": "/images/team_sales.png",
+      "title": "Sales & After-sales",
+      "description": "Documentation, photos, and practical timelines."
+    }
+  ],
+  "highlight": {
+    "title": "Your Day-to-Day Experience",
+    "description": "Expect quick replies, clear questions, and clear next steps. We keep the project moving because your timeline is your revenue. Our sales team works directly with the factory floor, not through layers of bureaucracy."
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Contact Our Team",
+      "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with a practical quote and clear next steps.",
+      "linkLabel": "Contact Us",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Verify read performance, ergonomics, and durability before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

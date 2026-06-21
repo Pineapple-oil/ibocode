@@ -2,7 +2,7 @@
   "intro": {
     "title": "Factory Overview",
     "lead": "Factory-direct manufacturing is only valuable if it delivers what overseas buyers actually need: consistent batches, stable lead times, and communication you can rely on.",
-    "paragraph": "Since 2010, COSUN has built our production flow around repeatability - from disciplined assembly standards to export-ready packing checks.",
+    "paragraph": "For over 10 years, Ibocode has built our production flow around repeatability - from disciplined assembly standards to export-ready packing checks, with 100% aging test before shipment.",
     "highlights": [
       "Faster launch cycles (prototype -> validation -> mass production)",
       "Stable replenishment (repeatable process + controlled revisions)",
@@ -18,7 +18,7 @@
     ]
   },
   "lines": {
-    "title": "10 Production Lines & Work Cells",
+    "title": "Production Lines & Work Cells",
     "left": [
       {
         "title": "SMT / PCBA Line",
@@ -43,20 +43,20 @@
     ],
     "right": [
       {
-        "title": "Car Charger Assembly Line",
-        "description": "Process checkpoints aimed at reducing heat and connection complaints."
+        "title": "Handheld Scanner Assembly Line",
+        "description": "Imager module alignment, trigger, and bezel fit checkpoints to protect read performance."
       },
       {
-        "title": "Cigarette Lighter Socket Assembly",
-        "description": "Contact stability, assembly consistency, and packaging protection."
+        "title": "Desktop / Platform Scanner Assembly",
+        "description": "Sensor calibration, stand fit, and omnidirectional read verification."
       },
       {
-        "title": "Phone Holder Assembly",
-        "description": "Clamp stability, surface protection, and holding performance."
+        "title": "Thermal Printer Assembly",
+        "description": "Printhead alignment, media feeding, and auto-cutter checks."
       },
       {
         "title": "100% Functional Test Line",
-        "description": "Functional checks plus visual inspection before outgoing shipment.",
+        "description": "Read-rate, interface, and visual checks before outgoing shipment.",
         "accent": "green"
       },
       {
@@ -102,7 +102,7 @@
     },
     "secondary": {
       "title": "Request Samples",
-      "description": "Stock samples or branded samples to verify fit, finish, and performance before you scale.",
+      "description": "Stock samples or branded samples to verify read performance and durability before you scale.",
       "linkLabel": "Request Samples",
       "href": "/contact"
     }

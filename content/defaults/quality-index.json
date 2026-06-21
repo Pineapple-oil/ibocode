@@ -15,7 +15,7 @@
     {
       "image": "/images/quality/index/reliability_card.png",
       "title": "Reliability Testing",
-      "description": "Heat, vibration, aging, and insertion cycle checks to reduce returns.",
+      "description": "Drop, vibration, aging, and key-press cycle checks to reduce returns.",
       "linkLabel": "View Tests",
       "href": "/quality/reliability"
     },

@@ -1,0 +1,190 @@
+{
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Products",
+      "href": "/products"
+    },
+    {
+      "label": "All Products"
+    }
+  ],
+  "title": "Barcode Scanners, Thermal Printers & POS",
+  "description": "Handheld and desktop scanners, 2D scanning platforms, thermal receipt and label printers, POS machines, cash drawers, and card readers - factory-direct from Ibocode with OEM/ODM support.",
+  "countLabel": "9 Products Available",
+  "categories": [
+    {
+      "label": "Handheld Barcode Scanners",
+      "active": true
+    },
+    {
+      "label": "Desktop & Platform Scanners"
+    },
+    {
+      "label": "Portable Barcode Readers"
+    },
+    {
+      "label": "Receipt Thermal Printers"
+    },
+    {
+      "label": "Label Thermal Printers"
+    },
+    {
+      "label": "Mobile Wireless Printers"
+    },
+    {
+      "label": "Cash Drawers"
+    },
+    {
+      "label": "POS Machines"
+    },
+    {
+      "label": "Card Readers"
+    }
+  ],
+  "newArrivals": [
+    {
+      "title": "IBC-1680W 2D Wireless Scanner",
+      "code": "IBC-1680W",
+      "image": "https://picsum.photos/seed/new-1/200/160"
+    },
+    {
+      "title": "U68-W High-Speed 2D Scanner",
+      "code": "U68-W",
+      "image": "https://picsum.photos/seed/new-2/200/160"
+    },
+    {
+      "title": "IBC-X1 2D Scanning Platform",
+      "code": "IBC-X1",
+      "image": "https://picsum.photos/seed/new-3/200/160"
+    }
+  ],
+  "products": [
+    {
+      "title": "IBC-1680W 2D Wireless Handheld Scanner",
+      "code": "IBC-1680W",
+      "image": "https://picsum.photos/seed/product-1/600/420",
+      "badges": [
+        "Hot"
+      ],
+      "tags": [
+        "2D Imager",
+        "Wireless"
+      ],
+      "href": "/products/ibc-1680w-2d-scanner"
+    },
+    {
+      "title": "IBC-1650W 2D Wireless Handheld Scanner",
+      "code": "IBC-1650W",
+      "image": "https://picsum.photos/seed/product-2/600/420",
+      "badges": [],
+      "tags": [
+        "2D Imager",
+        "Cordless"
+      ],
+      "href": "/products/ibc-1680w-2d-scanner"
+    },
+    {
+      "title": "IBC-U12W Universal 2D Wireless Scanner",
+      "code": "IBC-U12W",
+      "image": "https://picsum.photos/seed/product-3/600/420",
+      "badges": [
+        "New"
+      ],
+      "tags": [
+        "Screen Reading",
+        "2D"
+      ],
+      "href": "/products/ibc-1680w-2d-scanner"
+    },
+    {
+      "title": "U68-W High-Speed 2D Wireless Scanner",
+      "code": "U68-W",
+      "image": "https://picsum.photos/seed/product-4/600/420",
+      "badges": [],
+      "tags": [
+        "High-Speed",
+        "2D"
+      ],
+      "href": "/products/ibc-1680w-2d-scanner"
+    },
+    {
+      "title": "IBC-90 Wired 1D/2D Handheld Scanner",
+      "code": "IBC-90",
+      "image": "https://picsum.photos/seed/product-5/600/420",
+      "badges": [],
+      "tags": [
+        "Wired",
+        "Budget"
+      ],
+      "href": "/products/ibc-1680w-2d-scanner"
+    },
+    {
+      "title": "IBC-X1 High-Speed 2D Scanning Platform",
+      "code": "IBC-X1",
+      "image": "https://picsum.photos/seed/product-6/600/420",
+      "badges": [
+        "Hot"
+      ],
+      "tags": [
+        "Hands-free",
+        "Counter"
+      ],
+      "href": "/products/ibc-1680w-2d-scanner"
+    },
+    {
+      "title": "IBC-2200 2D Desktop Platform Scanner",
+      "code": "IBC-2200",
+      "image": "https://picsum.photos/seed/product-7/600/420",
+      "badges": [],
+      "tags": [
+        "Omni-directional"
+      ],
+      "href": "/products/ibc-1680w-2d-scanner"
+    },
+    {
+      "title": "IBC-DS40 2D Presentation Scanner",
+      "code": "IBC-DS40",
+      "image": "https://picsum.photos/seed/product-8/600/420",
+      "badges": [],
+      "tags": [
+        "Hands-free",
+        "Retail"
+      ],
+      "href": "/products/ibc-1680w-2d-scanner"
+    },
+    {
+      "title": "IBC-4600 Round Platform Scanner",
+      "code": "IBC-4600",
+      "image": "https://picsum.photos/seed/product-9/600/420",
+      "badges": [],
+      "tags": [
+        "Round",
+        "Mountable"
+      ],
+      "href": "/products/ibc-1680w-2d-scanner"
+    }
+  ],
+  "catalogCta": {
+    "title": "Request a Full Catalog PDF",
+    "items": [
+      {
+        "icon": ">",
+        "title": "Request a Quote",
+        "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with a practical quote.",
+        "linkLabel": "Start RFQ",
+        "action": "quoteModal"
+      },
+      {
+        "icon": ">",
+        "title": "Request Samples",
+        "description": "Verify read performance, ergonomics, and durability before you scale. Stock samples or branded samples are both available.",
+        "linkLabel": "Get Samples",
+        "href": "/contact"
+      }
+    ]
+  }
+}

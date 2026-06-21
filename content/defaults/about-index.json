@@ -2,8 +2,8 @@
   "hero": {
     "image": "/images/about/index/hero.png",
     "eyebrow": "About",
-    "title": "About COSUN",
-    "description": "Behind every reliable accessory is a manufacturer that respects the buyer risk. Since 2010, COSUN has focused on one mission: make in-vehicle accessories that feel right, perform consistently, and scale cleanly."
+    "title": "About Ibocode",
+    "description": "Behind every reliable scan is a manufacturer that respects the buyer risk. For over 10 years, Ibocode has focused on one mission: build barcode scanners, thermal printers, and POS equipment that read fast, perform consistently, and scale cleanly."
   },
   "intro": {
     "eyebrow": "Explore",
@@ -19,7 +19,7 @@
       {
         "image": "/images/about/whyus/quality_control.png",
         "title": "Why Us",
-        "description": "What buyers gain when they partner with COSUN, from repeatability to compliance planning.",
+        "description": "What buyers gain when they partner with Ibocode, from repeatability to compliance planning.",
         "linkLabel": "See Advantages",
         "linkHref": "/about/why-us"
       },
@@ -36,13 +36,13 @@
     "title": "Next Step",
     "primary": {
       "title": "Download a Company Introduction Pack",
-      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical quote and clear next steps.",
+      "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with a practical quote and clear next steps.",
       "linkLabel": "Request the Pack",
       "href": "/contact"
     },
     "secondary": {
       "title": "Get Samples",
-      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "description": "Verify read performance, ergonomics, and durability before you scale. Stock samples or branded samples are both available.",
       "linkLabel": "Request Samples",
       "href": "/contact"
     }

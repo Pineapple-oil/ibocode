@@ -1,35 +1,35 @@
 {
   "hero": {
     "title": "Company Profile",
-    "lead": "Cosun Global Electronic Manufacturing (COSUN) was built for global B2B buyers who want less drama and more predictable outcomes.",
+    "lead": "Guangzhou Ibocode Electronic Technology Co., Ltd. (Ibocode) was built for global B2B buyers who want less drama and more predictable outcomes.",
     "paragraphs": [
-      "Since 2010, we've grown by solving the problems procurement teams remember most: inconsistent batches, unclear specs, slow replies, and shipments that don't match the approved sample.",
-      "Today, COSUN supports wholesalers, brand owners, retailers, and importers across North America and Europe with a simple promise: stable quality, factory-direct efficiency, and clear communication."
+      "For over 10 years, we have grown by solving the problems procurement teams remember most: inconsistent read performance, unclear specs, slow replies, and shipments that don't match the approved sample.",
+      "Today, Ibocode supports wholesalers, brand owners, retailers, software integrators, and hardware distributors worldwide with a simple promise: stable quality, factory-direct efficiency, 100% aging test before shipment, and clear communication."
     ],
     "image": "/images/about/hero.png",
-    "imageOverlayTitle": "Founded 2010",
-    "imageOverlaySubtitle": "Dongguan, China"
+    "imageOverlayTitle": "10+ Years",
+    "imageOverlaySubtitle": "Guangzhou, China"
   },
   "mission": {
     "title": "Our Mission",
-    "description": "To power the driving experience with practical in-vehicle accessories - built to survive real use, not just pass a photo test.",
+    "description": "To deliver integrated data-capture and printing solutions - scanners, printers, and POS equipment built to read accurately and survive real daily use, not just pass a sample test.",
     "image": "/images/about/mission.png"
   },
   "vision": {
     "title": "Our Vision",
-    "description": "To become a long-term manufacturing partner for automotive accessory brands worldwide - helping customers launch faster, reduce returns, and scale repeat orders.",
+    "description": "To become a long-term manufacturing partner for barcode and POS brands worldwide - helping customers launch faster, reduce returns, and scale repeat orders.",
     "image": "/images/about/vision.png"
   },
   "products": {
     "title": "What We Make",
-    "description": "We focus on high-velocity automotive accessories that solve everyday needs and perform consistently in real car environments:",
+    "description": "We focus on high-velocity data-capture and printing products that solve everyday needs and perform consistently in retail, warehouse, and industrial environments:",
     "items": [
-      "Car cigarette lighter sockets (12V/24V replacement and panel-mount)",
-      "USB car chargers (USB-A/USB-C; PD/QC options by project)",
-      "Magnetic phone mounts and car holders",
-      "Temporary parking number plates",
-      "Car cup holders and ashtrays",
-      "In-vehicle power adapters and splitters"
+      "Handheld barcode scanners (wired, wireless, and Bluetooth 2D imagers)",
+      "Omni-directional desktop and platform scanners",
+      "Portable barcode readers",
+      "Thermal receipt and label printers (2\"/3\"/4\")",
+      "Cash drawers and POS machines",
+      "Card readers and integrated data-capture solutions"
     ],
     "gallery": [
       "/images/about/prod_charger.png",
@@ -47,7 +47,7 @@
       },
       {
         "title": "Brand Owners",
-        "description": "Private-label lines with differentiation customers can feel."
+        "description": "Private-label scanner and printer lines with differentiation customers can feel."
       },
       {
         "title": "Retailers",
@@ -58,20 +58,20 @@
         "description": "Fighting return rates, reviews, and listing compliance."
       },
       {
-        "title": "Fleet / Commercial",
-        "description": "Reliability and repeatable supply."
+        "title": "System Integrators & ISVs",
+        "description": "Reliable hardware that drops into POS, ERP, and warehouse workflows."
       }
     ]
   },
   "whyCosun": {
-    "title": "Why COSUN",
+    "title": "Why Ibocode",
     "cards": [
       {
         "title": "Factory Advantages",
         "items": [
-          "10 structured production lines or work cells for scale-ready workflow",
+          "Structured production lines and work cells for scale-ready workflow",
           "Standardized work instructions and checkpoints reduce variation",
-          "Functional testing aligned to common failure causes",
+          "Functional testing and 100% aging test aligned to common failure causes",
           "Revision control so approved stays approved"
         ]
       },
@@ -79,7 +79,7 @@
         "title": "Company Advantages",
         "items": [
           "Clear RFQ inputs for faster, accurate quotes",
-          "Faster decisions with engineering and production aligned",
+          "Faster decisions with R&D and production aligned",
           "Photo or video confirmations during pilot runs",
           "Export-ready communication that respects your timeline"
         ]
@@ -107,8 +107,8 @@
   "howWeWork": {
     "title": "How We Work",
     "steps": [
-      "Confirm market requirements, channel expectations, and reliability specs.",
-      "Prototype quickly to validate fit, finish, and user experience.",
+      "Confirm market requirements, application, and performance specs.",
+      "Prototype quickly to validate read performance, ergonomics, and user experience.",
       "Lock spec, packaging, and labeling before mass production.",
       "Run production with checkpoints and documented revisions.",
       "Support export packing and repeat-order stability as you scale."
@@ -118,13 +118,13 @@
     "title": "Next Step",
     "primary": {
       "title": "Start an RFQ",
-      "description": "Share target market, quantity, and customization needs. We respond within 24 hours with a practical quote and clear next steps.",
+      "description": "Share target market, application, and order quantity. We respond within 24 hours with a practical quote and clear next steps.",
       "linkLabel": "Start RFQ",
       "href": "/contact"
     },
     "secondary": {
       "title": "Request Samples",
-      "description": "Validate fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "description": "Validate read performance and durability before you scale. Stock samples or branded samples are both available.",
       "linkLabel": "Request Samples",
       "href": "/contact"
     }

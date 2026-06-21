@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "eyebrow": "Insights for global buyers",
+    "title": "Ibocode Blog: Scanning, Printing & POS Insights",
+    "description": "Practical insights for B2B buyers in barcode scanning, thermal printing, and POS. Read about market shifts, QC tactics, and compliance checklists."
+  },
+  "posts": [
+    {
+      "category": "Market Trends",
+      "title": "1D vs 2D Scan Engines: Which Barcode Scanner Do You Need?",
+      "excerpt": "From UPC barcodes to QR codes on phone screens, 2D imagers are becoming the default. Here is what wholesalers should know before sourcing.",
+      "date": "Oct 12, 2023",
+      "readTime": "5 min read",
+      "image": "https://picsum.photos/seed/blog-trends/900/620"
+    },
+    {
+      "category": "Engineering & Quality",
+      "title": "Reducing Return Rates: Why Scan Engine Quality Matters",
+      "excerpt": "Misreads and dead units drive returns. Learn how imager selection, alignment, and 100% aging testing protect your margins.",
+      "date": "Sep 28, 2023",
+      "readTime": "4 min read",
+      "image": "https://picsum.photos/seed/blog-quality/900/620"
+    },
+    {
+      "category": "Compliance",
+      "title": "CE, RoHS & FCC: Compliance Checklist for POS & Scanner Imports",
+      "excerpt": "Navigating EU and US compliance can be tricky. We break down the documentation you need before importing barcode and POS equipment.",
+      "date": "Sep 15, 2023",
+      "readTime": "6 min read",
+      "image": "https://picsum.photos/seed/blog-compliance/900/620"
+    },
+    {
+      "category": "Sourcing Strategy",
+      "title": "Retail Box vs Bulk Export: Packaging for Scanners & Printers",
+      "excerpt": "Retail boxes need to sell. Export cartons need to survive shipping. How to choose the right packaging strategy for your channel.",
+      "date": "Aug 22, 2023",
+      "readTime": "5 min read",
+      "image": "https://picsum.photos/seed/blog-packaging/900/620"
+    },
+    {
+      "category": "Product News",
+      "title": "Wireless 2D Scanners and Mobile Payment Codes",
+      "excerpt": "Wireless 2D imagers that read mobile payment screens are reshaping retail checkout. See what this means for your product line.",
+      "date": "Aug 10, 2023",
+      "readTime": "3 min read",
+      "image": "https://picsum.photos/seed/blog-product/900/620"
+    },
+    {
+      "category": "Sourcing Strategy",
+      "title": "How to Choose the Right Scanner OEM Partner in China",
+      "excerpt": "Beyond the price tag: assessing communication, IP protection, and quality control capabilities for long-term supply stability.",
+      "date": "Jul 05, 2023",
+      "readTime": "7 min read",
+      "image": "https://picsum.photos/seed/blog-partner/900/620"
+    }
+  ],
+  "pagination": {
+    "pages": [
+      "1",
+      "2",
+      "3"
+    ],
+    "active": "1"
+  }
+}

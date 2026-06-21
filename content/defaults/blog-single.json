@@ -1,30 +1,30 @@
 {
   "hero": {
     "eyebrow": "Single Post",
-    "title": "Fix Your Cracked Phone Screen",
-    "meta": "July 16, 2025 / COSUN"
+    "title": "1D vs 2D Scan Engines: A Practical Buyer's Guide",
+    "meta": "June 18, 2026 / Ibocode"
   },
   "heroImage": "https://picsum.photos/seed/blogsingle-hero/1400/700",
   "body": {
     "paragraphs": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, eros ut congue bibendum, purus nibh tincidunt sapien, eget convallis enim elit at turpis. Donec varius sapien vitae ante vestibulum ultricies. Etiam tristique vestibulum felis, nec varius urna dapibus sit amet. Vestibulum lacinia, libero in posuere venenatis, justo urna luctus sapien, ut luctus est velit at orci.",
-      "Aenean venenatis, purus vitae volutpat convallis, orci elit convallis purus, ac pulvinar magna nibh eu leo. Aliquam posuere, lacus at venenatis efficitur, lacus risus egestas leo, in fermentum tortor lectus ac justo. Integer nec est euismod, vehicula nulla a, luctus lorem."
+      "Choosing between a 1D laser scanner and a 2D imager is one of the first decisions buyers face when sourcing barcode equipment. The right choice depends on the symbologies you need to read today and the codes your customers will bring tomorrow.",
+      "A 2D imager reads both 1D and 2D barcodes, including QR codes, DataMatrix, and PDF417 - and crucially, barcodes displayed on mobile phone screens. For retail and hospitality environments where mobile payment and loyalty codes are common, a 2D engine is quickly becoming the safer long-term investment."
     ],
     "midImage": "https://picsum.photos/seed/blogsingle-mid/1200/900",
-    "sectionTitle": "Fix Your Cracked Phone Screen",
-    "sectionParagraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, eros ut congue bibendum, purus nibh tincidunt sapien, eget convallis enim elit at turpis. Donec varius sapien vitae ante vestibulum ultricies. Etiam tristique vestibulum felis, nec varius urna dapibus sit amet. Vestibulum lacinia, libero in posuere venenatis, justo urna luctus sapien, ut luctus est velit at orci. Aenean venenatis, purus vitae volutpat convallis, orci elit convallis purus, ac pulvinar magna nibh eu leo.",
-    "subheading": "Tips To Keep Gadgets Running",
+    "sectionTitle": "What Drives the Price Difference",
+    "sectionParagraph": "Engine cost, optics, and decode processing power are the main variables between entry-level and premium scanners. For B2B buyers, the key is matching the engine to the real-world reading distance, lighting, and barcode quality at the point of scan - not overpaying for capability you will never use.",
+    "subheading": "Specs Worth Checking",
     "subParagraphs": [
-      "Curabitur efficitur auctor diam, in varius sapien hendrerit in. Fusce in nisi velit. Pellentesque imperdiet cursus lacus, ac fermentum tortor fermentum id. Nulla facilisi. Integer non nisi eros. Praesent fermentum leo ac nibh consequat, id consectetur sapien finibus.",
-      "Suspendisse nibh velit, posuere nec erat ut, blandit fermentum metus. Vivamus interdum sem nibh, a aliquet tellus dapibus sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc non finibus nulla. Pellentesque imperdiet cursus lacus, ac fermentum tortor fermentum id."
+      "Look at print contrast minimum, ambient light immunity, and drop rating. A scanner rated for 1.5m drops and 100,000 Lux will survive busy retail floors far longer than a budget unit that fails after the first month.",
+      "Also confirm the interfaces you need - USB, RS232, or Bluetooth - and whether the firmware supports the data formats your POS or ERP system expects. Getting this right at the RFQ stage prevents costly integration work later."
     ]
   },
   "footer": {
     "tagsLabel": "Post Tags:",
     "tags": [
-      "mobile",
-      "phone",
-      "repair"
+      "barcode scanner",
+      "2D imager",
+      "sourcing"
     ],
     "shareLabel": "Share:",
     "shareItems": [

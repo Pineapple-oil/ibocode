@@ -178,7 +178,7 @@ export interface WooListResult<T> {
   status?: number;
 }
 
-const DEFAULT_WP_BASE = 'https://server.cosunglobal.com';
+const DEFAULT_WP_BASE = 'https://server.ibocode.com';
 const WC_API_BASE = process.env.WC_API_BASE || process.env.NEXT_PUBLIC_WP_API_BASE || DEFAULT_WP_BASE;
 const WC_API_ROOT = `${WC_API_BASE.replace(/\/$/, '')}/wp-json/wc/v3`;
 const WC_KEY = process.env.WC_CONSUMER_KEY;

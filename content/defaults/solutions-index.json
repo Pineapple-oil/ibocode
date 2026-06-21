@@ -38,7 +38,7 @@
       },
       {
         "title": "Product Customization",
-        "description": "Port mix, output tiers, materials and finish, structure options, and usability details."
+        "description": "Scan engine and interface, materials and finish, structure options, and usability details."
       },
       {
         "title": "Engineering Collaboration",
@@ -74,7 +74,7 @@
     "description": "You win when your SKU earns positive reviews, stays in stock, and scales without surprises.",
     "items": [
       "Launch faster with prototyping support and practical engineering feedback",
-      "Reduce returns by addressing fit, heat, durability, and packaging protection up front",
+      "Reduce returns by addressing read performance, drop durability, and packaging protection up front",
       "Protect brand reputation through consistent batches and controlled revisions",
       "Build a long-term supply chain partner instead of switching factories"
     ]

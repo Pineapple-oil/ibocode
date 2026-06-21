@@ -1,18 +1,18 @@
 {
   "intro": {
     "title": "Our Team",
-    "description": "The difference between a smooth project and a stressful one is rarely the product - it is communication. Our team is structured around fast decisions and clear handoffs between engineering, sourcing, QC, and customer support."
+    "description": "The difference between a smooth project and a stressful one is rarely the product - it is communication. Our team is structured around fast decisions and clear handoffs between R&D, quality control, operations, and sales & after-sales."
   },
   "teams": [
     {
       "image": "/images/team_engineering.png",
-      "title": "Engineering",
-      "description": "DFM, prototyping, and performance alignment."
+      "title": "Engineering & R&D",
+      "description": "Scan engine selection, DFM, and prototyping."
     },
     {
       "image": "/images/team_quality.png",
-      "title": "Quality",
-      "description": "Incoming, in-process, and final inspections."
+      "title": "Quality Control",
+      "description": "Incoming, in-process, aging, and final inspections."
     },
     {
       "image": "/images/team_ops.png",
@@ -21,7 +21,7 @@
     },
     {
       "image": "/images/team_sales.png",
-      "title": "Sales Support",
+      "title": "Sales & After-sales",
       "description": "Documentation, photos, and practical timelines."
     }
   ],
@@ -33,13 +33,13 @@
     "title": "Next Step",
     "primary": {
       "title": "Contact Our Team",
-      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical quote and clear next steps.",
+      "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with a practical quote and clear next steps.",
       "linkLabel": "Contact Us",
       "href": "/contact"
     },
     "secondary": {
       "title": "Request Samples",
-      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "description": "Verify read performance, ergonomics, and durability before you scale. Stock samples or branded samples are both available.",
       "linkLabel": "Request Samples",
       "href": "/contact"
     }

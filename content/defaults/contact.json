@@ -12,7 +12,7 @@
       "Product page link / product type",
       "Quantity (trial + monthly forecast)",
       "Target market (EU/US/UK/...) and required labels or marks",
-      "Customization scope (logo, packaging, structure, port configuration)",
+      "Customization scope (logo, packaging, structure, scan engine / interface)",
       "Timeline and delivery destination"
     ],
     "form": {
@@ -28,16 +28,16 @@
     "items": [
       {
         "title": "Email",
-        "value": "info@cosunglobal.com",
+        "value": "amyrinahxy@ibocode.com",
         "note": "Response target: within 24 hours on business days."
       },
       {
         "title": "Phone / WhatsApp",
-        "value": "+86-13189394111 / +86-13189394111"
+        "value": "+86-18826253532 (Amy Huang)"
       },
       {
         "title": "Factory Address",
-        "value": "[Insert Address]"
+        "value": "No. 14, Shetouling 1st Road, Sanlian Village, Lihu Street, Zengcheng District, Guangzhou, Guangdong, China"
       }
     ]
   },

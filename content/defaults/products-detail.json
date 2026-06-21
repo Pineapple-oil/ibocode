@@ -9,14 +9,14 @@
       "href": "/products"
     },
     {
-      "label": "Phone Mounts & Holders"
+      "label": "Handheld Barcode Scanners"
     },
     {
-      "label": "Magnetic Wireless Charger Pro"
+      "label": "IBC-1680W 2D Wireless Scanner"
     }
   ],
-  "title": "Magnetic Wireless Charger Pro",
-  "itemNumber": "Item #: CS-M15-PRO",
+  "title": "IBC-1680W 2D Wireless Handheld Scanner",
+  "itemNumber": "Item #: IBC-1680W",
   "gallery": [
     "https://picsum.photos/seed/detail-1/1000/800",
     "https://picsum.photos/seed/detail-2/1000/800",
@@ -27,31 +27,43 @@
   "details": [
     {
       "label": "Brand",
-      "value": "COSUN"
+      "value": "Ibocode"
     },
     {
       "label": "Model",
-      "value": "CS-M15-PRO"
+      "value": "IBC-1680W"
     },
     {
-      "label": "Size",
-      "value": "65 x 65 x 90 mm"
+      "label": "Scan Engine",
+      "value": "2D CMOS Imager (640 x 480 px)"
+    },
+    {
+      "label": "Dimensions",
+      "value": "160 x 97 x 64 mm"
     },
     {
       "label": "Weight",
-      "value": "125 g"
+      "value": "188 g"
     },
     {
-      "label": "Packaging",
-      "value": "Color Box / Blister (100 pcs/carton)"
+      "label": "Wireless",
+      "value": "2.4G (Bluetooth optional), up to 100m"
     },
     {
-      "label": "Material",
-      "value": "Zinc Alloy + Tempered Glass + Silicone"
+      "label": "Battery",
+      "value": "3.7V / 2500mAh rechargeable"
+    },
+    {
+      "label": "Drop Rating",
+      "value": "1.5m (5 ft)"
+    },
+    {
+      "label": "Interfaces",
+      "value": "USB / RS232 / 2.4G / Bluetooth"
     },
     {
       "label": "Customized",
-      "value": "Logo, Color, Packaging"
+      "value": "Logo, Color, Firmware, Packaging"
     },
     {
       "label": "Shipping",
@@ -59,7 +71,7 @@
     },
     {
       "label": "Accessories",
-      "value": "Air Vent Clip, USB-C Cable, User Manual"
+      "value": "USB Cable, Cradle, User Manual"
     }
   ],
   "primaryCta": {
@@ -74,7 +86,7 @@
   },
   "description": {
     "title": "Product Description",
-    "text": "The Magnetic Wireless Charger Pro (CS-M15-PRO) is designed for B2B procurement, offering reliable performance and customizable options for your brand. Built with Zinc Alloy + Tempered Glass + Silicone, it ensures durability and heat control. We support full OEM customization including logo placement, packaging design, and specific functions.",
+    "text": "The IBC-1680W is a handheld wireless 2D barcode scanner built for retail, warehouse, and industrial data capture. Its 640x480 CMOS imager reads all common 1D and 2D barcodes - including QR, DataMatrix, PDF417, and mobile payment codes on phone screens. With a 100m open-field wireless range, a 2500mAh battery, and a 1.5m drop rating, it keeps scanning through long shifts. We support full OEM customization including logo, housing color, firmware, and packaging.",
     "images": [
       "https://picsum.photos/seed/desc-1/600/420",
       "https://picsum.photos/seed/desc-2/600/420",
@@ -84,21 +96,22 @@
   "features": {
     "title": "Key Features",
     "items": [
-      "15W wireless fast charging",
-      "N52 magnet stability",
-      "Heat dissipation structure",
-      "Factory-direct pricing and QC control",
-      "Low MOQ for pilot orders"
+      "Reads 1D & 2D barcodes plus mobile screen / payment codes",
+      "2.4G wireless with optional Bluetooth, up to 100m range",
+      "640 x 480 imager with 20% minimum print contrast",
+      "2500mAh battery with offline storage of 20,000 barcodes",
+      "1.5m drop resistance and 100,000 Lux ambient light immunity",
+      "100% aging tested before shipment"
     ]
   },
   "oemSupport": {
     "title": "OEM Support",
     "items": [
-      "Logo and color matching",
-      "Packaging design and inserts",
+      "Logo and housing color customization",
+      "Firmware, beep tones, and data-format editing",
+      "Packaging design, inserts, and multi-language manuals",
       "Compliance planning (CE, RoHS, FCC)",
-      "Performance tuning for target markets",
-      "Private-label barcode & labeling"
+      "Private-label branding and barcode labeling"
     ]
   },
   "bottomCta": {
@@ -107,14 +120,14 @@
       {
         "icon": ">",
         "title": "Request a Quote",
-        "description": "Tell us your target market, quantity, and customization needs. We aim to respond within 24 hours.",
+        "description": "Tell us your target market, application, and order quantity. We aim to respond within 24 hours.",
         "linkLabel": "Start RFQ",
         "action": "quoteModal"
       },
       {
         "icon": ">",
         "title": "Request Samples",
-        "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+        "description": "Verify read performance and durability before you scale. Stock samples or branded samples are both available.",
         "linkLabel": "Get Samples",
         "href": "/contact"
       }

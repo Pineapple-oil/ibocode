@@ -36,19 +36,19 @@
     ]
   },
   "estimates": {
-    "title": "Standard Estimates (Placeholders)",
+    "title": "Standard Estimates",
     "cards": [
       {
         "label": "Sample Lead Time",
-        "value": "[Insert Data] days"
+        "value": "3-7 days (stock)"
       },
       {
         "label": "Mass Production",
-        "value": "[Insert Data] days"
+        "value": "15-30 days"
       },
       {
         "label": "MOQ",
-        "value": "[Insert Data]"
+        "value": "100 pcs (negotiable)"
       },
       {
         "label": "Incoterms",
@@ -61,13 +61,13 @@
     "title": "Next Step",
     "primary": {
       "title": "Request a Lead-Time Plan",
-      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical schedule and next steps.",
+      "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with a practical schedule and next steps.",
       "linkLabel": "Request Plan",
       "href": "/contact"
     },
     "secondary": {
       "title": "Start with a Pilot Order",
-      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "description": "Verify read performance and durability before you scale. Stock samples or branded samples are both available.",
       "linkLabel": "Start Pilot",
       "href": "/contact"
     }

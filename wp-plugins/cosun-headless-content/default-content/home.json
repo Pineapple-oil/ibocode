@@ -1,0 +1,278 @@
+{
+  "hero": {
+    "eyebrow": "Factory-direct OEM / ODM",
+    "title": "Barcode Scanners & POS, Built for Real Retail -- and Real Buyers.",
+    "description": "Ibocode (Guangzhou Ibocode Electronic Technology Co., Ltd.) is a factory-direct manufacturer of barcode scanners, thermal printers, cash drawers, and POS machines. For over 10 years, we have helped wholesalers, brand owners, retailers, software integrators, and hardware distributors launch reliable hardware that earns repeat orders -- not return tickets.",
+    "buyerRealityLabel": "Buyer reality",
+    "buyerRealityText": "If you have ever been burned by inconsistent read rates, unclear specs, or last-minute delays, you are not alone.",
+    "supportText": "B2B buyers worldwide need three things: predictable read performance, compliance-ready planning, and communication that does not waste time. That is exactly what our operation is built to deliver.",
+    "primaryCta": {
+      "label": "Request a Quote",
+      "href": "/contact"
+    },
+    "secondaryCta": {
+      "label": "Explore Factory",
+      "href": "/manufacturing/factory"
+    },
+    "highlights": [
+      "Repeat orders",
+      "Reliable reads",
+      "No guessing games"
+    ],
+    "backgroundImage": "/images/home_hero_bg.png",
+    "heroImage": "/images/home_factory_preview.png",
+    "checklist": {
+      "title": "Consistency checklist",
+      "items": [
+        "Incoming checks and in-process controls",
+        "100% function and aging verification",
+        "Export-ready packaging discipline"
+      ]
+    },
+    "cornerLabel": "OEM / ODM ready"
+  },
+  "stats": [
+    {
+      "value": "10+ Years",
+      "label": "AIDC experience"
+    },
+    {
+      "value": "100%",
+      "label": "Aging tested"
+    },
+    {
+      "value": "OEM / ODM",
+      "label": "Full capability"
+    },
+    {
+      "value": "Global",
+      "label": "Export support"
+    }
+  ],
+  "featuredProducts": {
+    "title": "Featured Product Categories",
+    "description": "We focus on barcode scanning, printing, and POS hardware that sells fast because it solves everyday retail and industrial problems.",
+    "items": [
+      {
+        "image": "/images/product_socket.png",
+        "title": "Handheld Barcode Scanners",
+        "description": "Wired, wireless, and Bluetooth 2D imagers for fast, accurate 1D/2D reading.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_charger.png",
+        "title": "Desktop & Platform Scanners",
+        "description": "Omni-directional and mountable scanners for hands-free retail checkout.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_mount.png",
+        "title": "Thermal Receipt Printers",
+        "description": "2\"/3\" receipt printers with stable media feeding and long printhead life.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_interior.png",
+        "title": "Thermal Label Printers",
+        "description": "3\"/4\" label printers built for high-volume shipping and retail labeling.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_parking_plate.png",
+        "title": "POS Machines & Cash Drawers",
+        "description": "Integrated POS terminals and durable cash drawers for complete checkout.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      },
+      {
+        "image": "/images/product_adapter.png",
+        "title": "Card Readers & Portable Scanners",
+        "description": "Portable readers and card readers that drop into any workflow.",
+        "linkLabel": "View capabilities",
+        "linkHref": "/oem-odm"
+      }
+    ]
+  },
+  "problems": {
+    "eyebrow": "Built for overseas B2B buyers",
+    "title": "The Problems We Remove",
+    "description": "If you have dealt with inconsistent read rates or slow feedback, our process is designed to make each run feel repeatable and predictable.",
+    "items": [
+      {
+        "title": "Inconsistent batches",
+        "description": "Process checkpoints protect batch consistency, so the product you approve is the product your customers receive."
+      },
+      {
+        "title": "Unclear specs",
+        "description": "Buyer-first execution means clear specs, clear revisions, and clear next steps without guesswork."
+      },
+      {
+        "title": "Last-minute delays",
+        "description": "Fast response culture and launch support keep packaging, labeling, and timelines on track."
+      }
+    ]
+  },
+  "whyChoose": {
+    "eyebrow": "Core Advantages",
+    "title": "Your Reliable Partner for Barcode Scanners, Printers & POS",
+    "description": "Built for buyers who need scale, repeatability, and faster market response without sacrificing margin or supply stability.",
+    "cards": [
+      {
+        "title": "01. Unbeatable Pricing",
+        "subtitle": "Factory Direct + Scale",
+        "description": "By combining factory-direct production with strong volume purchasing on scan engines and components, we keep costs competitive. Partnering with us means bypassing middlemen and directly sharing the dividends of our scale."
+      },
+      {
+        "title": "02. Robust Inventory & Rapid Fulfillment",
+        "subtitle": "Ready to ship",
+        "description": "With permanent inventory of popular scanner and printer models, we support fast dispatch. For international buyers, this shortens procurement cycles, improves capital turnover, and reduces the risk of stockouts."
+      },
+      {
+        "title": "03. Market-Proven Product DNA",
+        "subtitle": "Best-sellers with evidence",
+        "description": "Our handheld and platform scanners are long-standing sellers across retail and industrial use. Their designs and durability are already field-tested by daily users, helping you sell products buyers actually want."
+      },
+      {
+        "title": "04. High Flexibility & Partnership Growth",
+        "subtitle": "Built for international collaboration",
+        "description": "As an active partner in the international market, we value every client. We offer flexible MOQs and rapid response times, working closely with you to explore and grow your local market together."
+      }
+    ],
+    "glance": {
+      "title": "Why Choose Us? At a Glance",
+      "items": [
+        {
+          "feature": "Factory Direct",
+          "benefit": "Maximum profit margins for your business."
+        },
+        {
+          "feature": "Ready-to-Ship",
+          "benefit": "Zero stock pressure and faster cash flow."
+        },
+        {
+          "feature": "100% Aging Tested",
+          "benefit": "Lower DOA and return rates."
+        },
+        {
+          "feature": "Lean Production",
+          "benefit": "Agile response to your specific market needs."
+        }
+      ]
+    }
+  },
+  "audience": {
+    "title": "For Whom We Build",
+    "description": "Whether you sell through Amazon, regional retail, POS distributors, or system-integration channels, the expectations are the same: the product must read right, feel right, and work reliably every time.",
+    "items": [
+      {
+        "title": "Wholesalers and importers",
+        "description": "Need stable replenishment and export-ready packaging."
+      },
+      {
+        "title": "Brand owners",
+        "description": "Building private-label scanner and printer programs with differentiated designs."
+      },
+      {
+        "title": "Retailers",
+        "description": "Demanding consistent appearance and fewer complaints."
+      },
+      {
+        "title": "E-commerce sellers",
+        "description": "Who live and die by reviews and return rates."
+      },
+      {
+        "title": "System integrators & ISVs",
+        "description": "Need stable hardware that integrates with POS, ERP, and warehouse systems."
+      }
+    ],
+    "highlight": {
+      "title": "Factory strength you can show your team",
+      "items": [
+        "10+ years in barcode scanner and POS manufacturing",
+        "In-house R&D, QC, sales & after-sales teams",
+        "Worldwide export support",
+        "OEM/ODM: design, prototyping, 100% aging test, mass production, delivery"
+      ],
+      "linkLabel": "Read full company profile",
+      "linkHref": "/about/profile"
+    }
+  },
+  "pilotToScale": {
+    "eyebrow": "Pricing that scales with you",
+    "title": "Pilot to Scale, Without Quality Surprises",
+    "description": "Cheap is expensive when returns start coming in. We help you validate early and unlock better pricing as volumes grow.",
+    "cards": [
+      {
+        "title": "Pilot order",
+        "description": "Start with a pilot order to verify read performance, ergonomics, and market response."
+      },
+      {
+        "title": "Revision control",
+        "description": "Lock specs and revisions after validation to protect repeat orders."
+      },
+      {
+        "title": "Tiered pricing for scale",
+        "description": "Unlock better pricing as volumes grow, without cutting reliability."
+      }
+    ]
+  },
+  "compliance": {
+    "title": "Compliance-ready planning (for EU and US buyers)",
+    "description": "If you sell under your own brand, your business may be treated as the manufacturer for certain market requirements. We align documentation and labeling planning early.",
+    "cards": [
+      {
+        "title": "EU RoHS and CE",
+        "description": "Documentation pathways restricting hazardous substances and indicating conformity."
+      },
+      {
+        "title": "US FCC pathways",
+        "description": "Support for Certification and Supplier Declaration of Conformity depending on product type."
+      },
+      {
+        "title": "ISO 9001 aligned",
+        "description": "Quality management system support for vendor onboarding requirements."
+      }
+    ],
+    "note": "We align documentation and labeling planning based on destination market and product configuration."
+  },
+  "ordering": {
+    "eyebrow": "Simple ordering path",
+    "title": "A Simple, Supplier-Friendly Process",
+    "description": "Streamlined for global buyers who need clear steps, reliable timing, and transparent follow-through.",
+    "steps": [
+      {
+        "title": "Inquiry",
+        "description": "Requirements & Specs"
+      },
+      {
+        "title": "Quote",
+        "description": "Price & Timeline"
+      },
+      {
+        "title": "Artwork",
+        "description": "Design Confirmation"
+      },
+      {
+        "title": "Sample",
+        "description": "Prototype Approval"
+      },
+      {
+        "title": "Production",
+        "description": "Mass Manufacturing"
+      },
+      {
+        "title": "QC",
+        "description": "Quality Check"
+      },
+      {
+        "title": "Shipment",
+        "description": "Delivery & Support"
+      }
+    ],
+    "proTip": "Pro Tip: Include MOQ, target deadline, and artwork status in your RFQ to help us return a faster, comparable quotation."
+  }
+}

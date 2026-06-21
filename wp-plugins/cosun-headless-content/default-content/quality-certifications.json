@@ -1,0 +1,48 @@
+{
+  "intro": {
+    "title": "Certifications & Compliance",
+    "description": "Compliance is part of your brand promise. The right labeling and documentation pathway protects your listings and builds confidence."
+  },
+  "cards": [
+    {
+      "label": "CE",
+      "title": "CE Marking Readiness (EU)",
+      "description": "We support documentation planning and labeling preparation based on your product type and destination market. Manufacturers must indicate conformity with applicable EU rules."
+    },
+    {
+      "label": "RoHS",
+      "title": "RoHS Compliance",
+      "description": "For electrical equipment, we align materials and documentation pathways to support RoHS compliance expectations regarding hazardous substances."
+    },
+    {
+      "label": "FCC",
+      "title": "FCC Authorization (U.S.)",
+      "description": "FCC recognizes pathways such as Certification and SDoC. Tell us your product configuration and we will suggest a practical next step."
+    },
+    {
+      "label": "ISO",
+      "title": "ISO 9001 (Optional)",
+      "description": "If your sourcing process requires QMS documentation (like ISO 9001), tell us what your vendor onboarding needs include."
+    }
+  ],
+  "callout": {
+    "image": "https://picsum.photos/seed/cert_docs/1200/400",
+    "title": "Tell us your configuration",
+    "description": "Share your product type and target market and we will suggest a practical next step for testing and documentation planning."
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Request a Compliance Checklist",
+      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical checklist and next steps.",
+      "linkLabel": "Request Checklist",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

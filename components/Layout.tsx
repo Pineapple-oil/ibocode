@@ -41,7 +41,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
     logoAlt?: string;
   };
   const logoUrl = branding.logoUrl;
-  const logoAlt = branding.logoAlt || 'COSUN logo';
+  const logoAlt = branding.logoAlt || 'Ibocode logo';
 
   const getSocialIcon = (label: string) => {
     const normalized = label.toLowerCase();
@@ -248,7 +248,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
       <footer className="relative overflow-hidden bg-ink text-white/70">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-10 right-[-5%] text-[18vw] font-display text-white/5 tracking-[0.18em]">
-            COSUN
+            IBOCODE
           </div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

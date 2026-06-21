@@ -1,0 +1,53 @@
+{
+  "intro": {
+    "title": "Reliability Testing",
+    "description": "Retail, warehouse, and industrial environments are harsh: drops, vibration, temperature swings, and daily heavy use. Reliability testing helps you reduce the most expensive issues - returns, bad reviews, and warranty claims."
+  },
+  "checksTitle": "Common Reliability Checks",
+
+  "checks": [
+    {
+      "title": "Drop tests",
+      "description": "1.5m drop resistance for handheld scanners and readers."
+    },
+    {
+      "title": "Key / button press tests",
+      "description": "Trigger and keypad life-cycle verification."
+    },
+    {
+      "title": "Vibration tests",
+      "description": "Transportation-simulated vibration to protect shipping integrity."
+    },
+    {
+      "title": "Aging / burn-in",
+      "description": "100% aging test before shipment for early-failure detection."
+    },
+    {
+      "title": "Environmental tests",
+      "description": "High/low temperature, humidity, and salt-spray exposure."
+    }
+  ],
+  "images": [
+    "/images/quality/reliability/durability_test.png",
+    "/images/quality/reliability/env_test.png"
+  ],
+  "highlight": {
+    "title": "Why Buyers Like This",
+    "description": "Testing is not just for engineers - it's a risk-reduction tool for procurement. It gives you evidence to defend your brand."
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Ask for a Test Plan Recommendation",
+      "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with a practical test plan and next steps.",
+      "linkLabel": "Request Test Plan",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Verify read performance and durability before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

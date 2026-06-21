@@ -1,12 +1,12 @@
 {
   "topBar": {
     "left": [
-      "Global Electronic Manufacturing",
-      "Factory Direct"
+      "Global Barcode & POS Solutions",
+      "Guangzhou, China"
     ],
     "right": [
-      "North America",
-      "Europe"
+      "Worldwide Shipping",
+      "OEM/ODM Welcome"
     ]
   },
   "navigation": {
@@ -115,8 +115,8 @@
     "ctaLabel": "Request Quote"
   },
   "footer": {
-    "aboutText": "Your trusted partner for reliable, export-ready in-vehicle accessories. Built for compliance, repeat orders, and long-term scale.",
-    "responseNote": "We respond within 24 hours on most RFQs. Share target market, MOQ, and deadlines to speed up quotations.",
+    "aboutText": "Ibocode is a leading manufacturer of barcode scanners, thermal printers, cash drawers, and POS machines. Factory-direct OEM/ODM with strict quality control and 100% aging test before shipment.",
+    "responseNote": "We respond within 24 hours on most RFQs. Share your target market, application, and order quantity to speed up quotations.",
     "socialLinks": [
       {
         "label": "Facebook",
@@ -136,7 +136,7 @@
       },
       {
         "label": "WhatsApp",
-        "href": "https://wa.me/8613189394111"
+        "href": "https://wa.me/8618826253532"
       }
     ],
     "columns": [
@@ -194,37 +194,37 @@
     "contact": {
       "title": "Contact Us",
       "phone": {
-        "value": "+86-13189394111",
+        "value": "+86-18826253532",
         "note": "Mon - Fri, 9am - 6pm"
       },
       "email": {
-        "value": "info@cosunglobal.com",
+        "value": "amyrinahxy@ibocode.com",
         "note": "Response within 24h"
       },
       "address": {
-        "value": "Industrial Zone, Dongguan",
+        "value": "Zengcheng District, Guangzhou",
         "note": "Guangdong, China"
       }
     },
     "newsletter": {
       "title": "Subscribe Our Newsletter",
-      "description": "Latest blog posts and compliance updates for global buyers.",
+      "description": "Latest insights on barcode scanning, thermal printing, and POS solutions for global buyers.",
       "links": [
         {
-          "label": "The Shift to USB-C PD in Automotive",
+          "label": "1D vs 2D Scan Engines: Which Do You Need?",
           "href": "/blog"
         },
         {
-          "label": "EU RoHS vs. REACH: Compliance Checklist",
+          "label": "Choosing a 2D Wireless Barcode Scanner",
           "href": "/blog"
         },
         {
-          "label": "Choosing the Right OEM Partner in China",
+          "label": "OEM/ODM a Private-Label Scanner in China",
           "href": "/blog"
         }
       ]
     },
-    "copyright": "Copyright 2026 COSUN Global Electronic Manufacturing. All rights reserved."
+    "copyright": "Copyright 2026 Guangzhou Ibocode Electronic Technology Co., Ltd. All rights reserved."
   },
   "quoteModal": {
     "title": "Request a Quote",
@@ -242,8 +242,8 @@
       "name": "Your Name",
       "email": "name@company.com",
       "company": "Company Ltd.",
-      "product": "e.g., USB Car Charger, 3000 units",
-      "message": "Describe customization needs, target market, or timeline..."
+      "product": "e.g., IBC-1680W 2D scanner, 1000 units",
+      "message": "Describe your application, target market, scan engine, interface, or timeline..."
     },
     "submitLabel": "Send Request",
     "privacyNote": "We respect your privacy. Your information is only used for this inquiry."
@@ -252,21 +252,21 @@
     "title": "Next Steps",
     "primary": {
       "title": "Request a Quote",
-      "description": "Tell us your target market, quantity, and customization needs. We aim to respond within 24 hours with a practical quote and clear next steps.",
+      "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with a practical quote and clear next steps.",
       "linkLabel": "Start RFQ",
       "href": "/contact"
     },
     "secondary": {
       "title": "Request Samples",
-      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "description": "Verify read performance, ergonomics, and durability before you scale. Stock samples or branded samples are both available.",
       "linkLabel": "Get Samples",
       "href": "/contact"
     }
   },
   "branding": {
-    "logoUrl": "https://server.cosunglobal.com/wp-content/uploads/2026/03/1COSUN_white_t.png",
-    "logoAlt": "COSUN logo",
-    "markUrl": "https://server.cosunglobal.com/wp-content/uploads/2026/03/COSUN_white_tz.png",
-    "markAlt": "COSUN mark"
+    "logoUrl": "",
+    "logoAlt": "Ibocode logo",
+    "markUrl": "/images/ibocode-mark.png",
+    "markAlt": "Ibocode mark"
   }
 }

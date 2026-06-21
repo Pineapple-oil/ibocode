@@ -1,0 +1,110 @@
+{
+  "intro": {
+    "title": "Why Ibocode",
+    "description": "Your customers do not blame the factory - they blame your brand. Ibocode is built around what protects your reputation in mature markets: repeatable quality, practical validation, compliance-ready planning, and buyer-friendly execution."
+  },
+  "pillars": [
+    {
+      "image": "/images/about/whyus/quality_control.png",
+      "title": "1) Fewer Returns",
+      "subtitle": "Built for Real Retail & Industrial Use",
+      "description": "Returns usually come from misreads, weak housings, drop damage, battery or interface issues, and packaging damage. We reduce those risks by treating mass production as a controlled system.",
+      "items": [
+        "Assembly checkpoints reduce sample vs bulk drift",
+        "Functional testing and 100% aging aligned to common failure modes",
+        "Packaging protection planning to reduce transit damage and DOA issues",
+        "Revision control so the approved version stays the approved version"
+      ]
+    },
+    {
+      "image": "/images/about/whyus/rapid_prototyping.png",
+      "title": "2) Faster Launches",
+      "subtitle": "Speed Without Chaos",
+      "description": "Speed-to-market matters - but only if you do not pay for it later with defects and rework.",
+      "items": [
+        "Quick RFQ review with clear questions",
+        "Prototype plan and timeline you can share internally",
+        "R&D support for DFM and manufacturable decisions",
+        "Photo or video confirmation at key points when needed"
+      ]
+    },
+    {
+      "image": "/images/about/whyus/warehouse_logistics.png",
+      "title": "3) Stable Replenishment",
+      "subtitle": "Predictable Repeat Orders",
+      "description": "A supplier can win the first order. A real partner helps you scale repeat orders smoothly.",
+      "items": [
+        "Inspection checkpoints that support consistent batches",
+        "Repeat-order documentation for spec, packaging, and labeling",
+        "Forecast-friendly scheduling and replenishment planning"
+      ]
+    },
+    {
+      "image": "/images/about/whyus/communication_meeting.png",
+      "title": "4) Clear Communication",
+      "subtitle": "The Hidden Cost Saver",
+      "description": "Most B2B sourcing problems are communication problems. We keep it simple and decision-ready.",
+      "items": [
+        "Clear updates, documented next steps, and controlled revisions",
+        "Fast answers that help you decide, not vague replies",
+        "A project rhythm designed for overseas buyers and tight launch windows"
+      ]
+    }
+  ],
+  "factoryStrength": {
+    "title": "Factory Strength (What Buyers Want to See)",
+    "description": "Factory-direct only matters if it creates repeatability and accountability. Here is what keeps batches consistent.",
+    "items": [
+      "Multi-line production setup covering assembly, testing, and packing",
+      "Standardized work instructions and process checkpoints",
+      "Dedicated functional testing, aging, and final inspection flow",
+      "Export-ready packing discipline and carton marking"
+    ],
+    "note": "We can provide a factory capability pack with photos and line breakdowns."
+  },
+  "priceAdvantage": {
+    "title": "Price Advantage (Competitive Without Quality Surprises)",
+    "description": "Cheap becomes expensive when returns hit. Our pricing advantage comes from factory-direct efficiency and value engineering, not corner cutting.",
+    "items": [
+      "Factory-direct pricing structure with clear cost logic",
+      "Multi-tier BOM options (entry / mainstream / premium)",
+      "Cost-down roadmap for scale once sales are proven",
+      "Stable repeat orders reduce rework, claims, and delays"
+    ]
+  },
+  "marketCompetitiveness": {
+    "title": "How We Compete Worldwide",
+    "description": "Mature markets reward consistency. We prioritize repeatability and documentation readiness because that is what helps buyers win long term. Tell us your destination market and channel, and we will propose a practical checklist for labeling and documentation planning.",
+    "cards": [
+      {
+        "title": "EU Readiness",
+        "items": [
+          "Manufacturer responsibility for CE readiness and documentation.",
+          "RoHS substance restrictions for electronic equipment."
+        ]
+      },
+      {
+        "title": "US Readiness",
+        "items": [
+          "FCC authorization pathways (Certification or SDoC).",
+          "ISO 9001 aligned QMS documentation when required."
+        ]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Request a Capability Proposal",
+      "description": "Share your target market, product type, quantity (trial + forecast), and customization needs. We return with a practical quote, lead time, and next steps.",
+      "linkLabel": "Request Proposal",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Get Samples",
+      "description": "Validate read performance and durability before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

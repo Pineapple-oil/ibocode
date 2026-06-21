@@ -1,0 +1,136 @@
+{
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Products",
+      "href": "/products"
+    },
+    {
+      "label": "Handheld Barcode Scanners"
+    },
+    {
+      "label": "IBC-1680W 2D Wireless Scanner"
+    }
+  ],
+  "title": "IBC-1680W 2D Wireless Handheld Scanner",
+  "itemNumber": "Item #: IBC-1680W",
+  "gallery": [
+    "https://picsum.photos/seed/detail-1/1000/800",
+    "https://picsum.photos/seed/detail-2/1000/800",
+    "https://picsum.photos/seed/detail-3/1000/800",
+    "https://picsum.photos/seed/detail-4/1000/800",
+    "https://picsum.photos/seed/detail-5/1000/800"
+  ],
+  "details": [
+    {
+      "label": "Brand",
+      "value": "Ibocode"
+    },
+    {
+      "label": "Model",
+      "value": "IBC-1680W"
+    },
+    {
+      "label": "Scan Engine",
+      "value": "2D CMOS Imager (640 x 480 px)"
+    },
+    {
+      "label": "Dimensions",
+      "value": "160 x 97 x 64 mm"
+    },
+    {
+      "label": "Weight",
+      "value": "188 g"
+    },
+    {
+      "label": "Wireless",
+      "value": "2.4G (Bluetooth optional), up to 100m"
+    },
+    {
+      "label": "Battery",
+      "value": "3.7V / 2500mAh rechargeable"
+    },
+    {
+      "label": "Drop Rating",
+      "value": "1.5m (5 ft)"
+    },
+    {
+      "label": "Interfaces",
+      "value": "USB / RS232 / 2.4G / Bluetooth"
+    },
+    {
+      "label": "Customized",
+      "value": "Logo, Color, Firmware, Packaging"
+    },
+    {
+      "label": "Shipping",
+      "value": "Air / Sea / Express (EXW/FOB)"
+    },
+    {
+      "label": "Accessories",
+      "value": "USB Cable, Cradle, User Manual"
+    }
+  ],
+  "primaryCta": {
+    "label": "Get a Quote",
+    "action": "quoteModal",
+    "href": "/contact"
+  },
+  "secondaryCta": {
+    "label": "Customization",
+    "href": "/contact",
+    "action": ""
+  },
+  "description": {
+    "title": "Product Description",
+    "text": "The IBC-1680W is a handheld wireless 2D barcode scanner built for retail, warehouse, and industrial data capture. Its 640x480 CMOS imager reads all common 1D and 2D barcodes - including QR, DataMatrix, PDF417, and mobile payment codes on phone screens. With a 100m open-field wireless range, a 2500mAh battery, and a 1.5m drop rating, it keeps scanning through long shifts. We support full OEM customization including logo, housing color, firmware, and packaging.",
+    "images": [
+      "https://picsum.photos/seed/desc-1/600/420",
+      "https://picsum.photos/seed/desc-2/600/420",
+      "https://picsum.photos/seed/desc-3/600/420"
+    ]
+  },
+  "features": {
+    "title": "Key Features",
+    "items": [
+      "Reads 1D & 2D barcodes plus mobile screen / payment codes",
+      "2.4G wireless with optional Bluetooth, up to 100m range",
+      "640 x 480 imager with 20% minimum print contrast",
+      "2500mAh battery with offline storage of 20,000 barcodes",
+      "1.5m drop resistance and 100,000 Lux ambient light immunity",
+      "100% aging tested before shipment"
+    ]
+  },
+  "oemSupport": {
+    "title": "OEM Support",
+    "items": [
+      "Logo and housing color customization",
+      "Firmware, beep tones, and data-format editing",
+      "Packaging design, inserts, and multi-language manuals",
+      "Compliance planning (CE, RoHS, FCC)",
+      "Private-label branding and barcode labeling"
+    ]
+  },
+  "bottomCta": {
+    "title": "Ready to start your order?",
+    "items": [
+      {
+        "icon": ">",
+        "title": "Request a Quote",
+        "description": "Tell us your target market, application, and order quantity. We aim to respond within 24 hours.",
+        "linkLabel": "Start RFQ",
+        "action": "quoteModal"
+      },
+      {
+        "icon": ">",
+        "title": "Request Samples",
+        "description": "Verify read performance and durability before you scale. Stock samples or branded samples are both available.",
+        "linkLabel": "Get Samples",
+        "href": "/contact"
+      }
+    ]
+  }
+}

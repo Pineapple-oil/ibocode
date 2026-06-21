@@ -2,11 +2,11 @@
   "hero": {
     "image": "https://picsum.photos/seed/manufacturing/1920/800",
     "title": "Manufacturing & R&D",
-    "description": "A supplier can make a good sample. A factory partner can make the same product - again and again - on schedule. COSUN combines manufacturing discipline with practical engineering support."
+    "description": "A supplier can make a good sample. A factory partner can make the same product - again and again - on schedule. Ibocode combines manufacturing discipline with practical R&D support."
   },
   "capabilities": {
     "title": "Explore Our Capabilities",
-    "description": "COSUN combines manufacturing discipline with practical engineering support so you can launch faster and scale with confidence.",
+    "description": "Ibocode combines manufacturing discipline with practical engineering support so you can launch faster and scale with confidence.",
     "cards": [
       {
         "image": "https://picsum.photos/seed/factory_over/800/600",
@@ -17,7 +17,7 @@
       {
         "image": "https://picsum.photos/seed/lines/800/600",
         "title": "Production Lines",
-        "description": "Process control for consistency. 10 dedicated lines optimized for automotive accessory assembly.",
+        "description": "Process control for consistency. Dedicated lines optimized for scanner, printer, and POS assembly.",
         "href": "/manufacturing/lines"
       },
       {
@@ -38,13 +38,13 @@
     "title": "Next Step",
     "primary": {
       "title": "Request a Factory Capability Pack",
-      "description": "Tell us your target market, quantity, and customization needs. We respond within 24 hours with a practical overview and next steps.",
+      "description": "Tell us your target market, application, and order quantity. We respond within 24 hours with a practical overview and next steps.",
       "linkLabel": "Request Pack",
       "href": "/contact"
     },
     "secondary": {
       "title": "Request a Prototype Plan",
-      "description": "Verify fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "description": "Verify read performance, ergonomics, and durability before you scale. Stock samples or branded samples are both available.",
       "linkLabel": "Request Plan",
       "href": "/contact"
     }

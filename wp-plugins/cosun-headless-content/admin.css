@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap');
+
+/* ============================================================
+   Root variables & wrap
+   ============================================================ */
+.cosun-headless {
+  --cosun-ink:          #0f172a;
+  --cosun-muted:        #64748b;
+  --cosun-border:       #e2e8f0;
+  --cosun-accent:       #f6c343;
+  --cosun-accent-hover: #f59e0b;
+  --cosun-surface:      #ffffff;
+  --cosun-surface-alt:  #f8fafc;
+  --cosun-surface-warm: #fff7e6;
+  --cosun-nav-w:        240px;
+
+  max-width: 1400px;
+  font-family: 'Public Sans', 'Segoe UI', sans-serif;
+  color: var(--cosun-ink);
+  background:
+    radial-gradient(circle at top left, rgba(246,195,67,.15), rgba(246,195,67,0) 55%),
+    radial-gradient(circle at bottom right, rgba(59,130,246,.10), rgba(59,130,246,0) 50%);
+  border: 1px solid var(--cosun-border);
+  border-radius: 18px;
+  padding: 20px 24px;
+  box-shadow: 0 16px 40px rgba(15,23,42,.08);
+}
+
+.cosun-headless > h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  margin: 0 0 16px;
+  letter-spacing: .02em;
+  color: var(--cosun-ink);
+}
+
+/* ============================================================
+   Two-column app layout
+   ============================================================ */
+#cosun-headless-app {
+  display: grid;
+  grid-template-columns: var(--cosun-nav-w) 1fr;
+  gap: 20px;
+  align-items: start;
+  min-height: 600px;
+}
+
+/* ============================================================
+   Navigation sidebar
+   ============================================================ */
+#cosun-headless-nav {
+  position: sticky;
+  top: 32px;
+  background: var(--cosun-surface);
+  border: 1px solid var(--cosun-border);
+  border-radius: 16px;
+  padding: 12px 8px;
+  box-shadow: 0 8px 24px rgba(15,23,42,.07);
+  overflow-y: auto;
+  max-height: calc(100vh - 80px);
+}
+
+.cosun-nav-group {
+  margin-bottom: 6px;
+}
+
+.cosun-nav-group-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--cosun-muted);
+  padding: 8px 12px 4px;
+}
+
+.cosun-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--cosun-muted);
+  transition: background .15s, color .15s;
+  line-height: 1.3;
+}
+
+.cosun-nav-item:hover {
+  background: var(--cosun-surface-alt);
+  color: var(--cosun-ink);
+}
+
+.cosun-nav-item.active {
+  background: var(--cosun-surface-warm);
+  color: var(--cosun-ink);
+  font-weight: 700;
+  border-left: 3px solid var(--cosun-accent);
+  padding-left: 9px;
+}
+
+.cosun-nav-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.cosun-nav-label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ============================================================
+   Editor area
+   ============================================================ */
+#cosun-headless-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 500px;
+}
+
+/* Welcome screen */
+.cosun-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 40px;
+  background: var(--cosun-surface);
+  border: 2px dashed var(--cosun-border);
+  border-radius: 18px;
+  color: var(--cosun-muted);
+}
+
+.cosun-welcome h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  color: var(--cosun-ink);
+  margin: 0 0 10px;
+}
+
+/* ============================================================
+   Toolbar
+   ============================================================ */
+.cosun-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border: 1px solid var(--cosun-border);
+  border-left: 5px solid var(--cosun-accent);
+  border-radius: 14px;
+  background: var(--cosun-surface);
+  box-shadow: 0 8px 20px rgba(15,23,42,.07);
+}
+
+.cosun-toolbar-title {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--cosun-ink);
+}
+
+.cosun-toolbar-path {
+  font-size: 11px;
+  color: var(--cosun-muted);
+  background: var(--cosun-surface-alt);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+.cosun-toolbar-status {
+  font-size: 12px;
+  color: var(--cosun-muted);
+  margin-left: auto;
+  min-width: 80px;
+  text-align: right;
+}
+
+.cosun-toolbar-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ============================================================
+   Editor body
+   ============================================================ */
+.cosun-editor-body {
+  display: grid;
+  gap: 14px;
+}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.cosun-headless .button {
+  border-radius: 999px;
+  border: 1px solid var(--cosun-border);
+  background: var(--cosun-surface);
+  color: var(--cosun-ink);
+  padding: 6px 14px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+
+.cosun-headless .button:hover {
+  border-color: var(--cosun-accent-hover);
+  color: var(--cosun-ink);
+}
+
+.cosun-headless .button-primary {
+  background: var(--cosun-accent);
+  border-color: var(--cosun-accent);
+  color: var(--cosun-ink);
+  box-shadow: 0 6px 16px rgba(246,195,67,.35);
+}
+
+.cosun-headless .button-primary:hover {
+  background: var(--cosun-accent-hover);
+  border-color: var(--cosun-accent-hover);
+}
+
+.cosun-headless .button-secondary {
+  background: var(--cosun-surface-alt);
+}
+
+/* ============================================================
+   Sections (collapsible)
+   ============================================================ */
+.cosun-section {
+  border: 1px solid var(--cosun-border);
+  border-radius: 14px;
+  padding: 12px 16px;
+  background: var(--cosun-surface);
+  box-shadow: 0 6px 16px rgba(15,23,42,.05);
+}
+
+.cosun-section > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--cosun-ink);
+  list-style: none;
+  font-size: 14px;
+  padding: 2px 0;
+}
+
+.cosun-section > summary::-webkit-details-marker { display: none; }
+
+.cosun-section-body {
+  margin-top: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+/* ============================================================
+   Fields
+   ============================================================ */
+.cosun-field {
+  display: grid;
+  gap: 6px;
+}
+
+.cosun-field label {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--cosun-ink);
+}
+
+.cosun-field input[type="text"],
+.cosun-field input[type="number"],
+.cosun-field textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--cosun-border);
+  border-radius: 10px;
+  background: var(--cosun-surface);
+  font-size: 13px;
+  transition: border-color .2s, box-shadow .2s;
+  box-sizing: border-box;
+}
+
+.cosun-field input[type="text"]:focus,
+.cosun-field input[type="number"]:focus,
+.cosun-field textarea:focus {
+  border-color: var(--cosun-accent-hover);
+  box-shadow: 0 0 0 3px rgba(246,195,67,.25);
+  outline: none;
+}
+
+.cosun-field textarea { min-height: 90px; resize: vertical; }
+
+.cosun-field-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cosun-field-row input { flex: 1; }
+
+.cosun-image-preview {
+  margin-top: 8px;
+  max-width: 180px;
+  border-radius: 10px;
+  border: 1px solid var(--cosun-border);
+  display: block;
+  box-shadow: 0 4px 12px rgba(15,23,42,.08);
+}
+
+/* ============================================================
+   Arrays
+   ============================================================ */
+.cosun-array {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px dashed rgba(15,23,42,.16);
+  border-radius: 14px;
+  background: var(--cosun-surface-warm);
+}
+
+.cosun-array-title {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--cosun-ink);
+}
+
+.cosun-array-item {
+  border: 1px solid var(--cosun-border);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--cosun-surface);
+  box-shadow: 0 4px 12px rgba(15,23,42,.05);
+}
+
+.cosun-array-item-header {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--cosun-muted);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.cosun-array-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+/* ============================================================
+   Meta Box Overrides (Page Editor)
+   ============================================================ */
+.cosun-headless.is-metabox {
+  border: none;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  min-height: auto;
+}
+.cosun-headless.is-metabox .cosun-toolbar {
+  border-radius: 12px 12px 0 0;
+  border-bottom: none;
+  background: #f8fafc;
+}
+.cosun-headless.is-metabox .cosun-editor-body {
+  border: 1px solid var(--cosun-border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 20px;
+  background: var(--cosun-surface);
+}
+.cosun-headless.is-metabox .cosun-welcome {
+  padding: 40px;
+  min-height: 200px;
+}

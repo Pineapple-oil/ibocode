@@ -14,12 +14,12 @@
           "text": "Color, texture, coating, logo placement."
         },
         {
-          "label": "Port Config",
-          "text": "USB-A/C mix, PD/QC protocols."
+          "label": "Interface",
+          "text": "USB, RS232, Bluetooth, keyboard wedge."
         },
         {
           "label": "Structure",
-          "text": "Mount geometry, base stability, cable length."
+          "text": "Scan engine, reading angle, stand, and cable length."
         },
         {
           "label": "UX",

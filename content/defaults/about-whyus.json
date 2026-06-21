@@ -1,17 +1,17 @@
 {
   "intro": {
-    "title": "Why COSUN",
-    "description": "Your customers do not blame the factory - they blame your brand. COSUN is built around what protects your reputation in North America and Europe: repeatable quality, practical validation, compliance-ready planning, and buyer-friendly execution."
+    "title": "Why Ibocode",
+    "description": "Your customers do not blame the factory - they blame your brand. Ibocode is built around what protects your reputation in mature markets: repeatable quality, practical validation, compliance-ready planning, and buyer-friendly execution."
   },
   "pillars": [
     {
       "image": "/images/about/whyus/quality_control.png",
       "title": "1) Fewer Returns",
-      "subtitle": "Built for Real Car Conditions",
-      "description": "Returns usually come from fit problems, unstable connections, heat issues, weak mounts, or packaging damage. We reduce those risks by treating mass production as a controlled system.",
+      "subtitle": "Built for Real Retail & Industrial Use",
+      "description": "Returns usually come from misreads, weak housings, drop damage, battery or interface issues, and packaging damage. We reduce those risks by treating mass production as a controlled system.",
       "items": [
-        "Fit validation and assembly checkpoints reduce sample vs bulk drift",
-        "Functional testing aligned to common failure modes",
+        "Assembly checkpoints reduce sample vs bulk drift",
+        "Functional testing and 100% aging aligned to common failure modes",
         "Packaging protection planning to reduce transit damage and DOA issues",
         "Revision control so the approved version stays the approved version"
       ]
@@ -24,7 +24,7 @@
       "items": [
         "Quick RFQ review with clear questions",
         "Prototype plan and timeline you can share internally",
-        "Engineering support for DFM and manufacturable decisions",
+        "R&D support for DFM and manufacturable decisions",
         "Photo or video confirmation at key points when needed"
       ]
     },
@@ -57,7 +57,7 @@
     "items": [
       "Multi-line production setup covering assembly, testing, and packing",
       "Standardized work instructions and process checkpoints",
-      "Dedicated functional testing and final inspection flow",
+      "Dedicated functional testing, aging, and final inspection flow",
       "Export-ready packing discipline and carton marking"
     ],
     "note": "We can provide a factory capability pack with photos and line breakdowns."
@@ -73,7 +73,7 @@
     ]
   },
   "marketCompetitiveness": {
-    "title": "How We Compete in North America & Europe",
+    "title": "How We Compete Worldwide",
     "description": "Mature markets reward consistency. We prioritize repeatability and documentation readiness because that is what helps buyers win long term. Tell us your destination market and channel, and we will propose a practical checklist for labeling and documentation planning.",
     "cards": [
       {
@@ -102,7 +102,7 @@
     },
     "secondary": {
       "title": "Get Samples",
-      "description": "Validate fit, finish, and performance before you scale. Stock samples or branded samples are both available.",
+      "description": "Validate read performance and durability before you scale. Stock samples or branded samples are both available.",
       "linkLabel": "Request Samples",
       "href": "/contact"
     }

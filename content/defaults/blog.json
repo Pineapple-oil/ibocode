@@ -1,54 +1,54 @@
 {
   "hero": {
     "eyebrow": "Insights for global buyers",
-    "title": "COSUN Blog: Market, Engineering, and Compliance Updates",
-    "description": "Practical insights for B2B buyers in auto accessories. Read about market shifts, QC tactics, and compliance checklists."
+    "title": "Ibocode Blog: Scanning, Printing & POS Insights",
+    "description": "Practical insights for B2B buyers in barcode scanning, thermal printing, and POS. Read about market shifts, QC tactics, and compliance checklists."
   },
   "posts": [
     {
       "category": "Market Trends",
-      "title": "The Shift to USB-C PD in Automotive: What Wholesalers Need to Know",
-      "excerpt": "As EU mandates USB-C for consumer electronics, the automotive aftermarket is racing to catch up. Here is why high-wattage PD matters.",
+      "title": "1D vs 2D Scan Engines: Which Barcode Scanner Do You Need?",
+      "excerpt": "From UPC barcodes to QR codes on phone screens, 2D imagers are becoming the default. Here is what wholesalers should know before sourcing.",
       "date": "Oct 12, 2023",
       "readTime": "5 min read",
       "image": "https://picsum.photos/seed/blog-trends/900/620"
     },
     {
       "category": "Engineering & Quality",
-      "title": "Reducing Return Rates: Why Heat Dissipation Matters in Car Chargers",
-      "excerpt": "High return rates often stem from a single invisible factor: heat. Learn how material choice and circuit design impact longevity.",
+      "title": "Reducing Return Rates: Why Scan Engine Quality Matters",
+      "excerpt": "Misreads and dead units drive returns. Learn how imager selection, alignment, and 100% aging testing protect your margins.",
       "date": "Sep 28, 2023",
       "readTime": "4 min read",
       "image": "https://picsum.photos/seed/blog-quality/900/620"
     },
     {
       "category": "Compliance",
-      "title": "EU RoHS vs. REACH: Compliance Checklist for Auto Accessories",
-      "excerpt": "Navigating European compliance can be tricky. We break down the essential documentation you need before importing into the EU.",
+      "title": "CE, RoHS & FCC: Compliance Checklist for POS & Scanner Imports",
+      "excerpt": "Navigating EU and US compliance can be tricky. We break down the documentation you need before importing barcode and POS equipment.",
       "date": "Sep 15, 2023",
       "readTime": "6 min read",
       "image": "https://picsum.photos/seed/blog-compliance/900/620"
     },
     {
       "category": "Sourcing Strategy",
-      "title": "Packaging for Retail vs. E-commerce: A Cost Analysis",
-      "excerpt": "Retail boxes need to sell. E-commerce boxes need to survive. How to choose the right packaging strategy for your channel.",
+      "title": "Retail Box vs Bulk Export: Packaging for Scanners & Printers",
+      "excerpt": "Retail boxes need to sell. Export cartons need to survive shipping. How to choose the right packaging strategy for your channel.",
       "date": "Aug 22, 2023",
       "readTime": "5 min read",
       "image": "https://picsum.photos/seed/blog-packaging/900/620"
     },
     {
       "category": "Product News",
-      "title": "2025 Trend Report: Magnetic Mounts and MagSafe Ecosystems",
-      "excerpt": "The magnetic ecosystem is expanding beyond phones. See how new magnetic standards are influencing car mount designs.",
+      "title": "Wireless 2D Scanners and Mobile Payment Codes",
+      "excerpt": "Wireless 2D imagers that read mobile payment screens are reshaping retail checkout. See what this means for your product line.",
       "date": "Aug 10, 2023",
       "readTime": "3 min read",
       "image": "https://picsum.photos/seed/blog-product/900/620"
     },
     {
       "category": "Sourcing Strategy",
-      "title": "How to Choose the Right OEM Partner in China",
-      "excerpt": "Beyond the price tag: assessing communication, IP protection, and crisis management capabilities for long-term stability.",
+      "title": "How to Choose the Right Scanner OEM Partner in China",
+      "excerpt": "Beyond the price tag: assessing communication, IP protection, and quality control capabilities for long-term supply stability.",
       "date": "Jul 05, 2023",
       "readTime": "7 min read",
       "image": "https://picsum.photos/seed/blog-partner/900/620"

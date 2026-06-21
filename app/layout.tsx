@@ -19,12 +19,12 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: 'COSUN | Global Electronic Manufacturing',
-  description: 'Global electronic manufacturing partner for automotive accessories and OEM/ODM programs.',
+  title: 'Ibocode | Barcode Scanners, Thermal Printers & POS Solutions',
+  description: 'Ibocode (Guangzhou Ibocode Electronic Technology Co., Ltd.) manufactures barcode scanners, thermal printers, cash drawers, and POS machines with 10+ years of factory-direct OEM/ODM experience.',
   icons: {
-    icon: 'https://server.cosunglobal.com/wp-content/uploads/2026/03/COSUN_white_tz.png',
-    shortcut: 'https://server.cosunglobal.com/wp-content/uploads/2026/03/COSUN_white_tz.png',
-    apple: 'https://server.cosunglobal.com/wp-content/uploads/2026/03/COSUN_white_tz.png',
+    icon: '/images/ibocode-mark.png',
+    shortcut: '/images/ibocode-mark.png',
+    apple: '/images/ibocode-mark.png',
   },
 };
 

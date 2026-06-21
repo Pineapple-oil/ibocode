@@ -65,7 +65,7 @@ export const defaultSiteContent = {
 
 export type SiteContent = typeof defaultSiteContent;
 
-const API_BASE = process.env.NEXT_PUBLIC_WP_API_BASE || 'https://server.cosunglobal.com';
+const API_BASE = process.env.NEXT_PUBLIC_WP_API_BASE || 'https://server.ibocode.com';
 const API_ROOT = API_BASE.replace(/\/$/, '');
 const SITE_CONTENT_URL = `${API_ROOT}/wp-json/cosun/v1/site-content`;
 

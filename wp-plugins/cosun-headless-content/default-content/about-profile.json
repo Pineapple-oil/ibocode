@@ -1,0 +1,132 @@
+{
+  "hero": {
+    "title": "Company Profile",
+    "lead": "Guangzhou Ibocode Electronic Technology Co., Ltd. (Ibocode) was built for global B2B buyers who want less drama and more predictable outcomes.",
+    "paragraphs": [
+      "For over 10 years, we have grown by solving the problems procurement teams remember most: inconsistent read performance, unclear specs, slow replies, and shipments that don't match the approved sample.",
+      "Today, Ibocode supports wholesalers, brand owners, retailers, software integrators, and hardware distributors worldwide with a simple promise: stable quality, factory-direct efficiency, 100% aging test before shipment, and clear communication."
+    ],
+    "image": "/images/about/hero.png",
+    "imageOverlayTitle": "10+ Years",
+    "imageOverlaySubtitle": "Guangzhou, China"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To deliver integrated data-capture and printing solutions - scanners, printers, and POS equipment built to read accurately and survive real daily use, not just pass a sample test.",
+    "image": "/images/about/mission.png"
+  },
+  "vision": {
+    "title": "Our Vision",
+    "description": "To become a long-term manufacturing partner for barcode and POS brands worldwide - helping customers launch faster, reduce returns, and scale repeat orders.",
+    "image": "/images/about/vision.png"
+  },
+  "products": {
+    "title": "What We Make",
+    "description": "We focus on high-velocity data-capture and printing products that solve everyday needs and perform consistently in retail, warehouse, and industrial environments:",
+    "items": [
+      "Handheld barcode scanners (wired, wireless, and Bluetooth 2D imagers)",
+      "Omni-directional desktop and platform scanners",
+      "Portable barcode readers",
+      "Thermal receipt and label printers (2\"/3\"/4\")",
+      "Cash drawers and POS machines",
+      "Card readers and integrated data-capture solutions"
+    ],
+    "gallery": [
+      "/images/about/prod_charger.png",
+      "/images/about/prod_mount.png",
+      "/images/about/prod_adapter.png",
+      "/images/about/prod_parking.png"
+    ]
+  },
+  "audience": {
+    "title": "Who We Serve",
+    "items": [
+      {
+        "title": "Wholesalers & Importers",
+        "description": "Stable replenishment and fewer receiving surprises."
+      },
+      {
+        "title": "Brand Owners",
+        "description": "Private-label scanner and printer lines with differentiation customers can feel."
+      },
+      {
+        "title": "Retailers",
+        "description": "Shelf presentation, packaging clarity, and defect control."
+      },
+      {
+        "title": "E-commerce Sellers",
+        "description": "Fighting return rates, reviews, and listing compliance."
+      },
+      {
+        "title": "System Integrators & ISVs",
+        "description": "Reliable hardware that drops into POS, ERP, and warehouse workflows."
+      }
+    ]
+  },
+  "whyCosun": {
+    "title": "Why Ibocode",
+    "cards": [
+      {
+        "title": "Factory Advantages",
+        "items": [
+          "Structured production lines and work cells for scale-ready workflow",
+          "Standardized work instructions and checkpoints reduce variation",
+          "Functional testing and 100% aging test aligned to common failure causes",
+          "Revision control so approved stays approved"
+        ]
+      },
+      {
+        "title": "Company Advantages",
+        "items": [
+          "Clear RFQ inputs for faster, accurate quotes",
+          "Faster decisions with R&D and production aligned",
+          "Photo or video confirmations during pilot runs",
+          "Export-ready communication that respects your timeline"
+        ]
+      },
+      {
+        "title": "Pricing Advantage",
+        "items": [
+          "Factory-direct efficiency with clear cost structure",
+          "Value engineering tiers to hit target price",
+          "Stable repeat orders reduce rework and claims"
+        ]
+      }
+    ]
+  },
+  "compliance": {
+    "title": "Quality and Compliance Mindset",
+    "description": "Compliance planning protects your listings, reduces customs delays, and strengthens buyer confidence. We align documentation and labeling based on your product configuration and destination market.",
+    "items": [
+      "EU Declaration of Conformity and CE readiness",
+      "RoHS substance restrictions for electronics",
+      "FCC equipment authorization pathways",
+      "ISO 9001 aligned QMS documentation if required"
+    ]
+  },
+  "howWeWork": {
+    "title": "How We Work",
+    "steps": [
+      "Confirm market requirements, application, and performance specs.",
+      "Prototype quickly to validate read performance, ergonomics, and user experience.",
+      "Lock spec, packaging, and labeling before mass production.",
+      "Run production with checkpoints and documented revisions.",
+      "Support export packing and repeat-order stability as you scale."
+    ]
+  },
+  "cta": {
+    "title": "Next Step",
+    "primary": {
+      "title": "Start an RFQ",
+      "description": "Share target market, application, and order quantity. We respond within 24 hours with a practical quote and clear next steps.",
+      "linkLabel": "Start RFQ",
+      "href": "/contact"
+    },
+    "secondary": {
+      "title": "Request Samples",
+      "description": "Validate read performance and durability before you scale. Stock samples or branded samples are both available.",
+      "linkLabel": "Request Samples",
+      "href": "/contact"
+    }
+  }
+}

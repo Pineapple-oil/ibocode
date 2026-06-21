@@ -13,7 +13,7 @@ export const Logo: React.FC<LogoProps> = ({ className, variant = 'light' }) => {
       className={className}
       viewBox="0 0 240 140"
       role="img"
-      aria-label="COSUN logo"
+      aria-label="Ibocode logo"
     >
       <path
         d="M20 45 Q120 10 220 45 L230 70 Q220 105 120 130 Q20 105 10 70 Z"
@@ -29,11 +29,11 @@ export const Logo: React.FC<LogoProps> = ({ className, variant = 'light' }) => {
         dominantBaseline="middle"
         fontFamily="Bricolage Grotesque, sans-serif"
         fontWeight="800"
-        fontSize="52"
-        letterSpacing="0.06em"
+        fontSize="40"
+        letterSpacing="0.04em"
         fill="currentColor"
       >
-        COSUN
+        IBOCODE
       </text>
     </svg>
   );

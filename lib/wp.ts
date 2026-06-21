@@ -29,7 +29,7 @@ export interface WpPost {
   };
 }
 
-const DEFAULT_WP_BASE = 'https://server.cosunglobal.com';
+const DEFAULT_WP_BASE = 'https://server.ibocode.com';
 
 export const getWpBase = () => {
   const base = process.env.NEXT_PUBLIC_WP_API_BASE || DEFAULT_WP_BASE;
@@ -73,7 +73,12 @@ export const getTerms = (post: WpPost) => {
 
 export const fetchPosts = async (page = 1, perPage = 9) => {
   const url = buildWpUrl(`/wp/v2/posts?_embed&per_page=${perPage}&page=${page}`);
-  const response = await fetch(url, { cache: 'no-store' });
+  let response: Response;
+  try {
+    response = await fetch(url, { cache: 'no-store' });
+  } catch {
+    return { posts: [] as WpPost[], totalPages: 1, total: 0 };
+  }
   if (!response.ok) {
     return { posts: [] as WpPost[], totalPages: 1, total: 0 };
   }
@@ -85,7 +90,12 @@ export const fetchPosts = async (page = 1, perPage = 9) => {
 
 export const fetchPostBySlug = async (slug: string) => {
   const url = buildWpUrl(`/wp/v2/posts?_embed&slug=${encodeURIComponent(slug)}`);
-  const response = await fetch(url, { cache: 'no-store' });
+  let response: Response;
+  try {
+    response = await fetch(url, { cache: 'no-store' });
+  } catch {
+    return null;
+  }
   if (!response.ok) {
     return null;
   }
