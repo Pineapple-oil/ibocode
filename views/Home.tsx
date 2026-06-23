@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
@@ -160,7 +160,7 @@ const Home: React.FC<HomeProps> = ({ featuredCategoryCards = [], featuredProduct
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
             <div className="space-y-7">
-              <div className="inline-flex items-center gap-2 px-4 py-2 border border-brand/50 text-brand text-xs uppercase tracking-[0.28em]">
+              <div className="inline-flex items-center gap-2 px-4 py-2 border border-blue-400/50 text-blue-400 text-xs uppercase tracking-[0.28em]">
                 {home.hero.eyebrow}
               </div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight reveal-up">
@@ -169,8 +169,8 @@ const Home: React.FC<HomeProps> = ({ featuredCategoryCards = [], featuredProduct
               <p className="text-lg text-slate-200 max-w-2xl reveal-up" style={{ animationDelay: '0.1s' }}>
                 {home.hero.description}
               </p>
-              <div className="border-l-2 border-brand/60 pl-4 text-slate-200 reveal-up" style={{ animationDelay: '0.2s' }}>
-                <p className="text-xs uppercase tracking-[0.22em] text-brand/80 mb-2">{home.hero.buyerRealityLabel}</p>
+              <div className="border-l-2 border-blue-400/60 pl-4 text-slate-200 reveal-up" style={{ animationDelay: '0.2s' }}>
+                <p className="text-xs uppercase tracking-[0.22em] text-blue-400/80 mb-2">{home.hero.buyerRealityLabel}</p>
                 <p className="text-base">{home.hero.buyerRealityText}</p>
               </div>
               <p className="text-sm text-slate-300 max-w-2xl reveal-up" style={{ animationDelay: '0.3s' }}>
@@ -181,14 +181,14 @@ const Home: React.FC<HomeProps> = ({ featuredCategoryCards = [], featuredProduct
                   <button
                     type="button"
                     onClick={() => quoteModal?.open()}
-                    className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-full text-ink bg-brand hover:bg-brand-hover transition-colors"
+                    className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-full text-white bg-brand hover:bg-brand-hover transition-colors"
                   >
                     {heroPrimaryCta.label}
                   </button>
                 ) : (
                   <Link
                     href={heroPrimaryCta.href}
-                    className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-full text-ink bg-brand hover:bg-brand-hover transition-colors"
+                    className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-full text-white bg-brand hover:bg-brand-hover transition-colors"
                   >
                     {heroPrimaryCta.label}
                   </Link>
@@ -236,12 +236,12 @@ const Home: React.FC<HomeProps> = ({ featuredCategoryCards = [], featuredProduct
       </section>
 
       {/* Stats Bar */}
-      <div className="bg-brand text-ink py-8 border-b border-ink/10">
+      <div className="bg-brand text-white py-8 border-b border-white/10">
         <FadeInSection>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               {home.stats.map((stat, index) => (
-                <div key={`${stat.value}-${index}`} className="border border-ink/10 rounded-2xl py-4 bg-white/20">
+                <div key={`${stat.value}-${index}`} className="border border-white/15 rounded-2xl py-4 bg-white/20">
                   <div className="text-3xl font-display">{stat.value}</div>
                   <div className="text-xs font-semibold uppercase tracking-[0.25em]">{stat.label}</div>
                 </div>
@@ -302,7 +302,7 @@ const Home: React.FC<HomeProps> = ({ featuredCategoryCards = [], featuredProduct
               const Icon = problemIcons[index] ?? AlertTriangle;
               return (
                 <div key={`${item.title}-${index}`} className="p-7 rounded-2xl border border-ink/10 bg-paper shadow-sm">
-                  <div className="bg-ink text-brand w-12 h-12 rounded-xl flex items-center justify-center mb-5">
+                  <div className="bg-brand text-white w-12 h-12 rounded-xl flex items-center justify-center mb-5">
                     <Icon size={22} />
                   </div>
                   <h3 className="font-display text-xl mb-3">{item.title}</h3>
@@ -330,7 +330,7 @@ const Home: React.FC<HomeProps> = ({ featuredCategoryCards = [], featuredProduct
               const cardItems = 'items' in card && Array.isArray(card.items) ? card.items : [];
               return (
                 <div key={`${card.title}-${index}`} className="bg-white p-8 rounded-2xl border border-ink/10 hover:shadow-lg transition-shadow">
-                  <div className="bg-brand/40 p-3 rounded-full w-fit mb-6 text-ink">
+                  <div className="bg-brand/10 p-3 rounded-full w-fit mb-6 text-brand">
                     <Icon size={30} />
                   </div>
                   <h3 className="font-display text-xl mb-2">{card.title}</h3>
@@ -423,7 +423,7 @@ const Home: React.FC<HomeProps> = ({ featuredCategoryCards = [], featuredProduct
               return (
                 <div key={`${card.title}-${index}`} className="p-7 rounded-2xl border border-ink/10 bg-paper">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-ink text-brand w-11 h-11 rounded-xl flex items-center justify-center">
+                    <div className="bg-brand text-white w-11 h-11 rounded-xl flex items-center justify-center">
                       <Icon size={20} />
                     </div>
                     <h3 className="font-display text-lg">{card.title}</h3>

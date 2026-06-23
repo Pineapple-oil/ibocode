@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -101,9 +101,9 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="flex items-center gap-3 text-ink">
                 {logoUrl ? (
-                  <img src={logoUrl} alt={logoAlt} className="h-10 w-auto" />
+                  <img src={logoUrl} alt={logoAlt} className="h-6 w-auto" />
                 ) : (
-                  <Logo className="h-10 w-auto" />
+                  <Logo className="h-6 w-auto" />
                 )}
               </Link>
             </div>
@@ -151,12 +151,12 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                 <button
                   type="button"
                   onClick={handleQuoteClick}
-                  className="ml-4 bg-brand text-ink px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-hover transition-colors shadow-sm"
+                  className="ml-4 bg-brand text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-hover transition-colors shadow-sm"
                 >
                   {ctaLabel}
                 </button>
               ) : (
-                <Link href="/contact" className="ml-4 bg-brand text-ink px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-hover transition-colors shadow-sm">
+                <Link href="/contact" className="ml-4 bg-brand text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-hover transition-colors shadow-sm">
                   {ctaLabel}
                 </Link>
               )}
@@ -220,7 +220,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                   <button
                     type="button"
                     onClick={handleQuoteClick}
-                    className="block w-full text-center bg-brand text-ink px-5 py-3 rounded-md text-base font-bold hover:bg-brand-hover"
+                    className="block w-full text-center bg-brand text-white px-5 py-3 rounded-md text-base font-bold hover:bg-brand-hover"
                   >
                     {ctaLabel}
                   </button>
@@ -228,7 +228,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                   <Link
                     href="/contact"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block w-full text-center bg-brand text-ink px-5 py-3 rounded-md text-base font-bold hover:bg-brand-hover"
+                    className="block w-full text-center bg-brand text-white px-5 py-3 rounded-md text-base font-bold hover:bg-brand-hover"
                   >
                     {ctaLabel}
                   </Link>
@@ -272,7 +272,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                       key={`${link.label}-${index}`}
                       href={link.href}
                       aria-label={link.label}
-                      className="w-10 h-10 rounded-full bg-brand text-ink flex items-center justify-center shadow-sm hover:bg-brand-hover transition-colors"
+                      className="w-10 h-10 rounded-full bg-brand text-white flex items-center justify-center shadow-sm hover:bg-brand-hover transition-colors"
                     >
                       <Icon size={16} />
                     </a>
@@ -346,7 +346,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
               </h4>
               <ul className="space-y-4 text-sm">
                 <li className="flex items-start gap-3">
-                  <span className="w-9 h-9 rounded-full bg-brand text-ink flex items-center justify-center">
+                  <span className="w-9 h-9 rounded-full bg-brand text-white flex items-center justify-center">
                     <Phone size={16} />
                   </span>
                   <div>
@@ -355,7 +355,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-9 h-9 rounded-full bg-brand text-ink flex items-center justify-center">
+                  <span className="w-9 h-9 rounded-full bg-brand text-white flex items-center justify-center">
                     <Mail size={16} />
                   </span>
                   <div>
@@ -364,7 +364,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-9 h-9 rounded-full bg-brand text-ink flex items-center justify-center">
+                  <span className="w-9 h-9 rounded-full bg-brand text-white flex items-center justify-center">
                     <MapPin size={16} />
                   </span>
                   <div>

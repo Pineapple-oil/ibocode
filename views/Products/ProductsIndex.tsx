@@ -227,7 +227,7 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
                   {(product.badges ?? []).map((badge) => (
                     <span
                       key={badge}
-                      className="absolute top-3 left-3 bg-brand text-ink text-[11px] font-semibold uppercase px-2 py-1 rounded-full"
+                      className="absolute top-3 left-3 bg-brand text-white text-[11px] font-semibold uppercase px-2 py-1 rounded-full"
                     >
                       {badge}
                     </span>
@@ -278,7 +278,7 @@ const ProductsIndex: React.FC<ProductsIndexProps> = ({
             {content.catalogCta.items.map((item, index) => {
               const usesModal = item.action === 'quoteModal' && quoteModal;
               const iconText = item.icon || '>';
-              const iconClassName = index === 0 ? 'bg-brand text-ink' : 'bg-white/10 text-white';
+              const iconClassName = index === 0 ? 'bg-brand text-white' : 'bg-white/10 text-white';
 
               return (
                 <div key={`${item.title}-${index}`} className="flex gap-4">

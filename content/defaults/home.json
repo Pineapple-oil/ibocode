@@ -54,42 +54,42 @@
     "description": "We focus on barcode scanning, printing, and POS hardware that sells fast because it solves everyday retail and industrial problems.",
     "items": [
       {
-        "image": "/images/product_socket.png",
+        "image": "/images/product_handheld_scanner.png",
         "title": "Handheld Barcode Scanners",
         "description": "Wired, wireless, and Bluetooth 2D imagers for fast, accurate 1D/2D reading.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
-        "image": "/images/product_charger.png",
+        "image": "/images/product_desktop_scanner.png",
         "title": "Desktop & Platform Scanners",
         "description": "Omni-directional and mountable scanners for hands-free retail checkout.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
-        "image": "/images/product_mount.png",
+        "image": "/images/product_receipt_printer.png",
         "title": "Thermal Receipt Printers",
         "description": "2\"/3\" receipt printers with stable media feeding and long printhead life.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
-        "image": "/images/product_interior.png",
+        "image": "/images/product_label_printer.png",
         "title": "Thermal Label Printers",
         "description": "3\"/4\" label printers built for high-volume shipping and retail labeling.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
-        "image": "/images/product_parking_plate.png",
+        "image": "/images/product_pos_system.png",
         "title": "POS Machines & Cash Drawers",
         "description": "Integrated POS terminals and durable cash drawers for complete checkout.",
         "linkLabel": "View capabilities",
         "linkHref": "/oem-odm"
       },
       {
-        "image": "/images/product_adapter.png",
+        "image": "/images/product_portable_reader.png",
         "title": "Card Readers & Portable Scanners",
         "description": "Portable readers and card readers that drop into any workflow.",
         "linkLabel": "View capabilities",

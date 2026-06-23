@@ -18,11 +18,11 @@
   "title": "IBC-1680W 2D Wireless Handheld Scanner",
   "itemNumber": "Item #: IBC-1680W",
   "gallery": [
-    "https://picsum.photos/seed/detail-1/1000/800",
-    "https://picsum.photos/seed/detail-2/1000/800",
-    "https://picsum.photos/seed/detail-3/1000/800",
-    "https://picsum.photos/seed/detail-4/1000/800",
-    "https://picsum.photos/seed/detail-5/1000/800"
+    "/images/product_handheld_scanner.png",
+    "/images/product_detail_angle.png",
+    "/images/product_detail_cradle.png",
+    "/images/product_detail_scanning.png",
+    "/images/product_portable_reader.png"
   ],
   "details": [
     {
@@ -88,9 +88,9 @@
     "title": "Product Description",
     "text": "The IBC-1680W is a handheld wireless 2D barcode scanner built for retail, warehouse, and industrial data capture. Its 640x480 CMOS imager reads all common 1D and 2D barcodes - including QR, DataMatrix, PDF417, and mobile payment codes on phone screens. With a 100m open-field wireless range, a 2500mAh battery, and a 1.5m drop rating, it keeps scanning through long shifts. We support full OEM customization including logo, housing color, firmware, and packaging.",
     "images": [
-      "https://picsum.photos/seed/desc-1/600/420",
-      "https://picsum.photos/seed/desc-2/600/420",
-      "https://picsum.photos/seed/desc-3/600/420"
+      "/images/product_detail_scanning.png",
+      "/images/product_detail_cradle.png",
+      "/images/product_detail_angle.png"
     ]
   },
   "features": {

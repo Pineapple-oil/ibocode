@@ -164,22 +164,22 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                 <button
                   type="button"
                   onClick={() => quoteModal?.open()}
-                  className="flex-1 bg-brand text-ink font-semibold py-3 rounded-full"
+                  className="flex-1 bg-brand text-white font-semibold py-3 rounded-full"
                 >
                   {content.primaryCta.label}
                 </button>
               ) : content.primaryCta.href ? (
                 isExternalLink(content.primaryCta.href) ? (
-                  <a href={content.primaryCta.href} className="flex-1 bg-brand text-ink font-semibold py-3 rounded-full text-center">
+                  <a href={content.primaryCta.href} className="flex-1 bg-brand text-white font-semibold py-3 rounded-full text-center">
                     {content.primaryCta.label}
                   </a>
                 ) : (
-                  <Link href={content.primaryCta.href} className="flex-1 bg-brand text-ink font-semibold py-3 rounded-full text-center">
+                  <Link href={content.primaryCta.href} className="flex-1 bg-brand text-white font-semibold py-3 rounded-full text-center">
                     {content.primaryCta.label}
                   </Link>
                 )
               ) : (
-                <span className="flex-1 bg-brand text-ink font-semibold py-3 rounded-full text-center">
+                <span className="flex-1 bg-brand text-white font-semibold py-3 rounded-full text-center">
                   {content.primaryCta.label}
                 </span>
               )}
@@ -259,7 +259,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
             {content.bottomCta.items.map((item, index) => {
               const usesModal = item.action === 'quoteModal' && quoteModal;
               const iconText = item.icon || '>';
-              const iconClassName = index === 0 ? 'bg-brand text-ink' : 'bg-white/10 text-white';
+              const iconClassName = index === 0 ? 'bg-brand text-white' : 'bg-white/10 text-white';
 
               return (
                 <div key={`${item.title}-${index}`} className="flex gap-4">

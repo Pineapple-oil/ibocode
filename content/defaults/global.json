@@ -264,7 +264,7 @@
     }
   },
   "branding": {
-    "logoUrl": "",
+    "logoUrl": "/images/ibocode-logo.png",
     "logoAlt": "Ibocode logo",
     "markUrl": "/images/ibocode-mark.png",
     "markAlt": "Ibocode mark"

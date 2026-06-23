@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { Section } from '../../components/Section';
@@ -30,7 +30,7 @@ const ProductionLines: React.FC = () => {
                 <div className="space-y-8">
                     {leftItems.map((item, index) => (
                       <div key={`${item.title}-${index}`} className="flex gap-4">
-                        <div className="flex-shrink-0 w-12 h-12 bg-yellow-100 text-brand-text font-bold text-xl flex items-center justify-center rounded-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-brand/10 text-brand-text font-bold text-xl flex items-center justify-center rounded-lg">
                           {item.step}
                         </div>
                         <div>
@@ -43,7 +43,7 @@ const ProductionLines: React.FC = () => {
                 <div className="space-y-8">
                     {rightItems.map((item, index) => (
                       <div key={`${item.title}-${index}`} className="flex gap-4">
-                        <div className="flex-shrink-0 w-12 h-12 bg-yellow-100 text-brand-text font-bold text-xl flex items-center justify-center rounded-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-brand/10 text-brand-text font-bold text-xl flex items-center justify-center rounded-lg">
                           {item.step}
                         </div>
                         <div>

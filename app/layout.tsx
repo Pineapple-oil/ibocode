@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Bricolage_Grotesque, Fraunces } from 'next/font/google';
-import Script from 'next/script';
 import './globals.css';
 import NextTopLoader from 'nextjs-toploader';
 import { Providers } from '../components/Providers';
@@ -31,24 +30,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <Script id="tawk-to" strategy="afterInteractive">
-          {`
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-            (function() {
-              var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-              s1.async = true;
-              s1.src = 'https://embed.tawk.to/69c9e17fecf7021c3668053a/1jku9hnc7';
-              s1.charset = 'UTF-8';
-              s1.setAttribute('crossorigin', '*');
-              s0.parentNode.insertBefore(s1, s0);
-            })();
-          `}
-        </Script>
-      </head>
       <body className={`${bricolage.variable} ${fraunces.variable} font-sans bg-paper text-ink`}>
         <NextTopLoader
-          color="#F3E32F"
+          color="#244683"
           initialPosition={0.08}
           crawlSpeed={200}
           height={3}
@@ -56,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           showSpinner={false}
           easing="ease"
           speed={200}
-          shadow="0 0 10px #F3E32F,0 0 5px #F3E32F"
+          shadow="0 0 10px #244683,0 0 5px #244683"
         />
         <Providers>
           <Layout>{children}</Layout>

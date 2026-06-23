@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import {
@@ -131,7 +131,7 @@ const Blog: React.FC<BlogProps> = ({ posts, pagination }) => {
                     key={page}
                     href={`/blog?page=${page}`}
                     className={`w-9 h-9 rounded-full font-semibold inline-flex items-center justify-center ${
-                      isActive ? 'bg-brand text-ink' : 'text-slate-500 hover:text-ink hover:bg-slate-100'
+                      isActive ? 'bg-brand text-white' : 'text-slate-500 hover:text-ink hover:bg-slate-100'
                     }`}
                   >
                     {page}

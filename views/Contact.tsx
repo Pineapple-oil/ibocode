@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { Section } from '../components/Section';
@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
                   const Icon = detailIcons[index] ?? Mail;
                   return (
                     <div key={`${item.title}-${index}`} className="flex items-start gap-4">
-                      <div className="bg-yellow-100 p-4 rounded-full text-brand-text"><Icon /></div>
+                      <div className="bg-brand/10 p-4 rounded-full text-brand-text"><Icon /></div>
                       <div>
                         <h3 className="font-bold text-lg">{item.title}</h3>
                         <p className="text-slate-600 text-lg">{item.value}</p>

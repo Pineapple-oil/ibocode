@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { Send } from 'lucide-react';
@@ -122,7 +122,7 @@ export const QuoteModalProvider: React.FC<{ children: React.ReactNode }> = ({ ch
                 </label>
                 <button
                   type="submit"
-                  className="w-full rounded-xl bg-brand text-ink font-bold py-3 hover:bg-brand-hover transition-colors inline-flex items-center justify-center gap-2"
+                  className="w-full rounded-xl bg-brand text-white font-bold py-3 hover:bg-brand-hover transition-colors inline-flex items-center justify-center gap-2"
                 >
                   {modal.submitLabel} <Send size={18} />
                 </button>

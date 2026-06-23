@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import Link from 'next/link';
@@ -24,7 +24,7 @@ const AboutIndex: React.FC = () => {
           <div className="absolute inset-0 pattern-grid opacity-25" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <p className="text-xs uppercase tracking-[0.3em] text-brand/80">{content.hero.eyebrow}</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-blue-400/80">{content.hero.eyebrow}</p>
           <h1 className="font-display text-4xl md:text-5xl mt-4 mb-6">{content.hero.title}</h1>
           <p className="text-lg text-slate-200 max-w-3xl">{content.hero.description}</p>
         </div>

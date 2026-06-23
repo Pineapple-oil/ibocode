@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { Section } from '../../components/Section';
@@ -62,7 +62,7 @@ const WhyUs: React.FC = () => {
             <ul className="grid md:grid-cols-2 gap-4 text-sm text-slate-200">
                 {content.priceAdvantage.items.map((item, index) => (
                   <li key={`${item}-${index}`} className="flex items-start gap-3">
-                    <Repeat size={18} className="text-brand mt-1" /> {item}
+                    <Repeat size={18} className="text-blue-400 mt-1" /> {item}
                   </li>
                 ))}
             </ul>

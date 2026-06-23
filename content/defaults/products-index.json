@@ -49,24 +49,24 @@
     {
       "title": "IBC-1680W 2D Wireless Scanner",
       "code": "IBC-1680W",
-      "image": "https://picsum.photos/seed/new-1/200/160"
+      "image": "/images/product_handheld_scanner.png"
     },
     {
       "title": "U68-W High-Speed 2D Scanner",
       "code": "U68-W",
-      "image": "https://picsum.photos/seed/new-2/200/160"
+      "image": "/images/product_portable_reader.png"
     },
     {
       "title": "IBC-X1 2D Scanning Platform",
       "code": "IBC-X1",
-      "image": "https://picsum.photos/seed/new-3/200/160"
+      "image": "/images/product_desktop_scanner.png"
     }
   ],
   "products": [
     {
       "title": "IBC-1680W 2D Wireless Handheld Scanner",
       "code": "IBC-1680W",
-      "image": "https://picsum.photos/seed/product-1/600/420",
+      "image": "/images/product_handheld_scanner.png",
       "badges": [
         "Hot"
       ],
@@ -79,7 +79,7 @@
     {
       "title": "IBC-1650W 2D Wireless Handheld Scanner",
       "code": "IBC-1650W",
-      "image": "https://picsum.photos/seed/product-2/600/420",
+      "image": "/images/product_handheld_scanner.png",
       "badges": [],
       "tags": [
         "2D Imager",
@@ -90,7 +90,7 @@
     {
       "title": "IBC-U12W Universal 2D Wireless Scanner",
       "code": "IBC-U12W",
-      "image": "https://picsum.photos/seed/product-3/600/420",
+      "image": "/images/product_handheld_scanner.png",
       "badges": [
         "New"
       ],
@@ -103,7 +103,7 @@
     {
       "title": "U68-W High-Speed 2D Wireless Scanner",
       "code": "U68-W",
-      "image": "https://picsum.photos/seed/product-4/600/420",
+      "image": "/images/product_portable_reader.png",
       "badges": [],
       "tags": [
         "High-Speed",
@@ -114,7 +114,7 @@
     {
       "title": "IBC-90 Wired 1D/2D Handheld Scanner",
       "code": "IBC-90",
-      "image": "https://picsum.photos/seed/product-5/600/420",
+      "image": "/images/product_handheld_scanner.png",
       "badges": [],
       "tags": [
         "Wired",
@@ -125,7 +125,7 @@
     {
       "title": "IBC-X1 High-Speed 2D Scanning Platform",
       "code": "IBC-X1",
-      "image": "https://picsum.photos/seed/product-6/600/420",
+      "image": "/images/product_desktop_scanner.png",
       "badges": [
         "Hot"
       ],
@@ -138,7 +138,7 @@
     {
       "title": "IBC-2200 2D Desktop Platform Scanner",
       "code": "IBC-2200",
-      "image": "https://picsum.photos/seed/product-7/600/420",
+      "image": "/images/product_desktop_scanner.png",
       "badges": [],
       "tags": [
         "Omni-directional"
@@ -148,7 +148,7 @@
     {
       "title": "IBC-DS40 2D Presentation Scanner",
       "code": "IBC-DS40",
-      "image": "https://picsum.photos/seed/product-8/600/420",
+      "image": "/images/product_desktop_scanner.png",
       "badges": [],
       "tags": [
         "Hands-free",
@@ -159,7 +159,7 @@
     {
       "title": "IBC-4600 Round Platform Scanner",
       "code": "IBC-4600",
-      "image": "https://picsum.photos/seed/product-9/600/420",
+      "image": "/images/product_desktop_scanner.png",
       "badges": [],
       "tags": [
         "Round",

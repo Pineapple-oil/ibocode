@@ -7,7 +7,7 @@
   --paper: #F6F2E9;
   --ink: #0B1220;
   --steel: #111827;
-  --brand: #F3E32F;
+  --brand: #244683;
 }
 
 html {
@@ -20,8 +20,8 @@ body {
 }
 
 ::selection {
-  background: #F3E32F;
-  color: #0B1220;
+  background: #244683;
+  color: #FFFFFF;
 }
 
 .pattern-grid {

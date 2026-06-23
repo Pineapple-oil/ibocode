@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import Link from 'next/link';
@@ -45,7 +45,7 @@ export const CtaBlock: React.FC<CtaBlockProps> = ({ title, primary, secondary })
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <div className="flex items-start gap-3">
-              <div className="bg-brand p-2 rounded-full mt-1 text-ink">
+              <div className="bg-brand p-2 rounded-full mt-1 text-white">
                 <ArrowRight size={20} />
               </div>
               <div>
@@ -55,12 +55,12 @@ export const CtaBlock: React.FC<CtaBlockProps> = ({ title, primary, secondary })
                   <button
                     type="button"
                     onClick={() => quoteModal.open()}
-                    className="inline-block mt-3 text-brand font-semibold hover:text-white transition-colors"
+                    className="inline-block mt-3 text-blue-400 font-semibold hover:text-white transition-colors"
                   >
                     {primaryCta.linkLabel} &rarr;
                   </button>
                 ) : (
-                  <Link href={primaryHref} className="inline-block mt-3 text-brand font-semibold hover:text-white transition-colors">
+                  <Link href={primaryHref} className="inline-block mt-3 text-blue-400 font-semibold hover:text-white transition-colors">
                     {primaryCta.linkLabel} &rarr;
                   </Link>
                 )}

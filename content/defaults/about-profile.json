@@ -32,10 +32,10 @@
       "Card readers and integrated data-capture solutions"
     ],
     "gallery": [
-      "/images/about/prod_charger.png",
-      "/images/about/prod_mount.png",
-      "/images/about/prod_adapter.png",
-      "/images/about/prod_parking.png"
+      "/images/product_handheld_scanner.png",
+      "/images/product_desktop_scanner.png",
+      "/images/product_receipt_printer.png",
+      "/images/product_pos_system.png"
     ]
   },
   "audience": {
